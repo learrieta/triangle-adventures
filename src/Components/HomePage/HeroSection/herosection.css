@@ -1,0 +1,142 @@
+
+.herosection--pre--title h2{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.herosection--title h3{
+    font-size: 3rem;
+    font-weight: var(--font-semi);
+    font-family: 'Rajdhani';
+}
+
+.herosection--title span{
+    color: var(--font-accent);
+}
+
+.herosection--paragraph{
+    margin-bottom: 10px;
+}
+.herosection--paragraph{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    color: var(--font-color-gray);
+    line-height: 1.75rem;
+    font-family: 'Barlow', sans-serif;
+    width: calc(100% - 100px);
+}
+
+
+
+
+
+
+/*image section */
+
+.about-img {
+    position: relative;
+}
+
+.about-img .img {
+    padding: 0 30px 30px 15px;
+    position: relative;
+}
+.about-img .img::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 45px;
+    bottom: 0;
+    background-color: var(--font-accent);
+}
+.about-img .img img {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    transition: transform .25s ease;
+}
+.about-img .img:after {
+    content: '';
+    width: 50%;
+    position: absolute;
+    top: -6%;
+    bottom: 60%;
+    left: -3%;
+    background-image: url(../../../assets//dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.about-img .img img:hover {
+    transform: scale(.95);
+}
+
+
+@media screen and (max-width: 992px) {
+    .herosection--pre--title h2{
+        text-align: center;
+        
+    }
+    
+    .herosection--title h3{
+        text-align: center;
+        font-size: var(--h1-font-size) !important;
+    }
+    
+    
+    
+    
+    .herosection--paragraph{
+        text-align: center;
+        width: 100%
+    }
+    
+    .about-img .img img:hover {
+        transform: none;
+    }
+    
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .herosection--title h2{
+        font-size: var(--h3-font-size);
+    }
+    .about-img .img img:hover {
+        transform: none;
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    
+    .banner--title{
+        font-size: 2rem;
+       
+    }
+    
+    .large--button{
+        
+        font-weight: 600;
+       
+        
+        font-size: var(--normal-font-size);
+        
+    }
+    .about-img .img img:hover {
+        transform: none;
+    }
+}
+@media screen and (max-width: 375px) {
+    
+    .banner--title{
+        font-size: 1.6rem;
+       
+    }
+    .about-img .img img:hover {
+        transform: none;
+    }
+    
+}

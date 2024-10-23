@@ -1,0 +1,201 @@
+.navbar-brand{
+    
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h2-font-size);
+}
+
+.nav--title {
+    font-size: 2rem;
+    font-weight: var(--font-semi-bold);
+    font-family: 'Rajdhani';
+}
+
+
+.small--button--navbar{
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .3s background-color;
+}
+.small--button--navbar:hover{
+    background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
+    color: #fff;
+    transform: scale(1.1);
+}
+.navbar--black{
+    background: black;
+}
+.nav--list li a {
+    color: var(--font-color) !important;
+    font-weight: var(--font-medium);
+    position: relative;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+.nav--list li a:hover {
+    color: rgb(249, 183, 23)  !important;
+    
+}
+.nav--list a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    transition: width .3s ease;
+}
+
+.nav--list a:hover:after {
+    width: 100%;
+    
+    
+}
+
+.navbar--logo{
+    width: 100px;
+    border-radius: 40px;
+    display: none;
+}
+.navbar--logo--dark{
+    width: 80px;
+    border-radius: 40px;
+    
+}
+
+/* change hamburger button border color */
+.navbar-toggler {
+    border-color:  rgb(249, 183, 23)  !important;
+    
+
+}
+.navbar-toggler:focus {
+    border-color:  rgb(249, 183, 23)  !important;
+    
+
+}
+.burger--color{
+    color:  rgb(249, 183, 23)  !important;
+}
+/* change navbar-toggler inside lines color (stroke) */
+
+
+
+@media screen and (max-width: 992px) {
+    nav.navbar {
+        background: black !important;
+        padding: 10px !important;
+    }
+    .nav--list li a {
+        line-height: 50px;
+    }
+    .nav--list a:after {
+        bottom: .8rem;
+        left: 30%;
+    }
+    .nav--list a:hover:after {
+        width: 40%;
+    }
+    .small--button--navbar{
+        display: none;
+    }
+    #navbar--clear--logo{
+        display: none !important;
+    }
+    #navbar--logo{
+        display: inline !important;
+    }
+    .banner--title{
+        
+        font-size: 3rem;
+        font-weight:800;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        line-height: 100px;
+    }
+    .banner--position{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
+
+
+}
+@media screen and (max-width: 712px) {
+    .banner--title{
+        font-size: 3rem;
+        
+        top: 50%;
+        left: 50%;
+       
+        
+        line-height: 70px;
+    }
+    .banner--position{
+       
+        top: 80%;
+        
+    }
+    
+}
+@media screen and (max-width: 576px) {
+
+    .banner--title{
+        font-size: 2.5rem;
+       
+    }
+    .banner--position{
+        
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .large--button{
+        
+        font-weight: 600;
+       
+        
+        font-size: var(--h3-font-size);
+        
+    }
+    
+}
+@media screen and (max-width: 430px) {
+    
+    .banner--title{
+        font-size: 2rem;
+       
+    }
+    
+    .large--button{
+        
+        font-weight: 600;
+       
+        
+        font-size: var(--normal-font-size);
+        
+    }
+    
+}
+@media screen and (max-width: 375px) {
+    
+    .banner--title{
+        font-size: 1.6rem;
+       
+    }
+    
+}

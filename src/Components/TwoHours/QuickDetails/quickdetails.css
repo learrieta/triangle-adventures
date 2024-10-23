@@ -1,0 +1,29 @@
+.background--color{
+    background-color: rgba(8, 9, 14, .05);
+    padding: 20px;
+}
+.center--the--button{
+    display: flex;
+    justify-content: center;
+}
+
+.details--title{
+    font-family: 'Rajdhani';
+    font-size: var(--h2-font-size);
+    color: var(--font-accent);
+    font-weight: var(--font-semi);
+}
+.details--list li{
+    list-style: none;
+    font-family: var(--body-font);
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.image--item--pad img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding: 20px;
+}

@@ -1,0 +1,53 @@
+.footer--items{
+    background: black
+}
+
+.btn-floating,
+[class*='btn-outline-'].btn-floating {
+  border-radius: 50%;
+
+
+}
+.footer--title{
+    font-size: var(--h3-font-size) !important;
+}
+
+.footer--opts{
+    font-size: var(--normal-font-size) !important;
+}
+
+.btn-outline-light:hover {
+    color: white;
+    background-color: var(--font-accent);
+    
+}
+
+.foo--list li a {
+    color: var(--font-color) !important;
+    font-weight: var(--font-medium);
+    position: relative;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+.foo--list li a:hover {
+    color: rgb(249, 183, 23)  !important;
+    
+}
+.foo--list a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 10px;
+    background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    transition: width .3s ease;
+}
+
+.foo--list a:hover:after {
+    width: 100%;
+    
+    
+}

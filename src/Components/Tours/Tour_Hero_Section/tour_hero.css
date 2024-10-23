@@ -1,0 +1,54 @@
+.tour--container{
+    position: relative;
+}
+
+.banner--tour{
+    width: 100%;
+    height: 500px;
+    filter: brightness(70%);
+    z-index: -1;
+}
+.banner--tour--title{
+    font-family: "Rajdhani";
+    font-size: 4rem;
+    font-weight:800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    line-height: 100px;
+}
+
+@media screen and (max-width: 992px) {
+    .banner--tour--title {
+        font-size: 3rem;
+        font-weight: 800;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner--tour--title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .banner--tour--title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner--tour--title {
+        font-size: 1.6rem;
+    }
+}

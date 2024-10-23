@@ -1,0 +1,40 @@
+.instagram--title h4{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi);
+    font-family: 'Rajdhani';
+}
+
+.instagram--title span{
+    color: var(--font-accent);
+}
+
+.image--item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.image--item img:hover{
+    transform: scale(.9);
+    transition: transform .25s ease;
+}
+
+
+@media screen and (max-width: 670px) {
+
+    .instagram--title h4{
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-semi);
+        font-family: 'Rajdhani';
+    }
+
+    .image--item img{
+        width: 100% !important;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .image--item img:hover{
+        transform: none;
+        transition: none;
+    }
+}

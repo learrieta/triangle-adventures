@@ -1,0 +1,36 @@
+.aventon--title h3{
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi);
+    font-family: 'Rajdhani';
+}
+.aventon--title span{
+    color: var(--font-accent);
+}
+.aventon--img{
+
+    border-radius: 1rem;
+    
+}
+.aventon--part{
+    display: flex;
+    justify-content: center;
+}
+
+.aventon--paragraph{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    color: var(--font-color-gray);
+    line-height: 1.75rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 1px 40px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .aventon--title h3{
+        font-size: var(--h1-font-size);
+    }
+    
+    
+}

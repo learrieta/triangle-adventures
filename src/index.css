@@ -1,0 +1,33 @@
+:root {
+  --body-font: "Barlow", sans-serif;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.1rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+  --smaller-font-size: .813rem;
+  --tiny-font-size: .625rem;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi: 600;
+  --font-semi-bold: 700;
+  --container-color: white;
+  --font-color-gray: #676977;
+  --font-color: #ffff;
+  --font-accent:  rgb(249, 183, 23)  !important;;
+  --dark-font-color: #2C5359;
+}
+
+a{
+  text-decoration: none;
+}
+body{
+  font-family: "Barlow",sans-serif;
+}
+
+section{
+  padding-top: 2rem;
+  
+  margin-bottom: 2rem;
+}

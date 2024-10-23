@@ -1,0 +1,48 @@
+.banner--container{
+    position: relative;
+}
+
+.banner-image{
+    width: 100%;
+    height: 100vh;
+    
+   
+    filter: brightness(70%);
+    z-index: -1;
+    
+}
+.banner--title{
+    font-family: "Rajdhani";
+    font-size: 4rem;
+    font-weight:800;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    line-height: 100px;
+}
+.banner--position{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.large--button{
+    font-family: 'Rajdhani' !important;
+    font-weight: 600;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+    color: #fff;
+    font-size: var(--h2-font-size);
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .3s background-color;
+}
+.large--button:hover{
+    background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
+    color: #fff;
+    
+}
