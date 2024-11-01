@@ -8,7 +8,7 @@ import imgThree from '../../../assets/what to bring.png'
 const How_It_Works = () => {
   return (
     <section className='section' id='#how-it-works'>
-        <div className="container mt-lg-5 pt-5  my-lg-3 my-md-3 my-sm-2">
+        <div className="container mt-lg-2 pt-5  my-lg-3 my-md-3 my-sm-2">
             <div className="tours--title text-center">
               <h3 >How <span> it works</span></h3>
             </div> 

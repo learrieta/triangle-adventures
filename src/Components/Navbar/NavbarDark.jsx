@@ -45,7 +45,7 @@ const NavbarDark = () => {
                         </ul>
                         
                     </div> 
-                    <a type="button" className="small--button--navbar">
+                    <a type="button" className="small--button--navbar" href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
                         Book Now!
                     </a>
                     

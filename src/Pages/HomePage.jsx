@@ -14,7 +14,7 @@ const HomePage = () => {
   const ogData = {
     title: 'Outdoor fun with ebike guided tours across North Carolina!',
     description: 'The most fun outdoor activity around Raleigh and Clayton. Bring friends and family or team builders. Book now on our website.',
-    url:'https://www.triangle-adventures.com/',
+    url:'https://www.triangle-adventures.com',
     image: '../assets/websitelogo.png',
     siteName: 'Triangle Adventures',
     type: 'website'

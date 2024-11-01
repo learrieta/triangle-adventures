@@ -5,13 +5,15 @@ import QuickDetails from '../Components/TwoHours/QuickDetails/QuickDetails'
 
 
 const ScenicTour = () => {
+ 
   return (
     <div>
       <Helmet>
-        <title>Two Hour Tour - Claton NC</title>
-        <meta name='description' content='2 hours of smooth, scenic riding on hand-picked sections of the most beautiful scenery on NC Mountains to Sea Trail.' />
-        <link rel='canonical' href='/tours/scenic-tour' />
-      </Helmet>
+          <title>Two Hour Tour - Claton NC</title>
+          <meta name='description' content='Fun outdoor biking, exploring, adventures to do in Clayton ' />
+          <link rel='canonical' href='/tours/ScenicTour' />
+          
+        </Helmet>
       
       <TwoHeronSection />
       <QuickDetails />

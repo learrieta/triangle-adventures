@@ -7,13 +7,13 @@ const Footer = () => {
         
             <div className="container p-4">              
                 <div className="mb-4">               
-                    <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/RTPadventures" role="button" target='_blank'
                         ><i className="fab fa-facebook-f"></i
                     ></a>
-                    <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    <a className="btn btn-outline-light btn-floating m-1" href='https://www.instagram.com/triangleadventures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' role="button"
                         ><i className="fab fa-instagram"></i
                     ></a>
-                    <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    <a className="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@triangleadventures?fbclid=IwAR1HdlLPS7IhsTF_RPjWTZduqpEmrB2qsP2dFf7soJrqdm3EB9UEsfG3pls" target='_blank' role="button"
                         ><i className="fa-brands fa-tiktok"></i
                     ></a> 
                 </div>     
@@ -27,9 +27,9 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-auto">                            
-                            <button  className="btn btn-outline-light mb-4">
+                            <a  className="btn btn-outline-light mb-4" href='https://squareup.com/customer-programs/enroll/117pbzsBXauM?utm_medium=copied-link&utm_source=online!' target='_blank'>
                                 Subscribe
-                            </button>
+                            </a>
                         </div>                   
                     </div>                   
                 </div>    

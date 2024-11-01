@@ -10,7 +10,7 @@ const HomeBanner = () => {
             <img src={imgBanner} className='banner-image' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
             
             <h1 className='banner--title text-white'>The Triangle's<br /> only E-Bike <br />Touring Company.</h1>
-            <a type="button" className="large--button banner--position"> Book a Tour!</a>
+            <a type="button" className="large--button banner--position" href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'> Book a Tour!</a>
         </div>
     </div>
   )
