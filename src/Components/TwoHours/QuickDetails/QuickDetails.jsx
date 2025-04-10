@@ -1,6 +1,11 @@
 
 import './quickdetails.css'
-import img1 from '../../../assets/a4.jpg'
+import img1 from '../../../assets/2hour/2.1.png'
+import img2 from '../../../assets/2hour/2.2.png'
+import img3 from '../../../assets/2hour/2.3.jpg'
+import img4 from '../../../assets/2hour/2.4.jpg'
+import img5 from '../../../assets/2hour/2.5.jpg'
+import img6 from '../../../assets/2hour/2.6.png'
 
 
 
@@ -19,18 +24,18 @@ const QuickDetails = () => {
                             <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: Clayton, North Carolina</li>
                             <li><i className="fa-solid fa-user-group" style={{color: "#f9b717", width: "30px",}}></i>Capacity: 10 riders</li>
                             <li><i className="fa-regular fa-clock" style={{color: "#f9b717", width: "30px",}}></i> Times: Varies, Check the Calendar</li>
-                            <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 13+ </li>
+                            <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 15+ </li>
                             <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 69 per person </li>
                         </ul>
                         <div className="center--the--button">
-                            <a type="button" className="small--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584156/?full-items=yes&flow=1269994" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
+                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584156/?full-items=yes&flow=1269994" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
                                 Book Now!
                             </a>
                         </div>
                     </div>
 
-                    <div className="row mt-lg-5 pt-lg-4 mt-md-3 pt-md-2 ">
-                        <h4 className='about--the--adventure text-center'>About <span>The Adventure</span> </h4>
+                    <div className="row mt-lg-5 my-sm-5 pt-lg-4 mt-md-3 pt-md-2 ">
+                        <h4 className='about--the--adventure text-center '>About <span>The Adventure</span> </h4>
                         <ul className="nav nav-tabs nav-justified mb-3 nav--list--i pt-lg-3 pt-md-2 pt-sm-1" id="ex1" role="tablist">
                             <li className="nav-item" role="presentation">
                                 <a
@@ -103,16 +108,20 @@ const QuickDetails = () => {
                             <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img2} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img3} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img4} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
                         </div>
-                        
-                        
+                        <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
+                            <img src={img5} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                        </div>
+                        <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
+                            <img src={img6} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                        </div>
                         
                         
                     </div>

@@ -1,5 +1,5 @@
 import './rent.css'
-import aventon from '../../../assets/aventon.jpg'
+import aventon from '../../../assets/Home/aventon.jpg'
 const Rent = () => {
   return (
     <section>

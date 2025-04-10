@@ -7,6 +7,7 @@ import Rent from '../Components/HomePage/Rent/Rent'
 import Testimonials from '../Components/HomePage/Testimonials/Testimonials'
 import Tours from '../Components/HomePage/Tours/Tours'
 import HomeBanner from '../Components/HomePage/HomeBanner/HomeBanner'
+import Partners from '../Components/HomePage/Partners/Partners'
 
 
 
@@ -40,9 +41,9 @@ const HomePage = () => {
         <HeroSection />
         <Ebike />
         <Tours />
-        
         <Testimonials />
         <Pictures />
+        <Partners />
         
     </div>
   )

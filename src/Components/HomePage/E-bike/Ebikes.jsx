@@ -1,5 +1,5 @@
 import React from 'react'
-import ebikeImg from '../../../assets/ebike.png'
+import ebikeImg from '../../../assets/Home/ebike.png'
 import './ebike.css'
 
 const Ebikes = () => {

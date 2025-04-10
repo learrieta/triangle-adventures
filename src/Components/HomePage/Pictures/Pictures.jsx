@@ -1,12 +1,12 @@
 import './pictures.css'
-import hp1 from '../../../assets/hp1.jpg'
-import hp2 from '../../../assets/hp2.jpg'
-import hp3 from '../../../assets/hp3.jpg'
-import hp4 from '../../../assets/hp4.jpg'
-import hp5 from '../../../assets/hp5.jpg'
-import hp6 from '../../../assets/hp6.png'
-import hp7 from '../../../assets/hp7.jpg'
-import hp8 from '../../../assets/hp8.jpg'
+import hp1 from '../../../assets/Home/hp1.jpg'
+import hp2 from '../../../assets/Home/hp2.jpg'
+import hp3 from '../../../assets/Home/hp3.jpg'
+import hp4 from '../../../assets/Home/hp4.jpg'
+import hp5 from '../../../assets/Home/hp5.jpg'
+import hp6 from '../../../assets/Home/hp6.png'
+import hp7 from '../../../assets/Home/hp7.jpg'
+import hp8 from '../../../assets/Home/hp8.jpg'
 
 const Pictures = () => {
   return (

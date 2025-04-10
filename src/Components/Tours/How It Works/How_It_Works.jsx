@@ -1,8 +1,8 @@
 
 import './how_it_works.css'
-import imgOne from '../../../assets/how it works.png'
-import imgTwo from '../../../assets/what we provide.png'
-import imgThree from '../../../assets/what to bring.png'
+import imgOne from '../../../assets/Tours/how it works.png'
+import imgTwo from '../../../assets/Tours/what we provide.png'
+import imgThree from '../../../assets/Tours/what to bring.png'
 
 
 const How_It_Works = () => {

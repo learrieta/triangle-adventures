@@ -1,5 +1,5 @@
 import React from 'react'
-import imgTourBanner from '../../../assets/tour_banner.jpg'
+import imgTourBanner from '../../../assets/Tours/tour_banner.jpg'
 import './tour_hero.css'
 
 const Tour_Hero = () => {

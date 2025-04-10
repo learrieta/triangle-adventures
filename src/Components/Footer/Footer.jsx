@@ -13,9 +13,7 @@ const Footer = () => {
                     <a className="btn btn-outline-light btn-floating m-1" href='https://www.instagram.com/triangleadventures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' target='_blank' role="button"
                         ><i className="fab fa-instagram"></i
                     ></a>
-                    <a className="btn btn-outline-light btn-floating m-1" href="https://www.tiktok.com/@triangleadventures?fbclid=IwAR1HdlLPS7IhsTF_RPjWTZduqpEmrB2qsP2dFf7soJrqdm3EB9UEsfG3pls" target='_blank' role="button"
-                        ><i className="fa-brands fa-tiktok"></i
-                    ></a> 
+                    
                 </div>     
                 <div>                 
                     <div className="row d-flex justify-content-center">
@@ -69,7 +67,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center p-2">
-                © 2024 Triangle's Adventures. All rights reserved
+                © 2025 Triangle's Adventures. All rights reserved
             </div>
             <div className="text-center p-2 pb-5">
                 Design by: WebSense Studio

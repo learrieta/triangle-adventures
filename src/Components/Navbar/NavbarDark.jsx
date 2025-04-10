@@ -47,12 +47,12 @@ const NavbarDark = () => {
                         </ul>
                         
                     </div> 
-                    <li type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
+                    <a type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
                         Giftcards
-                    </li>
-                    <li type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
+                    </a>
+                    <a type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
                         Book Now!
-                    </li>
+                    </a>
                     
                    
                     

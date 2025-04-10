@@ -1,7 +1,7 @@
 import './tours.css'
-import imgOne from '../../../assets/scenary.jpg'
-import imgTwo from '../../../assets/fooddrink.jpg'
-import imgThree from '../../../assets/mystery.jpeg'
+import imgOne from '../../../assets/Home/scenary.jpg'
+import imgTwo from '../../../assets/Home/fooddrink.jpg'
+import imgThree from '../../../assets/Home/mystery.jpeg'
 
 import { Link } from 'react-router-dom'
 const Tours = () => {

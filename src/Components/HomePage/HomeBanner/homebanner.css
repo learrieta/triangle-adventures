@@ -2,15 +2,14 @@
     position: relative;
 }
 
-.banner-image{
-    width: 100%;
+.home--video--container video{
     height: 100vh;
-    
-   
-    filter: brightness(70%);
-    z-index: -1;
+    width: 100%;
+    object-fit: cover;
     
 }
+
+
 .banner--title{
     font-family: "Rajdhani";
     font-size: 4rem;

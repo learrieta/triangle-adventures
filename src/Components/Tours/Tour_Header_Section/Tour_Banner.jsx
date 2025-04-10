@@ -1,6 +1,6 @@
 import React from 'react'
 import './tour_banner.css'
-import heroImg  from '../../../assets/tour_hero.jpg'
+import heroImg  from '../../../assets/Tours/tour_hero.jpg'
 
 
 const Tour_Banner = () => {

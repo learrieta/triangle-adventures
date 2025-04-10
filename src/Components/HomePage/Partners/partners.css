@@ -1,0 +1,19 @@
+.partner--item img{
+    width: 300px;
+    height: 250px;
+    object-fit: fill;
+}
+
+.partner--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+@media screen and (max-width: 670px) {
+    .partner--item img{
+        width: 200px;
+        height: 200px;
+        object-fit: fill;
+    }
+}

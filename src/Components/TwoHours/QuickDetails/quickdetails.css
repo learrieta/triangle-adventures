@@ -76,3 +76,19 @@
     line-height: 2rem;
     padding: 30px;
 }
+
+.tours--button--navbar{
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+    color: #fff;
+    font-size: var(--normal-font-size);
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: .3s background-color;
+    
+}
+.tours--button--navbar:hover{
+    background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
+    color: #fff;
+    transform: scale(1.1);
+}

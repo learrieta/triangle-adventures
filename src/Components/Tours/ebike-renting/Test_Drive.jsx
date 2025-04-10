@@ -1,9 +1,9 @@
 import React from 'react'
 import './test_drive.css'
-import aventon_one from '../../../assets/a1.jpg'
-import aventon_two from '../../../assets/a2.jpg'
-import aventon_three from '../../../assets/a3.jpg'
-import aventon_four from '../../../assets/a4.jpg'
+import aventon_one from '../../../assets/Tours/a1.jpg'
+import aventon_two from '../../../assets/Tours/a2.jpg'
+import aventon_three from '../../../assets/Tours/a3.jpg'
+import aventon_four from '../../../assets/Tours/a4.jpg'
 
 const Test_Drive = () => {
   return (
