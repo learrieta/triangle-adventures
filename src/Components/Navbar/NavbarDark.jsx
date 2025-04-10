@@ -3,7 +3,7 @@
 import logo from '../../assets/websitelogo.png'
 import { TiThMenu } from "react-icons/ti";
 import { Link } from 'react-router-dom';
-import imgBanner from '../../assets/banner-picture.png'
+
 import './navbar.css'
 
 
@@ -33,7 +33,7 @@ const NavbarDark = () => {
                                 <Link to="/" className="nav-link active " aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to={'/tours'} className="nav-link  ">Tours</Link>
+                                <Link to={'/tours'} className="nav-link  ">Our 2025 E-bike Tours</Link>
                             </li>
                             <li className="nav-item mx-3">
                                 <Link to="#" className="nav-link ">About</Link>
@@ -41,13 +41,20 @@ const NavbarDark = () => {
                             <li className="nav-item mx-3">
                                 <Link to="#" className="nav-link  ">Contact</Link>
                             </li>
+                           
+                            
                             
                         </ul>
                         
                     </div> 
-                    <a type="button" className="small--button--navbar" href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
+                    <li type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
+                        Giftcards
+                    </li>
+                    <li type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/?full-items=yes' target='_blank'>
                         Book Now!
-                    </a>
+                    </li>
+                    
+                   
                     
                 </div>
             </div>

@@ -19,6 +19,7 @@
     border-radius: 50px;
     text-decoration: none;
     transition: .3s background-color;
+    
 }
 .small--button--navbar:hover{
     background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);

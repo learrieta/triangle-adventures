@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './tours_options.css'
 import imgOne from '../../../assets/scenary.jpg'
 import imgTwo from '../../../assets/fooddrink.jpg'
@@ -21,7 +21,7 @@ const Tours_Options = () => {
                 <img src={imgOne} alt="image" loading='eager' title='ebike tours' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
-                  <h2 className="card--title">Scenery Tour</h2>
+                  <h2 className="card--title">Greenery, Scenery & Mindfulness</h2>
                   <p className='card--description'>2 hours of smooth, scenic riding on hand-picked sections of the most beautiful scenery on NC Mountains to Sea Trail. Picturesque moments, some local history, exhilarating e-bike ride. Snack included.</p>   
                   <Link to={'/tours/scenic-tour'} className="card--button">Learn More</Link>
                   
@@ -34,7 +34,7 @@ const Tours_Options = () => {
                   <span className="card--description">Clayton, NC</span>
                   <h2 className="card--title">Food and Drink Tours</h2>
                   <p className='card--description'>Are you a foodie? Do you enjoy an adult beverage or two? Then these tours are for you.<br /> 1. Tacos, Taps, and Local Facts <br /> 2. Burgers, Brews, and History too</p>   
-                  <a href="#" className="card--button">Learn More</a>
+                  <Link to={'/tours/foods-and-drinks-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
 
@@ -43,7 +43,7 @@ const Tours_Options = () => {
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
-                  <p className='card--description'>If you want a unique Raleigh experience, this tour has it all: Modern art, ghost stories, weird history, picturesque view of Raleigh’s skyline, and more – all wrapped up in a fun e-bike ride. This fascinating 2 hour tour will fill you with a new appreciation for The City of Oaks.</p>   
+                  <p className='card--description'>Experience haunted spirits at Dorothea Dix Insane Asylum. See what makes Meredith College a ghostly hotspot. Talk to spirits with real witching rod... and lots more!</p>   
                   <a href="#" className="card--button">Learn More</a>
                 </div>
               </article>

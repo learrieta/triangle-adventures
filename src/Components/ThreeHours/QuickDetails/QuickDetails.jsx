@@ -1,4 +1,4 @@
-
+import React from 'react'
 import './quickdetails.css'
 import img1 from '../../../assets/a4.jpg'
 
@@ -15,15 +15,15 @@ const QuickDetails = () => {
                     <div className="row  background--color">
                         <h3 className='details--title'>Quick Details </h3>
                         <ul className='details--list'>
-                            <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 2 hours</li>
-                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: Clayton, North Carolina</li>
+                            <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 3 hours</li>
+                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: Deep River Brewery in Clayton</li>
                             <li><i className="fa-solid fa-user-group" style={{color: "#f9b717", width: "30px",}}></i>Capacity: 10 riders</li>
                             <li><i className="fa-regular fa-clock" style={{color: "#f9b717", width: "30px",}}></i> Times: Varies, Check the Calendar</li>
                             <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 13+ </li>
-                            <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 69 per person </li>
+                            <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 99 per person </li>
                         </ul>
                         <div className="center--the--button">
-                            <a type="button" className="small--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584156/?full-items=yes&flow=1269994" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
+                            <a type="button" className="small--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584155/?full-items=yes&flow=1269994" onclick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584155 } }));">
                                 Book Now!
                             </a>
                         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './how_it_works.css'
 import imgOne from '../../../assets/how it works.png'
 import imgTwo from '../../../assets/what we provide.png'
@@ -27,6 +27,8 @@ const How_It_Works = () => {
                         Go to the payment screen, register, then check out.<br/>
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
                         That’s it! You will be emailed the starting point.<br/>
+                        <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
+                        Any questions, please email us at: info@triangle-adventures.com.<br/>
                     </p>
                 </div>
                 <div className="col-lg-4 col-md-12 work--items">
@@ -42,7 +44,9 @@ const How_It_Works = () => {
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
                         Disinfected helmet (you are welcome to bring your own if preferred).<br/>
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
-                        Instruction on bikes, program overview, safety briefing..<br/>
+                        Instruction on bikes, program overview, safety briefing...<br/>
+                        <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
+                        If you love the bike and want to purchase a brand new one, just ask. We can even build them for you.<br/>
                     </p>
                 </div>
                 <div className="col-lg-4 col-md-12 work--items">

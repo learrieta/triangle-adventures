@@ -12,6 +12,9 @@
 .w--img:hover {
     transform: scale(1.2);
 }
+.tours--title{
+    padding-bottom: 30px;
+}
 
 .w--title {
     text-transform: uppercase;
