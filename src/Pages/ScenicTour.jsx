@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import TwoHeronSection from '../Components/TwoHours/TwoHourHeroSection/TwoHeronSection'
 import QuickDetails from '../Components/TwoHours/QuickDetails/QuickDetails'
+import Faq from '../Components/TwoHours/FAQSection/Faq'
 
 
 const ScenicTour = () => {
@@ -17,6 +18,7 @@ const ScenicTour = () => {
       
       <TwoHeronSection />
       <QuickDetails />
+      
       
       
       
