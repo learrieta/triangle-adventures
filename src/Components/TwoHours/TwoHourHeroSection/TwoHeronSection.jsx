@@ -1,6 +1,6 @@
 
 
-import twoHour from '../../../assets/twohour.jpg'
+import twoHour from '../../../assets/3hour/twohour.jpg'
 
 const TwoHeronSection = () => {
   return (

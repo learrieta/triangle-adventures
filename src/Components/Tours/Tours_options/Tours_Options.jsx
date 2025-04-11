@@ -44,7 +44,7 @@ const Tours_Options = () => {
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
                   <p className='card--description'>Experience haunted spirits at Dorothea Dix Insane Asylum. See what makes Meredith College a ghostly hotspot. Talk to spirits with real witching rod... and lots more!</p>   
-                  <a href="#" className="card--button">Learn More</a>
+                  <Link to={'/tours/ghost-and-misteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
               

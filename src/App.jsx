@@ -8,6 +8,7 @@ import Layout from './Layout'
 import Tours from './Pages/Tours'
 import ScenicTour from './Pages/ScenicTour'
 import FoodsandDrink from './Pages/FoodsandDrink'
+import Gmr from './Pages/Gmr'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
           <Route  exact path='/tours' element={<Tours />} />
           <Route  exact path='/tours/scenic-tour' element={<ScenicTour />} />
           <Route  exact path='/tours/foods-and-drinks-tour' element={<FoodsandDrink />} />
+          <Route  exact path='/tours/ghost-and-misteries' element={<Gmr />} />
         </Route>
         
         
