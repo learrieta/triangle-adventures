@@ -9,6 +9,9 @@ import Tours from './Pages/Tours'
 import ScenicTour from './Pages/ScenicTour'
 import FoodsandDrink from './Pages/FoodsandDrink'
 import Gmr from './Pages/Gmr'
+import AboutUs from './Pages/AboutUs'
+import Contact from './Pages/Contact'
+
 
 function App() {
   
@@ -23,6 +26,8 @@ function App() {
           <Route  exact path='/tours/scenic-tour' element={<ScenicTour />} />
           <Route  exact path='/tours/foods-and-drinks-tour' element={<FoodsandDrink />} />
           <Route  exact path='/tours/ghost-and-misteries' element={<Gmr />} />
+          <Route  exact path='/aboutus' element={<AboutUs />} />
+          <Route  exact path='/contact-us' element={<Contact />} />
         </Route>
         
         

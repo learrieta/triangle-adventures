@@ -99,72 +99,80 @@ const QuickDetails = () => {
                         
                     </div>
                     
-<section>
-  <h3 class="text-center mb-4 pb-2 text-primary fw-bold">FAQ</h3>
-  <p class="text-center mb-5">
-    Find the answers for the most frequently asked questions below
-  </p>
+                    <div className='p-4'>
+                    <h4 className='faq--the--adventure text-center '> Frequently <span>Asked Questions</span> </h4>
+                        <p class="text-center  itinerary--text--config mb-5">
+                            We aim to craft the perfect day where every guest departs with a sense of awe and wonder for this incredible area
+                        </p>
 
-  <div class="row">
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="far fa-paper-plane text-primary pe-2"></i> A simple
-        question?</h6>
-      <p>
-        <strong><u>Absolutely!</u></strong> We work with top payment companies which guarantees
-        your
-        safety and
-        security. All billing information is stored on our payment processing partner.
-      </p>
-    </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    What if there is severe weather?
+                                </h6>
+                                <p className='faq--text--config'>
+                                    Safety is our number one priority, so if weather is severe, we will communicate that out to our riders prior to the adventure beginning. We normally run rain or shine, so as long as the weather is not severe, we will still run the tours.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    What is the cancellation policy?
+                                </h6>
+                                <p className='faq--text--config'>
+                                        Full refunds will be given if cancellations are made 72 hours ahead of time. If less than 72 hours
+                                        ahead of time, a 50% refund will be given. Rescheduling is always preferred, but refunds will be
+                                        given when rescheduling is not possible. 
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    Will there be parking at the starting point?
+                                </h6>
+                                <p className='faq--text--config'>
+                                    Absolutely. But some of the places we meet may have a limited amount of parking spots, so
+                                    carpooling is preferred whenever possible.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    Can I purchase new bikes through you?
+                                </h6>
+                                <p className='faq--text--config'>
+                                    Absolutely. We are an authorized dealer with Aventon E-Bikes. If you ride a bike that you love,
+                                    you can ask to purchase through us and we can even build it for you. We also keep some brand
+                                    new bikes in stock, pre-built, ready for purchase. Just ask and we can give you all the details.
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    How do the test drives work?
+                                </h6>
+                                <p className='faq--text--config'>
+                                    On certain days throughout the year, we offer FREE test drives. Just sign up, come out, and try
+                                    out the bikes for free. No gimmicks, no hidden fees. Test drives typically last about 10 minutes. 
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4">
+                                <h6 class="mb-3 faqs--the--adventure">
+                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                    Can I bring my own equipment?
+                                </h6>
+                                <p className='faq--text--config'>
+                                    You can certainly bring your own helmet, as long as it is a CPSC certified bike helmet, however
+                                    we provide disinfected helmets. If you have your own E-Bike and are looking to use it on an
+                                    adventure, please contact us first and let us know.
+                                </p>
+                            </div>
 
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="fas fa-pen-alt text-primary pe-2"></i> A question
-        that
-        is longer then the previous one?</h6>
-      <p>
-        <strong><u>Yes, it is possible!</u></strong> You can cancel your subscription anytime in
-        your
-        account. Once the subscription is
-        cancelled, you will not be charged next month.
-      </p>
-    </div>
+                            
+                        </div>
+                    </div>
 
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="fas fa-user text-primary pe-2"></i> A simple
-        question?
-      </h6>
-      <p>
-        Currently, we only offer monthly subscription. You can upgrade or cancel your monthly
-        account at any time with no further obligation.
-      </p>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="fas fa-rocket text-primary pe-2"></i> A simple
-        question?
-      </h6>
-      <p>
-        Yes. Go to the billing section of your dashboard and update your payment information.
-      </p>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="fas fa-home text-primary pe-2"></i> A simple
-        question?
-      </h6>
-      <p><strong><u>Unfortunately no</u>.</strong> We do not issue full or partial refunds for any
-        reason.</p>
-    </div>
-
-    <div class="col-md-6 col-lg-4 mb-4">
-      <h6 class="mb-3 text-primary"><i class="fas fa-book-open text-primary pe-2"></i> Another
-        question that is longer than usual</h6>
-      <p>
-        Of course! We’re happy to offer a free plan to anyone who wants to try our service.
-      </p>
-    </div>
-  </div>
-</section>
 
 
                     

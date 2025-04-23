@@ -35,11 +35,11 @@ const NavbarDark = () => {
                             <li className="nav-item mx-3">
                                 <Link to={'/tours'} className="nav-link  ">Our 2025 E-bike Tours</Link>
                             </li>
-                            <li className="nav-item mx-3">
-                                <Link to="#" className="nav-link ">About</Link>
+                            <li className="nav-item dropdown mx-3">
+                                <Link to={'/aboutus'} className="nav-link ">About</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to="#" className="nav-link  ">Contact</Link>
+                                <Link to={'/contact-us'} className="nav-link  ">Contact</Link>
                             </li>
                            
                             

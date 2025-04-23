@@ -69,12 +69,33 @@
 .about--the--adventure span{
     color: rgb(249, 183, 23)  !important
 }
+.faq--the--adventure{
+    font-size: 1.6rem;
+    font-weight: var(--font-semi);
+    font-family: 'Rajdhani';
+}
+.faq--the--adventure span{
+    color: rgb(249, 183, 23)  !important
+}
+.faqs--the--adventure{
+    font-size: 1.1rem;
+    font-weight: var(--font-semi);
+    font-family: 'Rajdhani';
+    
+}
 .itinerary--text--config{
     font-size: var(--h3-font-size);
     font-weight: var(--font-normal);
     color: var(--font-color-gray);
     line-height: 2rem;
     padding: 30px;
+}
+.faq--text--config{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
+    color: var(--font-color-gray);
+    line-height: 2rem;
+    
 }
 
 .tours--button--navbar{

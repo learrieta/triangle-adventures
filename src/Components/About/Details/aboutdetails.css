@@ -1,0 +1,23 @@
+.fullscreen-video-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+.fullscreen-video-c video {
+    width: 60%;
+    
+    object-fit: contain;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.dave--paragraph{
+    display: flex;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    color: var(--font-color-gray);
+    line-height: 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    
+    
+}

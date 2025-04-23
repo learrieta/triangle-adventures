@@ -28,7 +28,7 @@ const QuickDetails = () => {
                             <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 99 per person </li>
                         </ul>
                         <div className="center--the--button">
-                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584155/?full-items=yes&flow=1269994" onclick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584155 } }));">
+                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us">
                                 Book Now!
                             </a>
                         </div>
@@ -96,7 +96,80 @@ const QuickDetails = () => {
                                 The guided e-bike tour is approximately 13 miles long, a leisurely-paced tour. The adventure lasts between 3-4 hours and includes plenty of breaks and photo ops. The bikes are motorized, allowing participants of all activity levels to experience a fun ride without the work of pedaling.
                             </div>
                         </div>
-                        
+                        <div className='p-4'>
+                            <h4 className='faq--the--adventure text-center '> Frequently <span>Asked Questions</span> </h4>
+                                <p class="text-center  itinerary--text--config mb-5">
+                                    We aim to craft the perfect day where every guest departs with a sense of awe and wonder for this incredible area
+                                </p>
+
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            What if there is severe weather?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                            Safety is our number one priority, so if weather is severe, we will communicate that out to our riders prior to the adventure beginning. We normally run rain or shine, so as long as the weather is not severe, we will still run the tours.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            What is the cancellation policy?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                                Full refunds will be given if cancellations are made 72 hours ahead of time. If less than 72 hours
+                                                ahead of time, a 50% refund will be given. Rescheduling is always preferred, but refunds will be
+                                                given when rescheduling is not possible. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            Will there be parking at the starting point?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                            Absolutely. But some of the places we meet may have a limited amount of parking spots, so
+                                            carpooling is preferred whenever possible.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            Can I purchase new bikes through you?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                            Absolutely. We are an authorized dealer with Aventon E-Bikes. If you ride a bike that you love,
+                                            you can ask to purchase through us and we can even build it for you. We also keep some brand
+                                            new bikes in stock, pre-built, ready for purchase. Just ask and we can give you all the details.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            How do the test drives work?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                            On certain days throughout the year, we offer FREE test drives. Just sign up, come out, and try
+                                            out the bikes for free. No gimmicks, no hidden fees. Test drives typically last about 10 minutes. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 mb-4">
+                                        <h6 class="mb-3 faqs--the--adventure">
+                                            <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                                            Can I bring my own equipment?
+                                        </h6>
+                                        <p className='faq--text--config'>
+                                            You can certainly bring your own helmet, as long as it is a CPSC certified bike helmet, however
+                                            we provide disinfected helmets. If you have your own E-Bike and are looking to use it on an
+                                            adventure, please contact us first and let us know.
+                                        </p>
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                            
                     </div>
                      
 

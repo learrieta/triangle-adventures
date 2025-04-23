@@ -38,9 +38,7 @@ const Footer = () => {
                             <li className='m-3'>
                                 <a href="#" className="text-white footer--opts ">Who We Are</a>
                             </li>
-                            <li className='m-3'>
-                                <a href="#" className="text-white footer--opts">How It Works</a>
-                            </li>
+                            
                             <li className='m-3'>
                                 <a href="#" className="text-white footer--opts">Faq</a>
                             </li>                           
