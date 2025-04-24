@@ -85,9 +85,21 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                                We will be meeting at the Welcome Center of the North Carolina Museum of Art. The address is: 2110 Blue Ridge Rd, Raleigh, NC 27607. Your guides will be waiting near the Welcome Center with the fleet of e-bikes. Please arrive 15 minutes prior to the start time.<br/>
-                                You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to make sure everyone feels comfortable on the bikes. Once we embark as a group, we will do a bit of scenic riding through Art Museum for some fun facts, then continue down the Greenway on the “Art to Heart” trail. We will make several stops around Dorothea Dix Park and NC State campus, among other historical locations. There will also be several stops for photo ops, including an amazing overlook of the Raleigh skyline.<br/>
-                                Prior to your trip, you’ll receive an email/text notification with all the details, including the exact meeting time. Tours generally take place in light rain or shine, and cancellations must be 72 hours in advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
+                               Meet your experienced guides next to our Triangle Adventures truck and trailer in the bus parking lot
+                                near the West Building (from main entrance of museum, turn left and follow the road).<br/>
+
+                                After a brief safety meeting, we do some quick orientation rides to make sure everyone feels
+                                comfortable on the bikes. We start with a true ghost story about an Art Museum haunting. Once we
+                                embark as a group from there, we begin our ride down the beautiful NC Greenway &quot;Art to Heart&quot; Trail.<br/>
+
+                                Our first stop is Meredith College, which is known as one of the most haunted colleges in America. We
+                                will show you exactly why (no spoilers)! From there we continue our journey down to Dorothea Dix Park
+                                and we visit and have some WILD stories about the old Insane Asylum and cemeteries nearby.
+                                We have a couple other stops for some ghost stories and interesting local history, then circle back
+                                around to NC State Campus and back to the Greenway trail, eventually returning to the NC Art Museum.<br/>
+
+                                For anyone that likes a fun e-bike ride, some beautiful scenery, local history, and wild ghost stories... this
+                                tour is for you.
                             </div>
                             <div className="tab-pane fade itinerary--text--config" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
                                 All participants will be provided with a pedal assisted Aventon eBike and a bike helmet for their trip. Participants of all fitness levels can enjoy an easy and fun ride, as you control how much (or little) effort you exert. Please dress in layers as it always feels much cooler on the eBikes. The bikes may not have storage so participants should bring a backpack or waist pack to store belongings and a snack or a bottle of water.
