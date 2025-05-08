@@ -32,7 +32,7 @@ const Tours = () => {
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
                   <h2 className="card--title">Food and Drink Tours</h2>
-                  <a href="#" className="card--button">Learn More</a>
+                  <Link to={'/tours/foods-and-drinks-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
 
@@ -41,7 +41,7 @@ const Tours = () => {
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
-                  <a href="#" className="card--button">Learn More</a>
+                  <Link to={'/tours/ghost-and-misteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
               
