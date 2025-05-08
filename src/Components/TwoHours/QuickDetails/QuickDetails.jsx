@@ -85,7 +85,7 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                                We will be meeting at the trail head at 6008 Mial Plantation Road, Raleigh. Your guides will be standing next to a pickup truck with an enclosed trailer, and a bunch of bikes. Please arrive 15 minutes prior to the start time.<br/>
+                                We will be meeting at the trail head at 2686 covered bridge road. Your guides will be standing next to a pickup truck with an enclosed trailer, and a bunch of bikes. Please arrive 15 minutes prior to the start time.<br/>
                                 You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to make sure everyone feels comfortable on the bikes. Once we embark as a group, you’ll enter the gorgeous Mountains to Sea trail. Your guide will have some interesting facts about local history and information about the Neuse River, native Tuscarora tribes, and more. There will also be several stops for scenic photo ops, snack and water breaks.<br/>
                                 Prior to your trip, you’ll receive a reminder email/text notification with all the details, including the exact meeting time. Trips will take place rain or shine, and cancellations must be 72 hours in advance (see FAQ page). If the weather is especially inclement, we will contact you with alternate arrangements.
                             </div>

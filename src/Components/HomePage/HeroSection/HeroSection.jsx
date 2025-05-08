@@ -15,11 +15,13 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className='herosection--paragraph'>
-                  Triangle Adventures is the most fun kind of business: Started as a passion, which turned into a hobby, which turned into a business.
-                </p>
+                  Discover the Raleigh area like never before with Triangle Adventures, the highest rated outdoor
+                  activity around! Our fun, guided tours blend local history, Greenway Trails, and delicious food
+                  stops, all on easy-to-ride pedal-assisted e-bikes.                </p>
                 <p className='herosection--paragraph'>
-                  We are a team who e-biked every weekend on the Mountains to Sea trail around the Triangle area. We kept saying how lucky we were to have such a gorgeous trail in our back yard, yet we wondered how many people live in the area that have never even been on the trail before.  
-                </p>
+                    Whether you&#39;re craving nature, flavor, beer, or
+                    ghost stories, we’ve got a ride for you. Join      us and turn an ordinary day into an unforgettable
+                    experience!          </p>
               </div>
             </div>
             <div className="col-xs-12  col-lg-5 align-content-center py-5">
