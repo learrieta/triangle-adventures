@@ -118,9 +118,7 @@ const QuickDetails = () => {
                                             What is the cancellation policy?
                                         </h6>
                                         <p className='faq--text--config'>
-                                                Full refunds will be given if cancellations are made 72 hours ahead of time. If less than 72 hours
-                                                ahead of time, a 50% refund will be given. Rescheduling is always preferred, but refunds will be
-                                                given when rescheduling is not possible. 
+                                                Full refunds will be given if cancellations are made 72 hours ahead of time. Please note, we had to make this policy because when people cancel last-minute, it takes that spot away from someone else who is waitlisted. Thank you for your understanding. 
                                         </p>
                                     </div>
                                     <div class="col-md-6 col-lg-4 mb-4">
