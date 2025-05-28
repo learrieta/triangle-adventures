@@ -22,7 +22,7 @@ const Tours_Options = () => {
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
                   <h2 className="card--title">Greenery, Scenery & Mindfulness</h2>
-                  <p className='card--description'>2 hours of smooth, scenic riding on hand-picked sections of the most beautiful scenery on NC Mountains to Sea Trail. Picturesque moments, some local history, exhilarating e-bike ride. Snack included.</p>   
+                  <p className='card--description'>2 hours of smooth, scenic riding on hand-picked sections of the most beautiful scenery on NC Mountains to Sea Trail. Picturesque moments, some local history, exhilarating e-bike ride. </p>   
                   <Link to={'/tours/scenic-tour'} className="card--button">Learn More</Link>
                   
                 </div>
@@ -43,7 +43,7 @@ const Tours_Options = () => {
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
-                  <p className='card--description'>Experience haunted spirits at Dorothea Dix Insane Asylum. See what makes Meredith College a ghostly hotspot. Talk to spirits with real witching rod... and lots more!</p>   
+                  <p className='card--description'>Experience haunted spirits at Dorothea Dix Insane Asylum. See what makes Meredith College a ghostly hotspot. Talk to spirits with real witching rods... and lots more!</p>   
                   <Link to={'/tours/ghost-and-misteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
