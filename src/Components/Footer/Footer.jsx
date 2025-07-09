@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center p-2">
-                © 2025 Triangle's Adventures. All rights reserved
+                © 2025 Triangle Adventures. All rights reserved
             </div>
             <div className="text-center p-2 pb-5">
                 Design by: WebSense Studio

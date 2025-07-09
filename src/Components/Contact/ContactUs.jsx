@@ -1,6 +1,6 @@
 import React from 'react'
 import './contactus.css'
-import about from '../../assets/Aboutus/home_footer.jpg'
+import about from '../../assets/Aboutus/contact.jpg'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 

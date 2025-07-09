@@ -21,7 +21,10 @@ const QuickDetails = () => {
                         <h3 className='details--title'>Quick Details </h3>
                         <ul className='details--list'>
                             <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 3 hours</li>
-                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: Deep River Brewery in Clayton</li>
+                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location:Revival 1869 (gravel parking lot behind building)
+222 East Main Street
+Clayton
+</li>
                             <li><i className="fa-solid fa-user-group" style={{color: "#f9b717", width: "30px",}}></i>Capacity: 10 riders</li>
                             <li><i className="fa-regular fa-clock" style={{color: "#f9b717", width: "30px",}}></i> Times: Varies, Check the Calendar</li>
                             <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 15+ </li>
@@ -85,7 +88,8 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                                We will be meeting at Deep River Brewery in Clayton. Your guides will be waiting near the Triangle Adventures trailer with the fleet of e-bikes. Please arrive 15 minutes prior to the start time.<br></br>
+                                We will be meeting at 348 East Main Street, Clayton NC. (Gravel parking lot)
+. Your guides will be waiting near the Triangle Adventures trailer with the fleet of e-bikes. Please arrive 15 minutes prior to the start time.<br></br>
                                 You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to make sure everyone feels comfortable on the bikes. Once we embark as a group, we will do a bit of scenic riding through Clayton, then stop at one of our favorite restaurants for a memorable lunch: Lil Hombre for the Tacos Tour, Vinson’s Pub for the Burgers Tour. Afterwards, we will enter the Mountains to Sea Trail, where we will have an exhilarating e-bike ride. During this time, your guide will have some interesting facts about local history and information about the Neuse River, native tribes, local cemeteries, and more. Finally, we will come full circle back to Deep River Brewery where you will have a beer waiting for you – compliments of Triangle Adventures. There will also be several stops for photo ops and bathroom breaks.<br></br>
                                 Prior to your trip, you’ll receive an email/text notification with all the details, including the exact meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
                             </div>

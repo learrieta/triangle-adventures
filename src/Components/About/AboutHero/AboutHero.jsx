@@ -1,5 +1,5 @@
 import React from 'react'
-import about from '../../../assets/Aboutus/home_footer.jpg'
+import about from '../../../assets/Aboutus/about.jpg'
 import './abouthero.css'
 
 const AboutHero = () => {
