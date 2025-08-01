@@ -40,7 +40,7 @@ const ContactUs = () => {
                                     <i className="bx bx-mail-send contact__card-icon"></i>
                                     <h3 className="contact__card-title">Email</h3>
                                     <span className="contact__card-data">Info@Triangle-Adventures.com</span>
-                                    <a href="mailto:lhidalgoarrieta@gmail.com" className="contact__button">Write me  <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                    <a href="mailto:Info@Triangle-Adventures.com" className="contact__button">Write me  <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
                                 </div>
                                 <div className="contact__card">
                                     <i className="bx bxs-phone contact__card-icon"></i>
@@ -62,6 +62,10 @@ const ContactUs = () => {
                                     <div className="contact__form-div">
                                         <label  className="contact__form-tag">Email</label>
                                         <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" />
+                                    </div>
+                                    <div className="contact__form-div">
+                                        <label  className="contact__form-tag">Phone Number</label>
+                                        <input type="tel" name="user_phone" className="contact__form-input" placeholder="Your Phone Number"/>
                                     </div>
                                     <div className="contact__form-div contact__form-area">
                                         <label  className="contact__form-tag">Message</label>
