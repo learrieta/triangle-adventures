@@ -21,7 +21,7 @@ const QuickDetails = () => {
                         <h3 className='details--title'>Quick Details </h3>
                         <ul className='details--list'>
                             <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 3 hours</li>
-                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location:Revival 1869 (gravel parking lot behind building)
+                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location:348 East Main Street, Clayton NC. (Gravel parking lot)
 222 East Main Street
 Clayton
 </li>

@@ -20,8 +20,8 @@ const QuickDetails = () => {
                     <div className="row  background--color">
                         <h3 className='details--title'>Quick Details </h3>
                         <ul className='details--list'>
-                            <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 3 hours</li>
-                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: Raleigh, North Carolina</li>
+                            <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 2.5 hours</li>
+                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location: 2110 Blue Ridge Road, Raleigh NC</li>
                             <li><i className="fa-solid fa-user-group" style={{color: "#f9b717", width: "30px",}}></i>Capacity: 10 riders</li>
                             <li><i className="fa-regular fa-clock" style={{color: "#f9b717", width: "30px",}}></i> Times: Varies, Check the Calendar</li>
                             <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 15+ </li>
@@ -85,8 +85,7 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                               Meet your experienced guides next to our Triangle Adventures truck and trailer in the bus parking lot
-                                near the West Building (from main entrance of museum, turn left and follow the road).<br/>
+                               Meet your experienced guides at 2110 Blue Ridge Road, Raleigh NC.<br/>
 
                                 After a brief safety meeting, we do some quick orientation rides to make sure everyone feels
                                 comfortable on the bikes. We start with a true ghost story about an Art Museum haunting. Once we
