@@ -7,6 +7,7 @@ import hp5 from '../../../assets/Home/hp5.jpg'
 import hp6 from '../../../assets/Home/hp6.png'
 import hp7 from '../../../assets/Home/hp7.jpg'
 import hp8 from '../../../assets/Home/hp8.jpg'
+import hp9 from '../../../assets/Home/fooddrink.png'
 
 const Pictures = () => {
   return (
@@ -29,7 +30,7 @@ const Pictures = () => {
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src="/src/assets/Home/fooddrink.png" alt="image" loading="eager" className="card--img"  style={{ height: '242px', width: '100%' }} />
+                  <img src={hp9} alt="image" loading="eager" className="card--img"  style={{ height: '242px', width: '100%' }} />
                 </div>
                 
               </div>
