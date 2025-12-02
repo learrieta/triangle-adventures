@@ -21,10 +21,7 @@ const QuickDetails = () => {
                         <h3 className='details--title'>Quick Details </h3>
                         <ul className='details--list'>
                             <li><i className="fa-regular fa-hourglass-half" style={{color: "#f9b717", width: "30px",}}></i>Duration: 3 hours</li>
-                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location:348 East Main Street, Clayton NC. (Gravel parking lot)
-222 East Main Street
-Clayton
-</li>
+                            <li><i className="fa-solid fa-location-arrow" style={{color: "#f9b717", width: "30px",}}></i>Location:348 East Main Street, Clayton NC. (Gravel parking lot)</li>
                             <li><i className="fa-solid fa-user-group" style={{color: "#f9b717", width: "30px",}}></i>Capacity: 10 riders</li>
                             <li><i className="fa-regular fa-clock" style={{color: "#f9b717", width: "30px",}}></i> Times: Varies, Check the Calendar</li>
                             <li><i className="fa-solid fa-circle-exclamation" style={{color: "#f9b717", width: "30px",}}></i> Ages: 15+ </li>
@@ -88,10 +85,24 @@ Clayton
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                                We will be meeting at 348 East Main Street, Clayton NC. (Gravel parking lot)
-. Your guides will be waiting near the Triangle Adventures trailer with the fleet of e-bikes. Please arrive 15 minutes prior to the start time.<br></br>
-                                You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to make sure everyone feels comfortable on the bikes. Once we embark as a group, we will do a bit of scenic riding through Clayton, then stop at one of our favorite restaurants for a memorable lunch: Lil Hombre for the Tacos Tour, Vinson’s Pub for the Burgers Tour. Afterwards, we will enter the Mountains to Sea Trail, where we will have an exhilarating e-bike ride. During this time, your guide will have some interesting facts about local history and information about the Neuse River, native tribes, local cemeteries, and more. Finally, we will come full circle back to Deep River Brewery where you will have a beer waiting for you – compliments of Triangle Adventures. There will also be several stops for photo ops and bathroom breaks.<br></br>
-                                Prior to your trip, you’ll receive an email/text notification with all the details, including the exact meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
+                               We will be meeting at 348 East Main Street, Clayton NC (gravel parking lot) . Your guides will be waiting
+                                near the Triangle Adventures trailer with the fleet of e-bikes. Please arrive 15 minutes prior to the start
+                                time.<br/><br/>
+                                You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to
+                                make sure everyone feels comfortable on the bikes. Once we embark as a group, we will do a bit of
+                                scenic riding through Clayton with some memorable history stops, then stop at one of our favorite
+                                restaurants for a memorable lunch: Don Betos for the Tacos Tour, Vinson’s Pub for the Burgers Tour.
+                                Afterwards, we will ride through downtown Clayton towards the entrance to the famous NC Mountains
+                                to Sea Trail. We will have an exhilarating e-bike ride through the woods on a paved trail full of tunnels,
+                                bridges, and sometimes wildlife! During this time, your guide will have some interesting, local facts
+                                about the Neuse River, native tribes, local cemeteries, moonshining, alcohol, and more.<br/><br/>
+                                Finally, we will come full circle back to Revival 1869, a prohibition-style speakeasy cocktail bar, where
+                                you will have a house-made cocktail waiting for you – compliments of Triangle Adventures. There will
+                                also be several stops for photo ops and bathroom breaks.<br/><br/>
+                                Prior to your trip, you’ll receive an email/text notification with all the details, including the exact
+                                meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in
+                                advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
+                                Get ready for a fun-filled adventure!
                             </div>
                             <div className="tab-pane fade itinerary--text--config" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
                                 All participants will be provided with a pedal assisted Aventon eBike and a bike helmet for their trip. Participants of all fitness levels can enjoy an easy and fun ride, as you control how much (or little) effort you exert. Please dress in layers as it always feels much cooler on the eBikes. The bikes may not have storage so participants should bring a backpack or waist pack to store belongings and a snack or a bottle of water.

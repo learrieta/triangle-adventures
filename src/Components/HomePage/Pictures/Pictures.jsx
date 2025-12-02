@@ -29,7 +29,7 @@ const Pictures = () => {
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp2} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src="/src/assets/Home/fooddrink.png" alt="image" loading="eager" className="card--img"  style={{ height: '242px', width: '100%' }} />
                 </div>
                 
               </div>

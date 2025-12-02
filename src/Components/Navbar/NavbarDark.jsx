@@ -33,7 +33,7 @@ const NavbarDark = () => {
                                 <Link to="/" className="nav-link active " aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to={'/tours'} className="nav-link  ">Our 2025 E-bike Tours</Link>
+                                <Link to={'/tours'} className="nav-link  ">Our 2026 E-bike Tours</Link>
                             </li>
                             <li className="nav-item dropdown mx-3">
                                 <Link to={'/aboutus'} className="nav-link ">About</Link>
@@ -47,7 +47,7 @@ const NavbarDark = () => {
                         </ul>
                         
                     </div> 
-                    <a type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
+                    <a type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/?flow=1269994' >
                         Giftcards
                     </a>
                     <a type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
