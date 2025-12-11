@@ -36,38 +36,61 @@ const HomeBanner = () => {
 
   return (
     <div>
-      {/* Winter popup */}
-      {showWinterPopup && (
-        <div className="winter-popup-overlay" onClick={handleClose}>
-          <div
-            className="winter-popup"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="winter-popup-close"
-              type="button"
-              onClick={handleClose}
-              aria-label="Close winter notice"
-            >
-              ×
-            </button>
+      {/* Winter / Holiday popup */}
+{showWinterPopup && (
+  <div className="winter-popup-overlay" onClick={handleClose}>
+    <div
+      className="winter-popup"
+      onClick={(e) => e.stopPropagation()}
+    >
+      {/* Falling snow layer */}
+      <div className="winter-popup-snow">
+        {Array.from({ length: 25 }).map((_, i) => (
+          <div key={i} className="snowflake" />
+        ))}
+      </div>
 
-            <div className="winter-popup-content">
-              <div className="winter-popup-icon">❄</div>
-              <h2 className="winter-popup-title">Winter Update</h2>
-              <p className="winter-popup-text">
-                We will be back in <strong>March 2026!</strong>
-              </p>
-              <p className="winter-popup-text">
-                Full schedule coming in <strong>January</strong>.
-              </p>
-              <p className="winter-popup-text">
-                <strong>Gift cards</strong> available now!
-              </p>
-            </div>
+      <button
+        className="winter-popup-close"
+        type="button"
+        onClick={handleClose}
+        aria-label="Close winter notice"
+      >
+        ×
+      </button>
+
+      <div className="winter-popup-content">
+        <div className="winter-popup-hero">
+          <div className="winter-popup-santa">
+            🎅
+          </div>
+          <div className="winter-popup-subtitle">
+            Happy Holidays!
           </div>
         </div>
-      )}
+
+        <h2 className="winter-popup-title">Winter Update</h2>
+
+        <p className="winter-popup-text">
+          We’ll be back in <strong>March 2026!</strong>
+        </p>
+        <p className="winter-popup-text">
+          Our full holiday & winter schedule arrives in{" "}
+          <strong>January</strong>.
+        </p>
+        <p className="winter-popup-text winter-popup-highlight">
+          🎁 <strong>Gift cards</strong> available now – perfect for the holidays!
+        </p>
+
+        <div className="winter-popup-footer">
+          <span className="winter-popup-tag">❄ Cozy season</span>
+          <span className="winter-popup-tag">🎄 Holiday ready</span>
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
 
       {/* Existing banner */}
       <div className="banner--container">
