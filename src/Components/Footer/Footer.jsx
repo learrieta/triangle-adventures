@@ -1,4 +1,5 @@
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -36,11 +37,11 @@ const Footer = () => {
                         <h5 className="text-uppercase footer--title">About Us</h5>
                         <ul className="list-unstyled mb-0 foo--list">
                             <li className='m-3'>
-                                <a href="#" className="text-white footer--opts ">Who We Are</a>
+                                <Link to={'/aboutus'} className="text-white footer--opts ">Who We Are</Link>
                             </li>
                             
                             <li className='m-3'>
-                                <a href="#" className="text-white footer--opts">Faq</a>
+                                <Link to={'/aboutus'} className="text-white footer--opts">Faq</Link>
                             </li>                           
                         </ul>
                     </div>
@@ -65,7 +66,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center p-2">
-                © 2025 Triangle Adventures. All rights reserved
+                © 2026 Triangle Adventures. All rights reserved
             </div>
             <div className="text-center p-2 pb-5">
                 Design by: WebSense Studio

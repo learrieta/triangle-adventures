@@ -14,7 +14,7 @@ const NavbarDark = () => {
     <div>
         <nav className="navbar sticky-top navbar-expand-lg navbar--black p-lg-2" id='navbar'>
             <div className="container">
-                <a href="#" className="navbar-brand"> <img src={logo} alt="" className='navbar--logo--dark' id='navbar--logo' /> </a>
+                <Link to="/" className="navbar-brand"> <img src={logo} alt="" className='navbar--logo--dark' id='navbar--logo' /> </Link>
                     
                 <button 
                     type='button'
@@ -48,7 +48,7 @@ const NavbarDark = () => {
                         
                     </div> 
                     <a type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/?flow=1269994' >
-                        Giftcards
+                        Gift Cards
                     </a>
                     <a type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
                         Book Now!

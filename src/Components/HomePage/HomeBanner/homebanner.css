@@ -45,286 +45,289 @@
     color: #fff;
     
 }
-
-
-
-.winter-popup-overlay {
+/* Overlay: softer + slightly green */
+.spring-popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(15, 23, 42, 0.75); /* dark, frosty overlay */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: rgba(8, 30, 18, 0.55);
+  backdrop-filter: blur(7px);
+  display: grid;
+  place-items: center;
   z-index: 9999;
+  padding: 16px;
+  pointer-events: auto;
 }
 
-/* Frosty card */
-.winter-popup {
+/* Card: spring meadow gradient + color pops */
+.spring-popup {
   position: relative;
-  max-width: 480px;
-  width: 90%;
-  padding: 2.25rem 2.5rem;
-  border-radius: 1.5rem;
-  background: linear-gradient(135deg, #0f172a, #1d4ed8);
-  color: #e5f2ff;
-  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.75);
+  width: min(580px, 100%);
+  border-radius: 24px;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+
+  background:
+    radial-gradient(900px 500px at 15% 0%, rgba(255, 220, 240, 0.95) 0%, transparent 55%),
+    radial-gradient(700px 420px at 85% 10%, rgba(210, 255, 222, 0.95) 0%, transparent 55%),
+    radial-gradient(900px 600px at 50% 110%, rgba(180, 255, 210, 0.9) 0%, rgba(240, 255, 245, 0.92) 45%, rgba(250, 253, 255, 0.98) 100%);
+  transform: translateY(10px) scale(0.98);
+  opacity: 0;
+  animation: springPopIn 420ms ease-out forwards;
 }
 
-/* Soft snow pattern */
-.winter-popup::before {
-  content: "";
-  position: absolute;
-  inset: -40%;
-  background-image: radial-gradient(
-      circle at 20% 20%,
-      rgba(255, 255, 255, 0.25) 0,
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 80% 0%,
-      rgba(255, 255, 255, 0.15) 0,
-      transparent 55%
-    ),
-    radial-gradient(
-      circle at 0% 100%,
-      rgba(255, 255, 255, 0.18) 0,
-      transparent 55%
-    );
-  opacity: 0.65;
+@keyframes springPopIn {
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Decorative overlays: NEVER block clicks */
+.spring-popup::before,
+.spring-popup::after {
   pointer-events: none;
 }
 
-/* subtle shimmer animation */
-@keyframes snowGlow {
-  0% {
-    transform: translateY(0);
-    opacity: 0.8;
-  }
-  50% {
-    transform: translateY(8px);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 0.8;
-  }
-}
-
-/* =========================
-   Core content (your base styles, slightly enhanced)
-   ========================= */
-
-.winter-popup-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-}
-
-/* If you still use the snowflake icon ❄ */
-.winter-popup-icon {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  animation: snowGlow 4s ease-in-out infinite;
-}
-
-.winter-popup-title {
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.winter-popup-text {
-  margin: 0.15rem 0;
-  font-size: 1rem;
-}
-
-/* Highlight line (e.g. gift cards / promo text) */
-.winter-popup-highlight {
-  margin-top: 0.35rem;
-  padding-top: 0.4rem;
-  border-top: 1px dashed rgba(248, 250, 252, 0.35);
-  font-weight: 500;
-}
-
-/* Close button (your style, with z-index bumped for snow layer) */
-.winter-popup-close {
+.spring-popup::after {
+  content: "";
   position: absolute;
-  top: 0.85rem;
-  right: 0.85rem;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.55), transparent 35%),
+    radial-gradient(1200px 220px at 50% 0%, rgba(120, 255, 180, 0.35), transparent 70%);
+  mix-blend-mode: soft-light;
+}
+
+/* Close button MUST be on top */
+.spring-popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 14px;
   border: none;
-  background: rgba(15, 23, 42, 0.85);
-  color: #e5f2ff;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
   cursor: pointer;
-  font-size: 1.3rem;
-  line-height: 1;
+  font-size: 22px;
+  display: grid;
+  place-items: center;
+  transition: transform 140ms ease, background 140ms ease;
+  z-index: 3;
+}
+
+.spring-popup-close:hover {
+  transform: scale(1.07);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* CONTENT: center all text */
+.spring-popup-content {
+  position: relative;
+  padding: 30px 22px 22px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* HERO centered */
+.spring-popup-hero {
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.spring-popup-mascot {
+  font-size: 40px;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.12));
+  animation: floaty 2.6s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.spring-popup-subtitle {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(10, 55, 30, 0.75);
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(10, 90, 40, 0.14);
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+/* Title */
+.spring-popup-title {
+  margin: 10px 0 12px;
+  font-size: 24px;
+  line-height: 1.2;
+  color: rgba(8, 45, 22, 0.92);
+}
+
+.spring-highlight {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 175, 220, 0.78),
+    rgba(150, 255, 195, 0.75),
+    rgba(170, 215, 255, 0.65)
+  );
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* Text */
+.spring-popup-text {
+  margin: 10px auto;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(8, 45, 22, 0.82);
+  max-width: 48ch;
+}
+
+.spring-popup-highlight {
+  max-width: 52ch;
+  background: rgba(120, 255, 180, 0.24);
+  border: 1px solid rgba(25, 145, 75, 0.18);
+  padding: 12px 14px;
+  border-radius: 16px;
+}
+
+.spring-popup-note {
+  font-size: 13px;
+  color: rgba(8, 45, 22, 0.62);
+}
+
+/* Actions centered */
+.spring-popup-actions {
   display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.spring-popup-cta {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.15s ease, background 0.15s ease;
-  z-index: 3; /* important so it stays above snow + content */
+  padding: 12px 16px;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 800;
+  color: rgba(6, 40, 20, 0.95);
+  border: 1px solid rgba(10, 90, 40, 0.16);
+  background: linear-gradient(135deg, rgba(255, 195, 235, 0.95), rgba(130, 255, 190, 0.95));
+  transition: transform 140ms ease, filter 140ms ease;
 }
 
-.winter-popup-close:hover {
-  transform: scale(1.05);
-  background: rgba(30, 64, 175, 0.95);
+.spring-popup-cta:hover {
+  transform: translateY(-1px);
+  filter: saturate(1.08) brightness(1.02);
 }
 
-/* =========================
-   New: Santa hero section
-   ========================= */
-
-.winter-popup-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-  margin-bottom: 0.75rem;
+.spring-popup-secondary {
+  padding: 11px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(8, 45, 22, 0.18);
+  background: rgba(255, 255, 255, 0.62);
+  cursor: pointer;
+  font-weight: 700;
+  color: rgba(8, 45, 22, 0.78);
+  transition: transform 140ms ease, background 140ms ease;
 }
 
-.winter-popup-santa {
-  font-size: 2.8rem; /* 🎅 size */
-  text-shadow:
-    0 0 10px rgba(248, 250, 252, 0.8),
-    0 0 20px rgba(248, 250, 252, 0.5);
-  animation: santa-bob 2.8s ease-in-out infinite;
+.spring-popup-secondary:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.86);
 }
 
-.winter-popup-subtitle {
-  font-size: 0.85rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  opacity: 0.9;
-}
-
-/* =========================
-   New: Footer tags
-   ========================= */
-
-.winter-popup-footer {
-  margin-top: 1.1rem;
+/* Tags centered */
+.spring-popup-footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 8px;
+  margin-top: 18px;
 }
 
-.winter-popup-tag {
-  font-size: 0.75rem;
-  padding: 0.2rem 0.65rem;
+.spring-popup-tag {
+  font-size: 12px;
+  padding: 7px 11px;
   border-radius: 999px;
-  background: rgba(15, 23, 42, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(8, 45, 22, 0.12);
+  color: rgba(8, 45, 22, 0.72);
 }
 
-/* =========================
-   New: Falling snow overlay
-   ========================= */
-
-/* Container that sits inside .winter-popup */
-.winter-popup-snow {
+/* Petals layer (decorative, non-clickable) */
+.spring-popup-petals,
+.spring-popup-petals * {
   pointer-events: none;
+}
+
+.spring-popup-petals {
   position: absolute;
   inset: 0;
   overflow: hidden;
   z-index: 0;
 }
 
-/* Individual snowflakes */
-.snowflake {
+.petal {
   position: absolute;
-  top: -10px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  box-shadow:
-    0 0 6px rgba(255, 255, 255, 0.9),
-    0 0 12px rgba(189, 222, 255, 0.65);
-  animation-name: winter-snow-fall;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  top: -12%;
+  width: 12px;
+  height: 18px;
+  border-radius: 14px 14px 14px 2px;
+  background: rgba(255, 150, 205, 0.8);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+  animation: petalFall linear infinite;
+  opacity: 0.9;
 }
 
-/* Random-ish positions & speeds using nth-child */
-.snowflake:nth-child(1)  { left: 5%;  animation-duration: 9s;  animation-delay: -1s; }
-.snowflake:nth-child(2)  { left: 15%; animation-duration: 11s; animation-delay: -4s; }
-.snowflake:nth-child(3)  { left: 25%; animation-duration: 7s;  animation-delay: -2s; }
-.snowflake:nth-child(4)  { left: 35%; animation-duration: 10s; animation-delay: -6s; }
-.snowflake:nth-child(5)  { left: 45%; animation-duration: 8s;  animation-delay: -3s; }
-.snowflake:nth-child(6)  { left: 55%; animation-duration: 12s; animation-delay: -1s; }
-.snowflake:nth-child(7)  { left: 65%; animation-duration: 9.5s;animation-delay: -5s; }
-.snowflake:nth-child(8)  { left: 75%; animation-duration: 10.5s;animation-delay: -8s; }
-.snowflake:nth-child(9)  { left: 85%; animation-duration: 8.5s;animation-delay: -4s; }
-.snowflake:nth-child(10) { left: 95%; animation-duration: 13s; animation-delay: -7s; }
-.snowflake:nth-child(11) { left: 12%; animation-duration: 9.5s;animation-delay: -9s; }
-.snowflake:nth-child(12) { left: 32%; animation-duration: 11.5s;animation-delay: -10s; }
-.snowflake:nth-child(13) { left: 52%; animation-duration: 7.5s;animation-delay: -11s; }
-.snowflake:nth-child(14) { left: 72%; animation-duration: 9s;  animation-delay: -12s; }
-.snowflake:nth-child(15) { left: 88%; animation-duration: 12.5s;animation-delay: -13s; }
-.snowflake:nth-child(16) { left: 20%; animation-duration: 10.2s;animation-delay: -14s; }
-.snowflake:nth-child(17) { left: 40%; animation-duration: 8.2s; animation-delay: -15s; }
-.snowflake:nth-child(18) { left: 60%; animation-duration: 11.2s;animation-delay: -16s; }
-.snowflake:nth-child(19) { left: 80%; animation-duration: 9.2s; animation-delay: -17s; }
-.snowflake:nth-child(20) { left: 10%; animation-duration: 13.2s;animation-delay: -18s; }
-.snowflake:nth-child(21) { left: 30%; animation-duration: 9.8s; animation-delay: -19s; }
-.snowflake:nth-child(22) { left: 50%; animation-duration: 12.8s;animation-delay: -20s; }
-.snowflake:nth-child(23) { left: 70%; animation-duration: 8.8s; animation-delay: -21s; }
-.snowflake:nth-child(24) { left: 90%; animation-duration: 11.8s;animation-delay: -22s; }
-.snowflake:nth-child(25) { left: 3%;  animation-duration: 10.8s;animation-delay: -23s; }
+.petal:nth-child(3n) { background: rgba(140, 255, 190, 0.65); }
+.petal:nth-child(5n) { background: rgba(255, 210, 235, 0.85); }
 
-/* =========================
-   Animations
-   ========================= */
+/* spread + timings */
+.petal:nth-child(1) { left: 4%;  animation-duration: 7s;  animation-delay: -1s; }
+.petal:nth-child(2) { left: 10%; animation-duration: 9s;  animation-delay: -4s; opacity: 0.65; }
+.petal:nth-child(3) { left: 16%; animation-duration: 8s;  animation-delay: -2s; }
+.petal:nth-child(4) { left: 22%; animation-duration: 10s; animation-delay: -6s; opacity: 0.6; }
+.petal:nth-child(5) { left: 28%; animation-duration: 7.5s;animation-delay: -3s; }
+.petal:nth-child(6) { left: 34%; animation-duration: 11s; animation-delay: -7s; opacity: 0.55; }
+.petal:nth-child(7) { left: 40%; animation-duration: 8.6s;animation-delay: -4.8s; }
+.petal:nth-child(8) { left: 46%; animation-duration: 12s; animation-delay: -8s; opacity: 0.55; }
+.petal:nth-child(9) { left: 52%; animation-duration: 7.2s;animation-delay: -2.9s; }
+.petal:nth-child(10){ left: 58%; animation-duration: 10.8s;animation-delay: -6.4s; opacity: 0.6; }
+.petal:nth-child(11){ left: 64%; animation-duration: 9.2s;animation-delay: -5.2s; }
+.petal:nth-child(12){ left: 70%; animation-duration: 7.8s;animation-delay: -3.6s; opacity: 0.7; }
+.petal:nth-child(13){ left: 76%; animation-duration: 11.2s;animation-delay: -7.2s; }
+.petal:nth-child(14){ left: 82%; animation-duration: 8.4s;animation-delay: -4.1s; opacity: 0.65; }
+.petal:nth-child(15){ left: 88%; animation-duration: 12.5s;animation-delay: -9s; opacity: 0.5; }
+.petal:nth-child(16){ left: 94%; animation-duration: 7.1s;animation-delay: -3.2s; }
+.petal:nth-child(17){ left: 12%; animation-duration: 9.8s;animation-delay: -8.2s; opacity: 0.55; }
+.petal:nth-child(18){ left: 33%; animation-duration: 8.9s;animation-delay: -6.9s; }
+.petal:nth-child(19){ left: 55%; animation-duration: 10.3s;animation-delay: -9.3s; opacity: 0.5; }
+.petal:nth-child(20){ left: 79%; animation-duration: 8.1s;animation-delay: -6.1s; }
+.petal:nth-child(21){ left: 6%;  animation-duration: 12.2s;animation-delay: -10.4s; opacity: 0.45; }
+.petal:nth-child(22){ left: 91%; animation-duration: 9.1s;animation-delay: -7.7s; opacity: 0.6; }
 
-@keyframes snowGlow {
-  0%, 100% {
-    text-shadow:
-      0 0 6px rgba(191, 219, 254, 0.9),
-      0 0 16px rgba(129, 199, 255, 0.7);
-    transform: translateY(0);
-  }
-  50% {
-    text-shadow:
-      0 0 12px rgba(191, 219, 254, 1),
-      0 0 24px rgba(129, 199, 255, 0.9);
-    transform: translateY(-2px);
-  }
+@keyframes petalFall {
+  0% { transform: translateY(-10%) translateX(0) rotate(10deg); }
+  50% { transform: translateY(55vh) translateX(22px) rotate(85deg); }
+  100% { transform: translateY(120vh) translateX(-22px) rotate(160deg); }
 }
 
-@keyframes santa-bob {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-
-@keyframes winter-snow-fall {
-  0% {
-    transform: translate3d(0, -10px, 0);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(-15px, 260px, 0);
-    opacity: 0;
-  }
-}
-
-/* =========================
-   Optional: small-screen tweaks
-   ========================= */
-
-@media (max-width: 480px) {
-  .winter-popup-title {
-    font-size: 1.3rem;
-  }
-
-  .winter-popup-santa {
-    font-size: 2.4rem;
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .spring-popup,
+  .spring-popup-mascot,
+  .petal {
+    animation: none !important;
   }
 }

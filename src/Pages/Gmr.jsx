@@ -10,7 +10,7 @@ const Gmr = () => {
   return (
     <div>
         <Helmet>
-            <title>Ghost & Mistery - Raleigh NC</title>
+            <title>Ghost & Mystery - Raleigh NC</title>
           <meta name='description' content='Fun outdoor biking, exploring, adventures to do in Raleigh ' />
           <link rel='canonical' href='/tours/ghost-and-misteries' />
         </Helmet>

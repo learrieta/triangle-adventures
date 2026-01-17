@@ -32,7 +32,7 @@ const Tours_Options = () => {
                 <img src={imgTwo} alt="image" loading='eager' title='ebike tours' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
-                  <h2 className="card--title">Food and Drink Tours</h2>
+                  <h2 className="card--title">Tacos,Margaritas & History</h2>
                   <p className='card--description'>Are you a foodie? Do you enjoy an adult beverage or two? Then these tours are for you.<br /> 1. Tacos, Taps, and Local Facts <br /> 2. Burgers, Brews, and History too</p>   
                   <Link to={'/tours/foods-and-drinks-tour'} className="card--button">Learn More</Link>
                 </div>

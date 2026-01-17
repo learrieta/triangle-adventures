@@ -7,7 +7,7 @@ const AboutHero = () => {
     <div className='tour--container'>
         <img src={about} className='banner--tour' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
              
-        <h1 className='banner--tour--title text-white'>Who we are !</h1>
+        <h1 className='banner--tour--title text-white'>About us</h1>
     </div>
   )
 }

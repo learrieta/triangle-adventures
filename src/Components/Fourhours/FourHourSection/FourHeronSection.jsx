@@ -1,6 +1,6 @@
 import React from 'react'
 
-import twoHour from '../../../assets/3hour/twohour.jpg'
+import twoHour from '../../../assets/Aboutus/about.jpg'
 
 const FourHeronSection = () => {
   return (

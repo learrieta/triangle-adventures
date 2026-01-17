@@ -48,7 +48,7 @@ const AboutDetails = () => {
                         <div className="text-center">
                             <p className="tours--subtitle">We will take you to breathtaking places</p>
                             <div className="tours--title">
-                            <h3 >Meet Our <span>Guides</span></h3>
+                            <h3 >Meet Your <span>Guides</span></h3>
                             </div>
                             
                         </div>

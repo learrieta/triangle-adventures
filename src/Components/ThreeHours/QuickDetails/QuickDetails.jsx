@@ -85,24 +85,29 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                               We will be meeting at 348 East Main Street, Clayton NC (gravel parking lot) . Your guides will be waiting
-                                near the Triangle Adventures trailer with the fleet of e-bikes. Please arrive 15 minutes prior to the start
-                                time.<br/><br/>
-                                You’ll meet your experienced guides, have a brief safety meeting, and do some quick orientation rides to
-                                make sure everyone feels comfortable on the bikes. Once we embark as a group, we will do a bit of
-                                scenic riding through Clayton with some memorable history stops, then stop at one of our favorite
-                                restaurants for a memorable lunch: Don Betos for the Tacos Tour, Vinson’s Pub for the Burgers Tour.
-                                Afterwards, we will ride through downtown Clayton towards the entrance to the famous NC Mountains
-                                to Sea Trail. We will have an exhilarating e-bike ride through the woods on a paved trail full of tunnels,
-                                bridges, and sometimes wildlife! During this time, your guide will have some interesting, local facts
-                                about the Neuse River, native tribes, local cemeteries, moonshining, alcohol, and more.<br/><br/>
-                                Finally, we will come full circle back to Revival 1869, a prohibition-style speakeasy cocktail bar, where
-                                you will have a house-made cocktail waiting for you – compliments of Triangle Adventures. There will
-                                also be several stops for photo ops and bathroom breaks.<br/><br/>
-                                Prior to your trip, you’ll receive an email/text notification with all the details, including the exact
+                               We are excited to announce this 2026 season we have launched something new on our tours:
+                                AI-powered digital video! This will allow stories to be told from the perspective of the actual historical
+                                figure, creating a wildly immersive experience like nothing else out there. See, hear and feel their
+                                personal story in their own voice... It&#39;s like stepping into the past.
+                                Meet your experienced guides at 348 East Main Street in Clayton NC (parking lot, you&#39;ll see our trailer
+                                and bikes).
+                                After a brief safety tutorial, we do some quick orientation rides to make sure everyone feels
+                                comfortable on the bikes. Once we embark as a group from there, we begin our easy ride through town
+                                as we stop along the way for some fascinating local history.
+                                About an hour into the tour we stop for a delicious lunch at a local hotspot for authentic Mexican street
+                                tacos (included at no additional charge). From there, we head to the famous NC Mountains to Sea Trail
+                                for some exhilarating e-bike riding, with some added scenic and historic stops along the way. We circle
+                                back towards downtown and end at a prohibition-style speakeasy bar, where you will be welcomed with
+                                a hand-squeezed fresh margarita... on us!
+                                During your adventure, expect to learn about local heroes, NASCAR origins, moonshining, native tribes,
+                                Neuse River, milling towns, play alcohol trivia, and lots more!
+                                For anyone that likes a fun e-bike ride, beautiful scenery, dad jokes, fun facts, and delicious food and
+                                drink... this tour is for you.
+                                Good for any fitness level. No pedaling required. The e-bikes do all the work for you.
+                                After you book your tour, you’ll receive an email/text notification with all the details, including the exact
                                 meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in
                                 advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
-                                Get ready for a fun-filled adventure!
+                                We make every tour a 5-star experience. Get ready for a fun-filled adventure!
                             </div>
                             <div className="tab-pane fade itinerary--text--config" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
                                 All participants will be provided with a pedal assisted Aventon eBike and a bike helmet for their trip. Participants of all fitness levels can enjoy an easy and fun ride, as you control how much (or little) effort you exert. Please dress in layers as it always feels much cooler on the eBikes. The bikes may not have storage so participants should bring a backpack or waist pack to store belongings and a snack or a bottle of water.

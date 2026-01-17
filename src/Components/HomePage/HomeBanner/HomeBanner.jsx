@@ -6,90 +6,100 @@ import homeVideo from '../../../assets/Home/tal.mp4'
 import React, { useState, useEffect } from "react";
 
 
-const WINTER_POPUP_KEY = "winterPopupDismissed";
+const SPRING_POPUP_KEY = "springPopupDismissed";
 
 const HomeBanner = () => {
-  const [showWinterPopup, setShowWinterPopup] = useState(false);
+  const [showSpringPopup, setShowSpringPopup] = useState(false);
 
   useEffect(() => {
-    // If we're on the server (Next.js etc.), skip
     if (typeof window === "undefined") return;
 
-    const alreadyDismissed = sessionStorage.getItem(WINTER_POPUP_KEY);
+    const alreadyDismissed = sessionStorage.getItem(SPRING_POPUP_KEY);
 
-    // Only show if not dismissed this session
     if (!alreadyDismissed) {
-      const timer = setTimeout(() => {
-        setShowWinterPopup(true);
-      }, 5000);
-
+      const timer = setTimeout(() => setShowSpringPopup(true), 5000);
       return () => clearTimeout(timer);
     }
   }, []);
 
   const handleClose = () => {
     if (typeof window !== "undefined") {
-      sessionStorage.setItem(WINTER_POPUP_KEY, "true");
+      sessionStorage.setItem(SPRING_POPUP_KEY, "true");
     }
-    setShowWinterPopup(false);
+    setShowSpringPopup(false);
   };
 
   return (
     <div>
-      {/* Winter / Holiday popup */}
-{showWinterPopup && (
-  <div className="winter-popup-overlay" onClick={handleClose}>
-    <div
-      className="winter-popup"
-      onClick={(e) => e.stopPropagation()}
-    >
-      {/* Falling snow layer */}
-      <div className="winter-popup-snow">
-        {Array.from({ length: 25 }).map((_, i) => (
-          <div key={i} className="snowflake" />
-        ))}
-      </div>
+      {showSpringPopup && (
+        <div className="spring-popup-overlay" onClick={handleClose}>
+          <div className="spring-popup" onClick={(e) => e.stopPropagation()}>
+            {/* Floating petals layer */}
+            <div className="spring-popup-petals" aria-hidden="true">
+              {Array.from({ length: 22 }).map((_, i) => (
+                <span key={i} className="petal" />
+              ))}
+            </div>
 
-      <button
-        className="winter-popup-close"
-        type="button"
-        onClick={handleClose}
-        aria-label="Close winter notice"
-      >
-        ×
-      </button>
+            <button
+              className="spring-popup-close"
+              type="button"
+              onClick={handleClose}
+              aria-label="Close spring announcement"
+            >
+              ×
+            </button>
 
-      <div className="winter-popup-content">
-        <div className="winter-popup-hero">
-          <div className="winter-popup-santa">
-            🎅
-          </div>
-          <div className="winter-popup-subtitle">
-            Happy Holidays!
+            <div className="spring-popup-content">
+              <div className="spring-popup-hero">
+                <div className="spring-popup-mascot" aria-hidden="true">
+                  🐝🌷
+                </div>
+                <div className="spring-popup-subtitle">Spring update</div>
+              </div>
+
+              <h2 className="spring-popup-title">
+                New on Tour: <span className="spring-highlight">AI Digital Video</span>
+              </h2>
+
+              <p className="spring-popup-text">
+                We are excited to announce <strong>AI digital video</strong> on our tours! Hear
+                stories told from the perspective of the actual historical figure, creating a{" "}
+                <strong>wildly immersive</strong> experience.
+              </p>
+
+              <p className="spring-popup-text spring-popup-highlight">
+                🌿 <strong>Our 2026 schedule is now up!</strong> Book early, spots fill up fast!
+              </p>
+
+              <p className="spring-popup-text spring-popup-note">
+                (Wilmington, NC schedule coming soon!)
+              </p>
+
+              <div className="spring-popup-actions">
+                <a className="spring-popup-cta" href="/">
+                  View 2026 Schedule →
+                </a>
+                <button
+                  className="spring-popup-secondary"
+                  onClick={handleClose}
+                  type="button"
+                >
+                  Maybe later
+                </button>
+              </div>
+
+              <div className="spring-popup-footer">
+                <span className="spring-popup-tag">🌼 Fresh season</span>
+                <span className="spring-popup-tag">🎥 Immersive video</span>
+                <span className="spring-popup-tag">🗓️ 2026 bookings</span>
+              </div>
+            </div>
           </div>
         </div>
+      )}
 
-        <h2 className="winter-popup-title">Winter Update</h2>
-
-        <p className="winter-popup-text">
-          We’ll be back in <strong>March 2026!</strong>
-        </p>
-        <p className="winter-popup-text">
-          Our full holiday & winter schedule arrives in{" "}
-          <strong>January</strong>.
-        </p>
-        <p className="winter-popup-text winter-popup-highlight">
-          🎁 <strong>Gift cards</strong> available now – perfect for the holidays!
-        </p>
-
-        <div className="winter-popup-footer">
-          <span className="winter-popup-tag">❄ Cozy season</span>
-          <span className="winter-popup-tag">🎄 Holiday ready</span>
-        </div>
-      </div>
-    </div>
-  </div>
-)}
+    
 
 
       {/* Existing banner */}

@@ -21,7 +21,7 @@ const ContactUs = () => {
         <div className='tour--container'>
             <img src={about} className='banner--tour' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
                 
-            <h1 className='banner--tour--title text-white'>Contact Us! !</h1>
+            <h1 className='banner--tour--title text-white'>Contact Us</h1>
         </div>
 
 
@@ -34,7 +34,7 @@ const ContactUs = () => {
                     
                     <div className="row mt-lg-5">
                         <div className="col-lg-6 col-md-12 contact--items">
-                            <h3 className='ct--title'> Contact Me</h3>
+                            <h3 className='ct--title'> Call Me</h3>
                             <div className="contact__info">
                                 <div className="contact__card">
                                     <i className="bx bx-mail-send contact__card-icon"></i>
@@ -64,7 +64,7 @@ const ContactUs = () => {
                                         <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" />
                                     </div>
                                     <div className="contact__form-div">
-                                        <label  className="contact__form-tag">Phone Number</label>
+                                        <label  className="contact__form-tag">Phone Number  </label>
                                         <input type="tel" name="user_phone" className="contact__form-input" placeholder="Your Phone Number"/>
                                     </div>
                                     <div className="contact__form-div contact__form-area">
