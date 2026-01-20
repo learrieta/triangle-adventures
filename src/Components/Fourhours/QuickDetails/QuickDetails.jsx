@@ -85,27 +85,27 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                                We are excited to announce this 2026 season we have launched something new on our tours:
+                                We are excited to announce this 2026 season we have launched something new on our tours: <br></br>
                                 AI-powered digital video! This will allow stories to be told from the perspective of the actual historical
                                 figure, creating a wildly immersive experience like nothing else out there. See, hear and feel their
-                                personal story in their own voice... It&#39;s like stepping into the past.
+                                personal story in their own voice... It&#39;s like stepping into the past. <br></br><br></br>
                                 Meet your experienced guides at the NC Museum of Art (2110 Blue Ridge Road, Raleigh NC). After a
                                 brief safety meeting, we do some quick orientation rides to make sure everyone feels comfortable on
-                                the bikes.
+                                the bikes. <br></br>
                                 We start with a true ghost story about an Art Museum haunting. Once we embark as a group from
                                 there, we begin our ride down the beautiful NC Greenway &quot;Art to Heart&quot; Trail. Our first stop is Meredith
                                 College, which is known as one of the most haunted colleges in America. We will show you exactly why
                                 (no spoilers)! From there we continue our journey down to Dorothea Dix Park and we visit and have
-                                some WILD stories about the old Mental Asylum and cemeteries nearby.
+                                some WILD stories about the old Mental Asylum and cemeteries nearby. <br></br>
                                 We continue to stop along the way for some ghost stories and interesting local history, then circle back
-                                around to NC State Campus and back to the Greenway trail to end back at the Art Museum.
+                                around to NC State Campus and back to the Greenway trail to end back at the Art Museum. <br></br><br></br>
                                 For anyone that likes a fun e-bike ride, some beautiful scenery, creepy history, and wild ghost stories...
-                                this tour is for you. Are you brave enough to join us?
-                                Good for any fitness level. No pedaling required. The e-bikes do all the work for you.
+                                this tour is for you. Are you brave enough to join us? <br></br>
+                                Good for any fitness level. No pedaling required. The e-bikes do all the work for you. <br></br><br></br>
                                 After you book your tour, you’ll receive an email/text notification with all the details, including the exact
                                 meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in
-                                advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
-                                Get ready for a fun-filled adventure!
+                                advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements. <br></br><br></br>
+                                We make every tour a 5-star experience. Get ready for a fun-filled adventure! <br></br><br></br>
                             </div>
                             <div className="tab-pane fade itinerary--text--config" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
                                 All participants will be provided with a pedal assisted Aventon eBike and a bike helmet for their trip. Participants of all fitness levels can enjoy an easy and fun ride, as you control how much (or little) effort you exert. Please dress in layers as it always feels much cooler on the eBikes. The bikes may not have storage so participants should bring a backpack or waist pack to store belongings and a snack or a bottle of water.

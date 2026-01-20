@@ -85,10 +85,10 @@ const QuickDetails = () => {
                                 role="tabpanel"
                                 aria-labelledby="ex3-tab-1"
                             >
-                               We are excited to announce this 2026 season we have launched something new on our tours:
+                               We are excited to announce this 2026 season we have launched something new on our tours:<br></br>
                                 AI-powered digital video! This will allow stories to be told from the perspective of the actual historical
                                 figure, creating a wildly immersive experience like nothing else out there. See, hear and feel their
-                                personal story in their own voice... It&#39;s like stepping into the past.
+                                personal story in their own voice... It&#39;s like stepping into the past.<br></br><br></br>
                                 Meet your experienced guides at 348 East Main Street in Clayton NC (parking lot, you&#39;ll see our trailer
                                 and bikes).<br></br>
                                 After a brief safety tutorial, we do some quick orientation rides to make sure everyone feels
@@ -100,13 +100,13 @@ const QuickDetails = () => {
                                 back towards downtown and end at a prohibition-style speakeasy bar, where you will be welcomed with
                                 a hand-squeezed fresh margarita... on us! <br></br>
                                 During your adventure, expect to learn about local heroes, NASCAR origins, moonshining, native tribes,
-                                Neuse River, milling towns, play alcohol trivia, and lots more!
+                                Neuse River, milling towns, play alcohol trivia, and lots more! <br></br><br></br>
                                 For anyone that likes a fun e-bike ride, beautiful scenery, dad jokes, fun facts, and delicious food and
                                 drink... this tour is for you. <br></br>
                                 Good for any fitness level. No pedaling required. The e-bikes do all the work for you.
                                 After you book your tour, you’ll receive an email/text notification with all the details, including the exact
                                 meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in
-                                advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements.
+                                advance (see FAQ page). If the weather is inclement, we will contact you with alternate arrangements. <br></br><br></br>
                                 We make every tour a 5-star experience. Get ready for a fun-filled adventure!
                             </div>
                             <div className="tab-pane fade itinerary--text--config" id="ex3-tabs-2" role="tabpanel" aria-labelledby="ex3-tab-2">
