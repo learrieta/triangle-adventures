@@ -59,7 +59,7 @@ const HomeBanner = () => {
               </div>
 
               <h2 className="spring-popup-title">
-                New on Tour: <span className="spring-highlight">AI Digital Video</span>
+                New for 2026: <span className="spring-highlight">AI Digital Video</span>
               </h2>
 
               <p className="spring-popup-text">

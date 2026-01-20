@@ -90,19 +90,19 @@ const QuickDetails = () => {
                                 figure, creating a wildly immersive experience like nothing else out there. See, hear and feel their
                                 personal story in their own voice... It&#39;s like stepping into the past.
                                 Meet your experienced guides at 348 East Main Street in Clayton NC (parking lot, you&#39;ll see our trailer
-                                and bikes).
+                                and bikes).<br></br>
                                 After a brief safety tutorial, we do some quick orientation rides to make sure everyone feels
                                 comfortable on the bikes. Once we embark as a group from there, we begin our easy ride through town
-                                as we stop along the way for some fascinating local history.
+                                as we stop along the way for some fascinating local history.<br></br>
                                 About an hour into the tour we stop for a delicious lunch at a local hotspot for authentic Mexican street
                                 tacos (included at no additional charge). From there, we head to the famous NC Mountains to Sea Trail
                                 for some exhilarating e-bike riding, with some added scenic and historic stops along the way. We circle
                                 back towards downtown and end at a prohibition-style speakeasy bar, where you will be welcomed with
-                                a hand-squeezed fresh margarita... on us!
+                                a hand-squeezed fresh margarita... on us! <br></br>
                                 During your adventure, expect to learn about local heroes, NASCAR origins, moonshining, native tribes,
                                 Neuse River, milling towns, play alcohol trivia, and lots more!
                                 For anyone that likes a fun e-bike ride, beautiful scenery, dad jokes, fun facts, and delicious food and
-                                drink... this tour is for you.
+                                drink... this tour is for you. <br></br>
                                 Good for any fitness level. No pedaling required. The e-bikes do all the work for you.
                                 After you book your tour, you’ll receive an email/text notification with all the details, including the exact
                                 meeting time. Trips generally take place in light rain or shine, and cancellations must be 72 hours in

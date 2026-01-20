@@ -31,7 +31,7 @@ const Tours = () => {
                 <img src={imgTwo} alt="image" loading='eager' title='ebike tours' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
-                  <h2 className="card--title">Tacos,Margaritas & History</h2>
+                  <h2 className="card--title">Tacos, Margaritas & History</h2>
                   <Link to={'/tours/foods-and-drinks-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
