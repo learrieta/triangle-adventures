@@ -28,7 +28,7 @@ const QuickDetails = () => {
                             <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 69 per person </li>
                         </ul>
                         <div className="center--the--button">
-                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/584156/?full-items=yes&flow=1269994" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
+                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
                                 Book Now!
                             </a>
                         </div>
