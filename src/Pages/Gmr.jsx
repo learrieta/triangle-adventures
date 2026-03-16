@@ -12,7 +12,7 @@ const Gmr = () => {
         <Helmet>
             <title>Ghost & Mystery - Raleigh NC</title>
           <meta name='description' content='Fun outdoor biking, exploring, adventures to do in Raleigh ' />
-          <link rel='canonical' href='/tours/ghost-and-misteries' />
+          <link rel='canonical' href='/tours/ghost-and-mysteries' />
         </Helmet>
 
         <FourHeronSection />
