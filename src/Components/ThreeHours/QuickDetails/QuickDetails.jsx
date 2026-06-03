@@ -131,8 +131,8 @@ const QuickDetails = () => {
                                 The guided e-bike tour is approximately 13 miles long, a leisurely-paced tour. The adventure lasts between 3-4 hours and includes plenty of breaks and photo ops. The bikes are motorized, allowing participants of all activity levels to experience a fun ride without the work of pedaling.
                             </div>
                         </div>
-                        <div className='p-4'>
-                            <h4 className='faq--the--adventure text-center '> Frequently <span>Asked Questions</span> </h4>
+                        <section className='p-4' id='faqs'>
+                            <h4 className='faq--the--adventure text-center' > Frequently <span>Asked Questions</span> </h4>
                                 <p className="text-center  itinerary--text--config mb-5">
                                     We aim to craft the perfect day where every guest departs with a sense of awe and wonder for this incredible area
                                 </p>
@@ -201,7 +201,7 @@ const QuickDetails = () => {
 
                                     
                                 </div>
-                            </div>
+                        </section>
                             
                     </div>
                      

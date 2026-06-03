@@ -12,7 +12,7 @@ import { trackBookNowClick, trackEvent } from "../../../utils/analytics";
 const SPRING_POPUP_KEY = "springPopupDismissed";
 
 const HomeBanner = () => {
-  const [showSpringPopup, setShowSpringPopup] = useState(false);
+  {/*const [showSpringPopup, setShowSpringPopup] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -30,14 +30,14 @@ const HomeBanner = () => {
       sessionStorage.setItem(SPRING_POPUP_KEY, "true");
     }
     setShowSpringPopup(false);
-  };
+  };   */}
 
   return (
     <div>
-      {showSpringPopup && (
+     {/*} {showSpringPopup && (
         <div className="spring-popup-overlay" onClick={handleClose}>
           <div className="spring-popup" onClick={(e) => e.stopPropagation()}>
-            {/* Floating petals layer */}
+            
             <div className="spring-popup-petals" aria-hidden="true">
               {Array.from({ length: 22 }).map((_, i) => (
                 <span key={i} className="petal" />
@@ -109,7 +109,7 @@ const HomeBanner = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
     
 
