@@ -1,0 +1,14 @@
+.trust-widget,
+.instagram-section {
+  padding: 4rem 0;
+}
+
+.trust-widget__copy {
+  max-width: 720px;
+  margin: 0 auto 1.5rem;
+}
+
+.instagram-section .instagram-media {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

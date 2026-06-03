@@ -3,6 +3,8 @@ import './contactus.css'
 import about from '../../assets/Aboutus/contact.jpg'
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { contactLinks } from '../../data/bookingLinks';
+import { trackEmailClick, trackEvent, trackPhoneClick } from '../../utils/analytics';
 
 const ContactUs = () => {
     const form = useRef();
@@ -14,12 +16,24 @@ const ContactUs = () => {
         .sendForm('service_9n7nk07', 'react-portfolio', form.current, {
             publicKey: '2ew0l7CkacnMa1X5W',
         })
-        e.target.reset()
+        .then(() => {
+            trackEvent('contact_form_submit', {
+                button_location: 'contact_page_form',
+                destination: 'emailjs',
+            });
+            e.target.reset();
+        })
+        .catch(() => {
+            trackEvent('contact_form_error', {
+                button_location: 'contact_page_form',
+                destination: 'emailjs',
+            });
+        })
     };
   return (
     <div>
         <div className='tour--container'>
-            <img src={about} className='banner--tour' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
+            <img src={about} className='banner--tour' loading='eager' title='clayton sunset' alt='Clayton sunset on a Triangle Adventures tour route'></img>
                 
             <h1 className='banner--tour--title text-white'>Contact Us</h1>
         </div>
@@ -30,7 +44,7 @@ const ContactUs = () => {
             <div className="container">
                 
                 <div className="row mt-lg-5 mb-lg-5  mt-md-5 mb-md-5 mt-sm-5 mb-sm-5   pt-md-5 pt-sm-5 contact--content">
-                    <h1 className="contact--title">Special request, large group, corporate event, or any other questions?</h1>
+                    <h2 className="contact--title">Special request, large group, corporate event, or any other questions?</h2>
                     
                     <div className="row mt-lg-5">
                         <div className="col-lg-6 col-md-12 contact--items">
@@ -40,13 +54,25 @@ const ContactUs = () => {
                                     <i className="bx bx-mail-send contact__card-icon"></i>
                                     <h3 className="contact__card-title">Email</h3>
                                     <span className="contact__card-data">Info@Triangle-Adventures.com</span>
-                                    <a href="mailto:Info@Triangle-Adventures.com" className="contact__button">Write me  <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                    <a
+                                        href={contactLinks.email}
+                                        className="contact__button"
+                                        onClick={() => trackEmailClick({ buttonLocation: 'contact_page_card' })}
+                                    >
+                                        Write me  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                    </a>
                                 </div>
                                 <div className="contact__card">
                                     <i className="bx bxs-phone contact__card-icon"></i>
                                     <h3 className="contact__card-title">Phone Number</h3>
                                     <span className="contact__card-data">919-807-1368</span>
-                                    <a href="" className="contact__button">Call me   <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                                    <a
+                                        href={contactLinks.phone}
+                                        className="contact__button"
+                                        onClick={() => trackPhoneClick({ buttonLocation: 'contact_page_card' })}
+                                    >
+                                        Call me   <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,7 @@
 
 import './quickdetails.css'
+import { bookingLinks } from '../../../data/bookingLinks';
+import { trackBookNowClick } from '../../../utils/analytics';
 import img1 from '../../../assets/2hour/2.1.png'
 import img2 from '../../../assets/2hour/2.2.png'
 import img3 from '../../../assets/2hour/2.3.jpg'
@@ -28,7 +30,20 @@ const QuickDetails = () => {
                             <li><i className="fa-solid fa-dollar-sign" style={{color: "#f9b717", width: "30px",}}></i> 69 per person </li>
                         </ul>
                         <div className="center--the--button">
-                            <a type="button" className="tours--button--navbar" href="https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us" onClick="return !(window.FH && FH.open({ shortname: 'triangleadventures', fallback: 'simple', fullItems: 'yes', flow: 1269994, view: { item: 584156 } }));">
+                            <a
+                                type="button"
+                                className="tours--button--navbar"
+                                href={bookingLinks.scenic}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() =>
+                                    trackBookNowClick({
+                                        tourName: 'Scenic Tour',
+                                        tourSlug: 'scenic-tour',
+                                        buttonLocation: 'scenic_tour_quick_details',
+                                    })
+                                }
+                            >
                                 Book Now!
                             </a>
                         </div>
@@ -101,32 +116,32 @@ const QuickDetails = () => {
                     
                     <div className='p-4'>
                     <h4 className='faq--the--adventure text-center '> Frequently <span>Asked Questions</span> </h4>
-                        <p class="text-center  itinerary--text--config mb-5">
+                        <p className="text-center  itinerary--text--config mb-5">
                             We aim to craft the perfect day where every guest departs with a sense of awe and wonder for this incredible area
                         </p>
 
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                        <div className="row">
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     What if there is severe weather?
                                 </h6>
                                 <p className='faq--text--config'>
                                     Safety is our number one priority, so if weather is severe, we will communicate that out to our riders prior to the adventure beginning. We normally run rain or shine, so as long as the weather is not severe, we will still run the tours.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     What is the cancellation policy?
                                 </h6>
                                 <p className='faq--text--config'>
                                         Full refunds will be given if cancellations are made 72 hours ahead of time. Please note, we had to make this policy because when people cancel last-minute, it takes that spot away from someone else who is waitlisted. Thank you for your understanding. 
                                 </p>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     Will there be parking at the starting point?
                                 </h6>
                                 <p className='faq--text--config'>
@@ -134,9 +149,9 @@ const QuickDetails = () => {
                                     carpooling is preferred whenever possible.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     Can I purchase new bikes through you?
                                 </h6>
                                 <p className='faq--text--config'>
@@ -145,9 +160,9 @@ const QuickDetails = () => {
                                     new bikes in stock, pre-built, ready for purchase. Just ask and we can give you all the details.
                                 </p>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     How do the test drives work?
                                 </h6>
                                 <p className='faq--text--config'>
@@ -155,9 +170,9 @@ const QuickDetails = () => {
                                     out the bikes for free. No gimmicks, no hidden fees. Test drives typically last about 10 minutes. 
                                 </p>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <h6 class="mb-3 faqs--the--adventure">
-                                    <i class="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
+                            <div className="col-md-6 col-lg-4 mb-4">
+                                <h6 className="mb-3 faqs--the--adventure">
+                                    <i className="far fa-paper-plane   pe-2" style={{color: 'rgb(249, 183, 23) ',}}></i> 
                                     Can I bring my own equipment?
                                 </h6>
                                 <p className='faq--text--config'>

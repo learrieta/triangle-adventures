@@ -1,8 +1,9 @@
 
-
+import { trackBookNowClick, trackGiftCardClick } from '../../utils/analytics';
 import logo from '../../assets/websitelogo.png'
 import { TiThMenu } from "react-icons/ti";
 import { Link } from 'react-router-dom';
+import { bookingLinks } from '../../data/bookingLinks';
 
 import './navbar.css'
 
@@ -14,7 +15,7 @@ const NavbarDark = () => {
     <div>
         <nav className="navbar sticky-top navbar-expand-lg navbar--black p-lg-2" id='navbar'>
             <div className="container">
-                <Link to="/" className="navbar-brand"> <img src={logo} alt="" className='navbar--logo--dark' id='navbar--logo' /> </Link>
+                <Link to="/" className="navbar-brand"> <img src={logo} alt="Triangle Adventures" className='navbar--logo--dark' id='navbar--logo' /> </Link>
                     
                 <button 
                     type='button'
@@ -33,7 +34,7 @@ const NavbarDark = () => {
                                 <Link to="/" className="nav-link active " aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link to={'/tours'} className="nav-link  ">Our 2026 E-bike Tours</Link>
+                                <Link to={'/tours'} className="nav-link  ">E-Bike Tours</Link>
                             </li>
                             <li className="nav-item dropdown mx-3">
                                 <Link to={'/aboutus'} className="nav-link ">About</Link>
@@ -47,10 +48,30 @@ const NavbarDark = () => {
                         </ul>
                         
                     </div> 
-                    <a type="button" className="small--button--navbar " href='https://fareharbor.com/embeds/book/triangleadventures/items/?flow=1269994' >
+                    <a
+                        type="button"
+                        className="small--button--navbar "
+                        href={bookingLinks.giftCards}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => trackGiftCardClick({ buttonLocation: 'navbar' })}
+                        >
                         Gift Cards
                     </a>
-                    <a type="button" className="small--button--navbar mx-3" href='https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us' >
+                    <a
+                        type="button"
+                        className="small--button--navbar mx-3"
+                        href={bookingLinks.calendar}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() =>
+                            trackBookNowClick({
+                            tourName: 'All Tours Calendar',
+                            tourSlug: 'all-tours',
+                            buttonLocation: 'navbar',
+                            })
+                        }
+                        >
                         Book Now!
                     </a>
                     

@@ -18,7 +18,7 @@ const Tours_Options = () => {
           <div className="tours--container">
             <div className="card--container">
               <article className="card--article">
-                <img src={imgOne} alt="image" loading='eager' title='ebike tours' className="card--img" />
+                <img src={imgOne} alt="Scenic Clayton greenway e-bike tour with Triangle Adventures" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
                   <h2 className="card--title">Greenery, Scenery & Mindfulness</h2>
@@ -29,7 +29,7 @@ const Tours_Options = () => {
               </article>
 
               <article className="card--article">
-                <img src={imgTwo} alt="image" loading='eager' title='ebike tours' className="card--img" />
+                <img src={imgTwo} alt="Food and drinks e-bike tour in Clayton NC" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Clayton, NC</span>
                   <h2 className="card--title">Tacos, Margaritas & History</h2>
@@ -39,12 +39,12 @@ const Tours_Options = () => {
               </article>
 
               <article className="card--article">
-                <img src={imgThree} alt="image" loading='eager' title='ebike tours' className="card--img" />
+                <img src={imgThree} alt="Raleigh ghost and history e-bike tour" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
                   <p className='card--description'>Experience haunted spirits at Dorothea Dix Insane Asylum. See what makes Meredith College a ghostly hotspot. Talk to spirits with real witching rods... and lots more!</p>   
-                  <Link to={'/tours/ghost-and-misteries'} className="card--button">Learn More</Link>
+                  <Link to={'/tours/ghost-and-mysteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
               

@@ -21,13 +21,13 @@ const AboutDetails = () => {
                         </div>
                         <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={about1} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='eager'/>
+                            <img src={about1} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
                         </div>
                         <div className="carousel-item">
-                            <img src={about2} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='eager'/>
+                            <img src={about2} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
                         </div>
                         <div className="carousel-item">
-                            <img src={about3} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='eager'/>
+                            <img src={about3} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
                         </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

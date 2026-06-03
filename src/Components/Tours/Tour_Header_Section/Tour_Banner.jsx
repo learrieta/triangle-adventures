@@ -12,7 +12,7 @@ const Tour_Banner = () => {
               <div className="img-exp">
                 <div className="about-img">
                   <div className="img">
-                    <img src={heroImg} alt="clayton clients" title='clayton activity' loading='eager' className="img-fluid tour--banner--img" />
+                    <img src={heroImg} alt="clayton clients" title='clayton activity' loading='lazy' className="img-fluid tour--banner--img" />
                   </div>
                 </div>
               </div>

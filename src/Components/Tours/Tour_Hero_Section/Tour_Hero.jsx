@@ -1,13 +1,24 @@
 import React from 'react'
 import imgTourBanner from '../../../assets/Tours/tour_banner.jpg'
+import mobileTourBanner from '../../../assets/Tours/mobileTourBanner.jpg'
 import './tour_hero.css'
 
 const Tour_Hero = () => {
   return (
     <div className="tour--container">
-        <img src={imgTourBanner} className='banner--tour' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
+        <picture>
+          <source 
+            media="(max-width: 776px)" 
+            srcSet={mobileTourBanner} 
+          />
+          <img 
+            src={imgTourBanner} 
+            className="banner--tour"
+            alt="Triangle Adventures guided e-bike tours in North Carolina"
+          />
+        </picture>
             
-        <h1 className='banner--tour--title text-white'>Discover Our E-bike Tours</h1>
+        <h1 className='banner--tour--title text-white'>Guided E-Bike Tours Across the Triangle</h1>
     </div>
     
     

@@ -16,14 +16,14 @@ const Partners = () => {
               
               <div className="col-lg-6 col-md-6 col-sm-12 my-2  px-lg-5 ">
                 <div className='partner--item '>
-                  <img src={hp1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp1} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               
               <div className="col-lg-6 col-md-6 col-sm-12 my-2 px-lg-5 ">
                 <div className='partner--item'>
-                  <img src={hp3} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp3} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>

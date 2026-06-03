@@ -14,7 +14,7 @@ const How_It_Works = () => {
             </div> 
             <div className="row">     
                 <div className="col-lg-4 col-md-12 work--items">
-                    <img src={imgOne} alt="img" className="w--img" />
+                    <img src={imgOne} alt="Triangle Adventures customer on an e-bike tour" className="w--img" />
                     <h4 className="w--title"><span>How</span> to Book</h4>
                     <p className="w--description text-center">
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
@@ -32,7 +32,7 @@ const How_It_Works = () => {
                     </p>
                 </div>
                 <div className="col-lg-4 col-md-12 work--items">
-                    <img src={imgTwo} alt="img" className="w--img" />
+                    <img src={imgTwo} alt="Triangle Adventures customer on an e-bike tour" className="w--img" />
                     <h4 className="w--title"><span>what</span> we provide</h4>
                     <p className="w--description text-center">
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>
@@ -50,7 +50,7 @@ const How_It_Works = () => {
                     </p>
                 </div>
                 <div className="col-lg-4 col-md-12 work--items">
-                    <img src={imgThree} alt="img" className="w--img" />
+                    <img src={imgThree} alt="Triangle Adventures customer on an e-bike tour" className="w--img" />
                     <h4 className="w--title"><span>what</span> to bring</h4>
                     <p className="w--description text-center">
                         <i className="fa-solid fa-circle-notch" style={{color: "#f9b717", width: "30px",}}></i>

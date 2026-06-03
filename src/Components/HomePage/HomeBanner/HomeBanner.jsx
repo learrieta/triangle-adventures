@@ -4,6 +4,9 @@ import './homebanner.css'
 import homeVideo from '../../../assets/Home/tal.mp4'
 
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { bookingLinks } from "../../../data/bookingLinks";
+import { trackBookNowClick, trackEvent } from "../../../utils/analytics";
 
 
 const SPRING_POPUP_KEY = "springPopupDismissed";
@@ -77,9 +80,18 @@ const HomeBanner = () => {
               </p>
 
               <div className="spring-popup-actions">
-                <a className="spring-popup-cta" href="/">
+                <Link
+                  className="spring-popup-cta"
+                  to="/tours"
+                  onClick={() =>
+                    trackEvent("schedule_click", {
+                      button_location: "spring_popup",
+                      destination: "tours_page",
+                    })
+                  }
+                >
                   View 2026 Schedule →
-                </a>
+                </Link>
                 <button
                   className="spring-popup-secondary"
                   onClick={handleClose}
@@ -105,7 +117,7 @@ const HomeBanner = () => {
       {/* Existing banner */}
       <div className="banner--container">
         <div className="home--video--container">
-          <video autoPlay loop muted src={homeVideo}></video>
+          <video autoPlay loop muted playsInline preload="metadata" src={homeVideo}></video>
         </div>
         <h1 className="banner--title text-white">
           The Triangle&apos;s
@@ -115,9 +127,16 @@ const HomeBanner = () => {
         <a
           type="button"
           className="large--button banner--position"
-          href="https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994&from-ssl=yes&ga4t=AW-16453875434%2Cundefined__undefined%3B&g4=yes&cp=no&csp=no&back=https%3A%2F%2Fwww.triangle-adventures.com%2F&u=9b6d5aac-5806-4561-af48-c70f8e3bcf8c&language=en-us"
+          href={bookingLinks.calendar}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
+          onClick={() =>
+            trackBookNowClick({
+              tourName: "All Tours Calendar",
+              tourSlug: "all-tours",
+              buttonLocation: "homepage_hero",
+            })
+          }
         >
           Book a Tour!
         </a>

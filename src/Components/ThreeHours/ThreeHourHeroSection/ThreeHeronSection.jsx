@@ -1,11 +1,20 @@
 import React from 'react'
 
 import twoHour from '../../../assets/3hour/food_drink_fun.jpg'
+import mobileImg from '../../../assets/Tours/mobileImg.jpg'
 
 const ThreeHeronSection = () => {
   return (
     <div className="tour--container">
-        <img src={twoHour} className='banner--tour' loading='eager' title='clayton sunset' alt='clayotn-sunset'></img>
+        <picture>
+          <source media="(max-width: 576px)" srcSet={mobileImg} />
+          <img
+            src={twoHour}
+            className="banner--tour"
+            loading="eager"
+            alt="Food and drinks tour"
+          />
+        </picture>
             
         <h1 className='banner--tour--title text-white'>Food & Drinks Tour</h1>
     </div>

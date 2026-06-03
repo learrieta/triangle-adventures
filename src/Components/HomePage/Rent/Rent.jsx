@@ -22,7 +22,7 @@ const Rent = () => {
                     <div className="img-exp">
                         <div className="about-img">
                             <div className="img">
-                                <img src={aventon} alt="clayton ebike rental" title='Aventon rentals' loading='eager' className="img-fluid aventon--img" />
+                                <img src={aventon} alt="clayton ebike rental" title='Aventon rentals' loading='lazy' className="img-fluid aventon--img" />
                             </div>
                         </div>
                     </div>

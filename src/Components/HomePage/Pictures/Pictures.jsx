@@ -24,25 +24,25 @@ const Pictures = () => {
               
               <div className="col-lg-3 col-md-6 col-sm-12 my-2   ">
                 <div className='image--item'>
-                  <img src={hp1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp1} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp2} alt="image" loading="eager" className="card--img"  style={{ height: '242px', width: '100%' }} />
+                  <img src={hp2} alt="Triangle Adventures e-bike tour experience" loading="lazy" className="card--img"  style={{ height: '242px', width: '100%' }} />
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp3} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp3} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp4} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp4} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
@@ -53,25 +53,25 @@ const Pictures = () => {
             <div className="row ">
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp5} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp5} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp6} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp6} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp7} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp7} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp8} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                  <img src={hp8} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                 </div>
                 
               </div>

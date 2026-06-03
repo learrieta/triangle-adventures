@@ -26,7 +26,7 @@ const Testimonials = () => {
             <div className="row justify-content-center align-items-center">
                 <div className="col-lg-6 col-sm-12 col-xs-12">
                     <div className="fullscreen-video-container">
-                        <video autoPlay loop muted src={reviews}></video>
+                        <video autoPlay loop muted playsInline preload="metadata" src={reviews}></video>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@ const Testimonials = () => {
                             <div className="carousel-item active">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT1} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT1} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Mark Franzen</h3>
                                             
@@ -58,7 +58,7 @@ const Testimonials = () => {
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT5} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT5} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Jane Bragagnolo</h3>
                                             
@@ -80,7 +80,7 @@ const Testimonials = () => {
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT6} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT6} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">CJF</h3>
                                             
@@ -101,7 +101,7 @@ const Testimonials = () => {
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT7} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT7} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Jason Stevenson</h3>
                                             
@@ -124,7 +124,7 @@ Would do this again. You won't be disappointed.</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT8} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT8} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name"> Angela Andrews</h3>
                                             
@@ -143,7 +143,7 @@ Would do this again. You won't be disappointed.</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT9} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT9} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Byron Jennings</h3>
                                             
@@ -162,7 +162,7 @@ Would do this again. You won't be disappointed.</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT5} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT5} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Jessica Safford</h3>
                                             
@@ -183,7 +183,7 @@ Thanks Marlo & Dave! :)</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT2} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT2} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Karen Stone</h3>
                                             
@@ -204,7 +204,7 @@ Thanks Marlo & Dave! :)</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT4} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT4} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">Yuriy Bronshteyn</h3>
                                             
@@ -225,7 +225,7 @@ Thanks Marlo & Dave! :)</p>
                             <div className="carousel-item">
                                 <div className="testimonials-item">
                                     <div className="info">
-                                        <img src={imgT3} alt="img" loading='eager' title='e bikes customers' />
+                                        <img src={imgT3} alt="Triangle Adventures customer on an e-bike tour" loading='lazy' title='e bikes customers' />
                                         <div className="text-box">
                                             <h3 className="name">J Fed</h3>
                                             

@@ -20,13 +20,13 @@ const Test_Drive = () => {
               <div className="row ">
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_one} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                    <img src={aventon_one} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                   </div>
                   
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_two} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                    <img src={aventon_two} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                   </div>
                   
                 </div>
@@ -34,13 +34,13 @@ const Test_Drive = () => {
               <div className='row'>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_three} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                    <img src={aventon_three} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                   </div>
                   
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_four} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                    <img src={aventon_four} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
                   </div>
                   
                 </div>

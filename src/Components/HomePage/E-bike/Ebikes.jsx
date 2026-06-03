@@ -9,7 +9,7 @@ const Ebikes = () => {
         <div className="row">
           <div className="col-xs-12  col-lg-4">
             <div className='align-content-center'>
-              <img src={ebikeImg} alt="ebike" id='ebike--windows' loading='eager' title='clayton river' className="img-fluid" />
+              <img src={ebikeImg} alt="ebike" id='ebike--windows' loading='lazy' title='clayton river' className="img-fluid" />
             </div>
           </div>
           <div className="col-xs-12 col-md-12 col-lg-8 align-content-center ">
@@ -24,7 +24,7 @@ const Ebikes = () => {
               </div>
 
               <div className='ebike--phone justify-content-center' >
-                <img src={ebikeImg} alt="ebike" loading='eager' title='clayton river' className="img-fluid" />
+                <img src={ebikeImg} alt="ebike" loading='lazy' title='clayton river' className="img-fluid" />
               </div>
               
           </div>
