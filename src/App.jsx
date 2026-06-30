@@ -14,7 +14,6 @@ import RouteChangeTracker from "./Components/Analytics/RouteChangeTracker";
 
 function App() {
   return (
-    
     <>
       <RouteChangeTracker />
       <Routes>
@@ -24,9 +23,10 @@ function App() {
           <Route path="/tours/scenic-tour" element={<ScenicTour />} />
           <Route path="/tours/foods-and-drinks-tour" element={<FoodsandDrink />} />
           <Route path="/tours/ghost-and-mysteries" element={<Gmr />} />
-          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<Contact />} />
 
+          <Route path="/aboutus" element={<Navigate to="/about-us" replace />} />
           <Route path="/tours/ScenicTour" element={<Navigate to="/tours/scenic-tour" replace />} />
           <Route path="/tours/FoodAndDrinks" element={<Navigate to="/tours/foods-and-drinks-tour" replace />} />
           <Route path="/tours/ghost-and-misteries" element={<Navigate to="/tours/ghost-and-mysteries" replace />} />
