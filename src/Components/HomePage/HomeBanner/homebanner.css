@@ -42,18 +42,6 @@
     text-shadow: 0 16px 38px rgba(0, 0, 0, 0.48);
 }
 
-.banner--trust-copy {
-    margin: 0;
-    color: rgba(255, 255, 255, 0.94);
-    background: rgba(0, 0, 0, 0.36);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 999px;
-    padding: 0.72rem 1.2rem;
-    font-size: 1rem;
-    line-height: 1.4;
-    backdrop-filter: blur(8px);
-}
-
 .large--button{
     font-family: 'Rajdhani' !important;
     font-weight: 600;
@@ -75,11 +63,6 @@
 @media screen and (max-width: 768px) {
     .banner--title {
         font-size: 3rem;
-    }
-
-    .banner--trust-copy {
-        border-radius: 18px;
-        font-size: 0.92rem;
     }
 }
 
