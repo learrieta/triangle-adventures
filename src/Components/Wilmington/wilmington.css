@@ -103,54 +103,101 @@
 }
 
 .wilmington-things-section {
-  padding: 4rem 0 5rem;
+  padding: 4.5rem 0 5.5rem;
   background:
-    radial-gradient(circle at 50% 0%, rgba(249, 183, 23, 0.08), transparent 38%),
-    rgba(8, 9, 14, 0.03);
+    radial-gradient(circle at 50% 0%, rgba(249, 183, 23, 0.1), transparent 36%),
+    linear-gradient(180deg, rgba(8, 9, 14, 0.035), rgba(255, 255, 255, 0.98));
 }
 
-.wilmington-things-grid {
+.wilmington-things-heading {
+  margin-bottom: 3rem;
+}
+
+.wilmington-nearby-list {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.25rem;
-  margin-top: 2.5rem;
+  gap: 2.2rem;
 }
 
-.wilmington-thing-card {
-  min-height: 250px;
-  padding: 1.4rem;
-  border-radius: 22px;
+.wilmington-nearby-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.wilmington-nearby-row--reverse {
+  grid-template-columns: minmax(0, 1.14fr) minmax(0, 0.86fr);
+}
+
+.wilmington-nearby-row--reverse .wilmington-nearby-content {
+  order: 2;
+}
+
+.wilmington-nearby-row--reverse .wilmington-nearby-image-wrap {
+  order: 1;
+}
+
+.wilmington-nearby-content,
+.wilmington-nearby-image-wrap {
+  border-radius: 28px;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.wilmington-nearby-content {
+  padding: clamp(1.5rem, 4vw, 2.6rem);
   background: #fff;
-  border: 1px solid rgba(249, 183, 23, 0.22);
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(249, 183, 23, 0.25);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: left;
 }
 
-.wilmington-thing-card span {
+.wilmington-nearby-content span {
   display: inline-flex;
-  margin-bottom: 1rem;
-  width: 44px;
-  height: 44px;
+  margin-bottom: 1.25rem;
+  width: 54px;
+  height: 54px;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: rgba(249, 183, 23, 0.16);
+  background: rgba(249, 183, 23, 0.18);
   color: var(--font-accent);
   font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
   font-weight: 800;
 }
 
-.wilmington-thing-card h4 {
+.wilmington-nearby-content h4 {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.45rem;
+  font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+  line-height: 1.05;
   font-weight: 800;
   color: var(--font-color-gray);
+  margin-bottom: 1rem;
 }
 
-.wilmington-thing-card p {
+.wilmington-nearby-content p {
   color: var(--font-color-gray);
-  line-height: 1.75;
+  line-height: 1.8;
+  font-size: 1.04rem;
   margin: 0;
+}
+
+.wilmington-nearby-image-wrap {
+  position: relative;
+  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.12);
+}
+
+.wilmington-nearby-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.01);
 }
 
 .wilmington-details-card {
@@ -243,8 +290,7 @@
 @media screen and (max-width: 992px) {
   .wilmington-intro-grid,
   .locations-card-grid,
-  .wilmington-highlight-grid,
-  .wilmington-things-grid {
+  .wilmington-highlight-grid {
     grid-template-columns: 1fr;
   }
 
@@ -252,8 +298,29 @@
     padding: 3.5rem 0 1rem;
   }
 
-  .wilmington-things-grid {
-    gap: 1rem;
+  .wilmington-nearby-row,
+  .wilmington-nearby-row--reverse {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .wilmington-nearby-row--reverse .wilmington-nearby-content,
+  .wilmington-nearby-row--reverse .wilmington-nearby-image-wrap {
+    order: initial;
+  }
+
+  .wilmington-nearby-content {
+    border-radius: 24px 24px 0 0;
+    min-height: auto;
+  }
+
+  .wilmington-nearby-image-wrap {
+    border-radius: 0 0 24px 24px;
+    min-height: 280px;
+  }
+
+  .wilmington-nearby-image {
+    min-height: 280px;
   }
 }
 
@@ -293,14 +360,38 @@
     padding-right: 0.25rem;
   }
 
+  .wilmington-things-section {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .wilmington-nearby-list {
+    gap: 1.6rem;
+  }
+
+  .wilmington-nearby-content {
+    padding: 1.35rem;
+  }
+
+  .wilmington-nearby-content span {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 1rem;
+  }
+
+  .wilmington-nearby-content p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .wilmington-nearby-image-wrap,
+  .wilmington-nearby-image {
+    min-height: 230px;
+  }
+
   .wilmington-warning,
   .wilmington-highlight-card {
     font-size: 0.95rem;
-  }
-
-  .wilmington-thing-card {
-    min-height: auto;
-    padding: 1.2rem;
   }
 }
 
