@@ -1,0 +1,100 @@
+.wilmington-details-card {
+  position: relative;
+  border: 1px solid rgba(249, 183, 23, 0.22);
+}
+
+.new-tour-inline-badge,
+.new-tour-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+  color: #fff;
+  border-radius: 999px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.new-tour-inline-badge {
+  margin-bottom: 0.9rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.86rem;
+}
+
+.new-tour-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 0.48rem 0.86rem;
+  font-size: 0.78rem;
+}
+
+.wilmington-warning {
+  color: #7a2c0d;
+  background: rgba(255, 131, 61, 0.12);
+  border-left: 4px solid rgb(249, 183, 23);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  font-weight: 600;
+}
+
+.wilmington-intro {
+  max-width: 860px;
+  margin: 0 auto 1.5rem;
+  color: var(--font-color-gray);
+  font-size: var(--h3-font-size);
+  line-height: 1.8;
+}
+
+.wilmington-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2.5rem;
+}
+
+.wilmington-highlight-card {
+  background: rgba(8, 9, 14, 0.05);
+  border: 1px solid rgba(249, 183, 23, 0.22);
+  border-radius: 18px;
+  padding: 1rem;
+  color: var(--font-color-gray);
+  font-weight: 500;
+  line-height: 1.7;
+}
+
+.locations-page {
+  padding-top: 3rem;
+}
+
+.locations-card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.wilmington-card-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.location--card,
+.location--card-new {
+  border-radius: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .locations-card-grid,
+  .wilmington-highlight-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wilmington-warning,
+  .wilmington-highlight-card {
+    font-size: 0.95rem;
+  }
+}
