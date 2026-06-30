@@ -2,11 +2,42 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
-import imgTrueCrime from '../assets/Home/mystery.png'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
 
 const wilmingtonHeroImage = 'https://www.southport-nc.com/images/uploads/place/3206/0526-469.jpg'
+const wilmingtonTourImage = 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bikes-on-tour-de-wilmington.jpg?v=1746580005&width=1200'
+
+const nearbyItems = [
+  {
+    number: '01',
+    title: 'Explore the Riverwalk',
+    text: 'Take in Cape Fear River views, downtown shops, waterfront patios, and classic Wilmington riverfront scenery before or after your ride.',
+    image: wilmingtonHeroImage,
+    alt: 'Wilmington Riverwalk by the Cape Fear River',
+  },
+  {
+    number: '02',
+    title: 'Grab food downtown',
+    text: 'Plan time for riverfront dining, coffee, dessert, or a relaxed meal around Historic Downtown and the Cargo District.',
+    image: 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-tour-de-wilmington-e-bike-tour.jpg?v=1746655130&width=1200',
+    alt: 'Downtown Wilmington e-bike tour route',
+  },
+  {
+    number: '03',
+    title: 'Visit the beaches',
+    text: 'Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.',
+    image: 'https://www.southport-nc.com/images/uploads/place/2743/0526-335.jpg',
+    alt: 'Wilmington area beach and pier',
+  },
+  {
+    number: '04',
+    title: 'Walk historic streets',
+    text: 'Wilmington is full of old homes, hidden corners, and local legends that pair perfectly with the True Crime and Weird History theme.',
+    image: 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bridge-in-wilmington.jpg?v=1746579954&width=1200',
+    alt: 'Historic Wilmington streets and bridge area',
+  },
+]
 
 const Wilmington = () => {
   return (
@@ -67,7 +98,7 @@ const Wilmington = () => {
             <div className="card--container wilmington-card-grid">
               <article className="card--article location--card-new">
                 <span className="new-tour-badge">New Tour</span>
-                <img src={imgTrueCrime} alt="Wilmington True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
+                <img src={wilmingtonTourImage} alt="Wilmington True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">True Crime & Weird History</h2>
@@ -81,7 +112,7 @@ const Wilmington = () => {
 
       <section className="wilmington-things-section">
         <div className="container">
-          <div className="text-center">
+          <div className="text-center wilmington-things-heading">
             <p className="tours--subtitle">Make a day of it</p>
             <div className="tours--title">
               <h3>Things to do <span>Nearby</span></h3>
@@ -91,27 +122,19 @@ const Wilmington = () => {
             </p>
           </div>
 
-          <div className="wilmington-things-grid">
-            <div className="wilmington-thing-card">
-              <span>01</span>
-              <h4>Explore the Riverwalk</h4>
-              <p>Take in Cape Fear River views, downtown shops, waterfront patios, and classic Wilmington riverfront scenery before or after your ride.</p>
-            </div>
-            <div className="wilmington-thing-card">
-              <span>02</span>
-              <h4>Grab food downtown</h4>
-              <p>Plan time for riverfront dining, coffee, dessert, or a relaxed meal around Historic Downtown and the Cargo District.</p>
-            </div>
-            <div className="wilmington-thing-card">
-              <span>03</span>
-              <h4>Visit the beaches</h4>
-              <p>Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.</p>
-            </div>
-            <div className="wilmington-thing-card">
-              <span>04</span>
-              <h4>Walk historic streets</h4>
-              <p>Wilmington is full of old homes, hidden corners, and local legends that pair perfectly with the True Crime and Weird History theme.</p>
-            </div>
+          <div className="wilmington-nearby-list">
+            {nearbyItems.map((item, index) => (
+              <article className={`wilmington-nearby-row ${index % 2 === 1 ? 'wilmington-nearby-row--reverse' : ''}`} key={item.number}>
+                <div className="wilmington-nearby-content">
+                  <span>{item.number}</span>
+                  <h4>{item.title}</h4>
+                  <p>{item.text}</p>
+                </div>
+                <div className="wilmington-nearby-image-wrap">
+                  <img src={item.image} alt={item.alt} loading="lazy" className="wilmington-nearby-image" />
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>
