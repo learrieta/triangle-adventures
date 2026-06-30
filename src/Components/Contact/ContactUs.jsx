@@ -15,14 +15,6 @@ const ContactUs = () => {
 
         if (!form.current) return;
 
-        const formData = new FormData(form.current);
-        const honeyPot = formData.get('company_website');
-
-        if (honeyPot) {
-            form.current.reset();
-            return;
-        }
-
         setFormStatus('sending');
         setStatusMessage('Sending your message...');
 
@@ -99,10 +91,6 @@ const ContactUs = () => {
                             <h3 className="ct--title">Send An Inquiry</h3>
                             <div className="centering--form">
                                 <form ref={form} onSubmit={sendEmail} className="contact__form">
-                                    <div className="contact__form-honeypot" aria-hidden="true">
-                                        <label htmlFor="company_website">Company Website</label>
-                                        <input id="company_website" type="text" name="company_website" tabIndex="-1" autoComplete="off" />
-                                    </div>
                                     <div className="contact__form-div">
                                         <label  className="contact__form-tag">Name</label>
                                         <input type="text" name="name" className="contact__form-input" placeholder="Insert your name" required />
