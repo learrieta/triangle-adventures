@@ -44,7 +44,16 @@ const Tours = () => {
                   <Link to={'/locations/raleigh/ghost-and-mysteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
+            </div>
+          </div>
 
+          <div className="new-tour-feature text-center">
+            <p className="tours--subtitle">New Wilmington launch</p>
+            <div className="tours--title">
+              <h3>Book the <span>New Tour</span></h3>
+            </div>
+            <p className="tours--text new-tour-feature__text">A darker, stranger, story-packed ride through Wilmington true crime, weird history, and unforgettable local stories.</p>
+            <div className="tours--container new-tour-feature__container">
               <article className="card--article new--tour-card">
                 <span className="new-tour-badge">New Tour</span>
                 <img src={imgThree} alt="Wilmington True Crime and Weird History e-bike tour" loading='lazy' className="card--img" />
