@@ -19,19 +19,19 @@
     padding: 5px 80px;
 }
 
-
 .tours--container{
     display: grid;
     place-items: center;
-    
     padding-block: 3rem;
-    
 }
 
 .card--container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3.5rem;
+}
+.home--tour-card-grid{
+    grid-template-columns: repeat(4, 1fr);
 }
 .card--article{
     position: relative;
@@ -41,7 +41,6 @@
 .card--img{
     width: 348px;
     border-radius: 1.5rem;
-
 }
 .card--data{
     width: 316px;
@@ -84,8 +83,25 @@
     color: var(--font-accent);
 }
 
-
-
+.new-tour-badge{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.48rem 0.86rem;
+    border-radius: 999px;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
 
 .card--article:hover .card--data{
     animation: show-data 1s forwards;
@@ -141,15 +157,26 @@
     }
 }
 
+.locations-card-grid{
+    grid-template-columns: repeat(2, 1fr);
+}
+.wilmington-card-grid{
+    grid-template-columns: repeat(1, 1fr);
+}
 
-
-
+@media screen and (max-width: 1600px) {
+    .home--tour-card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (max-width: 1400px) {
     .card--container{
-        
         grid-template-columns: repeat(3, 1fr);
         gap: 2.5rem;
+    }
+    .home--tour-card-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     .card--img{
         width: 300px;
@@ -159,17 +186,15 @@
     }
     .card--title{
         font-size: var(--h2-font-size);
-        
     }
-
-
-
 }
 @media screen and (max-width: 1200px) {
     .card--container{
-        
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+    }
+    .home--tour-card-grid{
+        grid-template-columns: repeat(2, 1fr);
     }
     .card--img{
         width: 250px;
@@ -179,15 +204,11 @@
     }
     .card--title{
         font-size: var(--h3-font-size);
-        
     }
-
-
-
 }
 @media screen and (max-width: 992px) {
-    .card--container{
-        
+    .card--container,
+    .locations-card-grid{
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
@@ -197,54 +218,38 @@
     .card--data{
         width: 250px;
     }
-
-
-
-
 }
 
 @media screen and (max-width: 768px) {
-
-    .card--container{
-        
+    .card--container,
+    .home--tour-card-grid,
+    .locations-card-grid{
         grid-template-columns: repeat(1, 1fr);
         gap: 3rem;
     }
-    
-    
     .tours--text{
-        
         padding: 1px 10px;
     }
-    
-    
 }
 @media screen and (max-width: 576px) {
-
     .tours--title h3{
         font-size: var(--h1-font-size);
     }
-    
-    
 }
 
 @media screen and (max-width: 430px) {
-    
     .card--img{
         width: 280px;
     }
     .card--data{
         width: 230px;
     }
-    
 }
 @media screen and (max-width: 375px) {
-    
     .card--img{
         width: 260px;
     }
     .card--data{
         width: 210px;
     }
-    
 }
