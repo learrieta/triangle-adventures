@@ -1,3 +1,155 @@
+.wilmington-landing-hero {
+  position: relative;
+  min-height: 72vh;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.wilmington-landing-hero__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wilmington-landing-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(249, 183, 23, 0.16), transparent 32%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.62));
+}
+
+.wilmington-landing-hero__content {
+  position: relative;
+  z-index: 1;
+  width: min(880px, 92vw);
+  color: #fff;
+  padding: 6rem 1rem 4rem;
+}
+
+.wilmington-landing-hero__eyebrow {
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: rgb(249, 183, 23);
+}
+
+.wilmington-landing-hero h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(4rem, 9vw, 8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  margin: 0 0 1rem;
+  text-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+}
+
+.wilmington-landing-hero p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wilmington-landing-hero__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 999px;
+  background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.wilmington-landing-hero__button:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.wilmington-intro-section {
+  padding: 5rem 0 2rem;
+}
+
+.wilmington-intro-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.wilmington-intro-copy {
+  color: var(--font-color-gray);
+  font-size: var(--h3-font-size);
+  line-height: 1.9;
+  margin: 0;
+}
+
+.wilmington-tour-section {
+  padding-top: 2rem;
+}
+
+.wilmington-things-section {
+  padding: 4rem 0 5rem;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(249, 183, 23, 0.08), transparent 38%),
+    rgba(8, 9, 14, 0.03);
+}
+
+.wilmington-things-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+}
+
+.wilmington-thing-card {
+  min-height: 250px;
+  padding: 1.4rem;
+  border-radius: 22px;
+  background: #fff;
+  border: 1px solid rgba(249, 183, 23, 0.22);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.wilmington-thing-card span {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: rgba(249, 183, 23, 0.16);
+  color: var(--font-accent);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 800;
+}
+
+.wilmington-thing-card h4 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--font-color-gray);
+}
+
+.wilmington-thing-card p {
+  color: var(--font-color-gray);
+  line-height: 1.75;
+  margin: 0;
+}
+
 .wilmington-details-card {
   position: relative;
   border: 1px solid rgba(249, 183, 23, 0.22);
@@ -86,15 +238,37 @@
 }
 
 @media screen and (max-width: 992px) {
+  .wilmington-intro-grid,
   .locations-card-grid,
-  .wilmington-highlight-grid {
+  .wilmington-highlight-grid,
+  .wilmington-things-grid {
     grid-template-columns: 1fr;
+  }
+
+  .wilmington-intro-section {
+    padding: 3.5rem 0 1rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .wilmington-landing-hero {
+    min-height: 62vh;
+  }
+
+  .wilmington-landing-hero__content {
+    padding-top: 4rem;
+  }
+
+  .wilmington-landing-hero p {
+    font-size: 1rem;
+  }
+
   .wilmington-warning,
   .wilmington-highlight-card {
     font-size: 0.95rem;
+  }
+
+  .wilmington-thing-card {
+    min-height: auto;
   }
 }
