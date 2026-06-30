@@ -13,7 +13,7 @@ const HomeBanner = () => {
       <div className="banner--content">
         <h1 className="banner--title text-white">
           The Triangle&apos;s
-          <br /> E-Bike <br />
+          <br /> only E-Bike <br />
           Touring Company.
         </h1>
         <a
