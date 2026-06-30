@@ -14,25 +14,25 @@ const Tours = () => {
               <h3 >Popular <span>Tours</span></h3>
             </div>
             
-            <p className="tours--text">This eco-friendly adventure takes you through scenic routes and hidden gems, combining the excitement of cycling with the ease of electric assistance. Perfect for all fitness levels, our knowledgeable guides will share fascinating insights and stories about the towns history, culture, and landmarks.</p>
+            <p className="tours--text">This eco-friendly adventure takes you through scenic routes and hidden gems, combining the excitement of cycling with the ease of electric assistance. Perfect for all fitness levels, our knowledgeable guides will share fascinating insights and stories about local history, culture, and landmarks.</p>
           </div>
           <div className="tours--container">
-            <div className="card--container">
+            <div className="card--container home--tour-card-grid">
               <article className="card--article">
                 <img src={imgOne} alt="Scenic Clayton greenway e-bike tour with Triangle Adventures" loading='lazy' className="card--img" />
                 <div className="card--data">
-                  <span className="card--description">Clayton, NC</span>
+                  <span className="card--description">Raleigh Area</span>
                   <h2 className="card--title">Greenery, Scenery & Mindfulness</h2>
-                  <Link to={'/tours/scenic-tour'} className="card--button">Learn More</Link>
+                  <Link to={'/locations/raleigh/scenic-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
 
               <article className="card--article">
                 <img src={imgTwo} alt="Food and drinks e-bike tour in Clayton NC" loading='lazy' className="card--img" />
                 <div className="card--data">
-                  <span className="card--description">Clayton, NC</span>
+                  <span className="card--description">Raleigh Area</span>
                   <h2 className="card--title">Tacos, Margaritas & History</h2>
-                  <Link to={'/tours/foods-and-drinks-tour'} className="card--button">Learn More</Link>
+                  <Link to={'/locations/raleigh/foods-and-drinks-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
 
@@ -41,17 +41,21 @@ const Tours = () => {
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
-                  <Link to={'/tours/ghost-and-mysteries'} className="card--button">Learn More</Link>
+                  <Link to={'/locations/raleigh/ghost-and-mysteries'} className="card--button">Learn More</Link>
                 </div>
               </article>
-              
+
+              <article className="card--article new--tour-card">
+                <span className="new-tour-badge">New Tour</span>
+                <img src={imgThree} alt="Wilmington True Crime and Weird History e-bike tour" loading='lazy' className="card--img" />
+                <div className="card--data">
+                  <span className="card--description">Wilmington, NC</span>
+                  <h2 className="card--title">True Crime & Weird History</h2>
+                  <Link to={'/locations/wilmington/true-crime-tour'} className="card--button">Learn More</Link>
+                </div>
+              </article>
             </div>
           </div>
-          
-          
-        
-        
-        
         </div>
     </section>
   )
