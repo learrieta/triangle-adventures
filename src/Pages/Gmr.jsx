@@ -7,7 +7,7 @@ import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
 import { breadcrumbSchema, tourProductSchema } from '../data/seoSchemas'
 
 const Gmr = () => {
-  const path = '/tours/ghost-and-mysteries'
+  const path = '/locations/raleigh/ghost-and-mysteries'
 
   return (
     <div>
@@ -19,7 +19,8 @@ const Gmr = () => {
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'Tours', path: '/tours' },
+          { name: 'Locations', path: '/locations' },
+          { name: 'Raleigh', path: '/locations/raleigh' },
           { name: 'Ghost & History E-Bike Tour', path },
         ])}
       />
