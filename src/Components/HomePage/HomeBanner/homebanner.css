@@ -1,11 +1,13 @@
 .banner--container{
     position: relative;
     min-height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
 }
 
 .home--video--container video{
     height: 100vh;
+    height: 100svh;
     width: 100%;
     object-fit: cover;
 }
@@ -32,15 +34,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.4rem;
+    gap: clamp(1rem, 2.5vw, 1.4rem);
 }
 
 .banner--title{
     font-family: "Rajdhani";
-    font-size: 4rem;
+    font-size: clamp(3rem, 7vw, 4.25rem);
     font-weight:800;
     text-align: center;
-    line-height: 1.18;
+    line-height: 1.14;
     margin: 0;
     text-shadow: 0 16px 38px rgba(0, 0, 0, 0.48);
 }
@@ -56,6 +58,8 @@
     text-decoration: none;
     transition: .3s background-color, .2s transform;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3);
+    max-width: 90vw;
+    white-space: nowrap;
 }
 .large--button:hover{
     background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
@@ -74,7 +78,7 @@
     }
 
     .banner--title {
-        font-size: 2.55rem;
+        font-size: clamp(2.1rem, 9vw, 2.65rem);
         line-height: 1.12;
     }
 
@@ -104,7 +108,7 @@
     }
 
     .banner--title {
-        font-size: 1.8rem;
+        font-size: clamp(1.65rem, 8.5vw, 1.95rem);
         line-height: 1.18;
     }
 
@@ -112,5 +116,21 @@
         font-size: 0.95rem;
         padding: 10px 22px;
         min-width: 132px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .banner--content {
+        width: 92vw;
+    }
+
+    .banner--title {
+        font-size: 1.55rem;
+    }
+
+    .large--button {
+        font-size: 0.88rem;
+        padding: 9px 18px;
+        min-width: 120px;
     }
 }
