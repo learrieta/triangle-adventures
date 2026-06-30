@@ -11,14 +11,15 @@ const Tours = () => {
   return (
     <div>
       <SEO
-        title="Triangle E-Bike Tours | Raleigh, Durham, Cary & Clayton"
-        description="Explore Triangle Adventures guided e-bike tours near Raleigh, Durham, Cary, and Clayton, NC. Pick scenic greenway rides, food and drinks, or ghost and history tours."
-        path="/tours"
+        title="Raleigh Area E-Bike Tours | Triangle Adventures"
+        description="Explore Triangle Adventures guided e-bike tours in the Raleigh area, including scenic greenway rides, food and drinks, ghost stories, and local history."
+        path="/locations/raleigh"
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'Tours', path: '/tours' },
+          { name: 'Locations', path: '/locations' },
+          { name: 'Raleigh', path: '/locations/raleigh' },
         ])}
       />
 
