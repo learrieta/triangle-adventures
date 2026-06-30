@@ -14,14 +14,12 @@ const Tour_Hero = () => {
           <img 
             src={imgTourBanner} 
             className="banner--tour"
-            alt="Triangle Adventures guided e-bike tours in North Carolina"
+            alt="Triangle Adventures guided e-bike tours in the Raleigh area"
           />
         </picture>
             
-        <h1 className='banner--tour--title text-white'>Guided E-Bike Tours Across the Triangle</h1>
+        <h1 className='banner--tour--title text-white'>Raleigh Area E-Bike Tours</h1>
     </div>
-    
-    
   )
 }
 
