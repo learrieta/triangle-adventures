@@ -7,29 +7,30 @@ import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
 import { breadcrumbSchema, tourProductSchema } from '../data/seoSchemas'
 
 const FoodsandDrink = () => {
-  const path = '/tours/foods-and-drinks-tour'
+  const path = '/locations/raleigh/foods-and-drinks-tour'
 
   return (
     <div>
       <SEO
-        title="Food & Drinks E-Bike Tour in Clayton NC | Triangle Adventures"
-        description="Join a guided Clayton, NC food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding."
+        title="Food & Drinks E-Bike Tour in Raleigh Area NC | Triangle Adventures"
+        description="Join a guided Raleigh area food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding."
         path={path}
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'Tours', path: '/tours' },
+          { name: 'Locations', path: '/locations' },
+          { name: 'Raleigh', path: '/locations/raleigh' },
           { name: 'Food & Drinks E-Bike Tour', path },
         ])}
       />
       <JsonLd
         data={tourProductSchema({
           name: 'Food & Drinks E-Bike Tour',
-          description: 'A guided Clayton, NC food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding.',
+          description: 'A guided Raleigh area food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding.',
           price: '99',
           path,
-          areaServed: 'Clayton, NC',
+          areaServed: 'Raleigh Area, NC',
         })}
       />
 
