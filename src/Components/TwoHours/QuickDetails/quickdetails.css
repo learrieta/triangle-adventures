@@ -6,6 +6,7 @@
 .center--the--button{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .details--title{
@@ -13,6 +14,9 @@
     font-size: var(--h2-font-size);
     color: var(--font-accent);
     font-weight: var(--font-semi);
+}
+.details--list{
+    padding-left: 0;
 }
 .details--list li{
     list-style: none;
@@ -27,6 +31,7 @@
     height: 300px;
     object-fit: cover;
     padding: 20px;
+    border-radius: 30px;
 }
 
 .nav-tabs .nav-link {
@@ -35,9 +40,7 @@
     border: 3px solid transparent;
     border-top-left-radius: .25rem;
     border-top-right-radius: .25rem;
-    
 }
-
 
 .nav-tabs .nav-link.active{
     color: rgb(249, 183, 23)  !important;
@@ -59,18 +62,18 @@
 }
 .nav--list--i li a:hover {
     color: rgb(249, 183, 23)  !important;
-    
 }
 .about--the--adventure{
-    font-size: 2.2rem;
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
     font-weight: var(--font-semi);
     font-family: 'Rajdhani';
+    line-height: 1.15;
 }
 .about--the--adventure span{
     color: rgb(249, 183, 23)  !important
 }
 .faq--the--adventure{
-    font-size: 1.6rem;
+    font-size: clamp(1.35rem, 4vw, 1.6rem);
     font-weight: var(--font-semi);
     font-family: 'Rajdhani';
 }
@@ -81,7 +84,6 @@
     font-size: 1.1rem;
     font-weight: var(--font-semi);
     font-family: 'Rajdhani';
-    
 }
 .itinerary--text--config{
     font-size: var(--h3-font-size);
@@ -95,7 +97,6 @@
     font-weight: var(--font-normal);
     color: var(--font-color-gray);
     line-height: 2rem;
-    
 }
 
 .tours--button--navbar{
@@ -106,10 +107,90 @@
     border-radius: 50px;
     text-decoration: none;
     transition: .3s background-color;
-    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .tours--button--navbar:hover{
     background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .background--color{
+        padding: 1.1rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .details--list li{
+        display: flex;
+        align-items: flex-start;
+        gap: 0.35rem;
+        line-height: 1.55;
+        margin-bottom: 0.75rem;
+        font-size: 0.98rem;
+    }
+
+    .details--list li i{
+        flex: 0 0 30px;
+        margin-top: 0.15rem;
+    }
+
+    .nav--list--i{
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        padding-bottom: 0.5rem;
+        scrollbar-width: thin;
+    }
+
+    .nav--list--i li{
+        flex: 0 0 auto;
+    }
+
+    .nav--list--i li a{
+        font-size: 0.98rem;
+        white-space: nowrap;
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+    .itinerary--text--config{
+        padding: 1rem 0.25rem;
+        line-height: 1.75rem;
+        font-size: 0.98rem;
+    }
+
+    .faq--text--config{
+        line-height: 1.7rem;
+    }
+
+    .image--item--pad img {
+        height: 230px;
+        padding: 8px 0;
+        border-radius: 18px;
+    }
+
+    .tours--button--navbar{
+        width: min(240px, 100%);
+        padding: 0.75rem 1.25rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .background--color{
+        border-radius: 16px;
+    }
+
+    .details--title{
+        text-align: center;
+    }
+
+    .image--item--pad img {
+        height: 210px;
+    }
 }
