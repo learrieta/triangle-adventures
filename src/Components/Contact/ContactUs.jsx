@@ -1,16 +1,30 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import './contactus.css'
 import about from '../../assets/Aboutus/contact.jpg'
-import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { contactLinks } from '../../data/bookingLinks';
 import { trackEmailClick, trackEvent, trackPhoneClick } from '../../utils/analytics';
 
 const ContactUs = () => {
     const form = useRef();
+    const [formStatus, setFormStatus] = useState('idle');
+    const [statusMessage, setStatusMessage] = useState('');
 
     const sendEmail = (e) => {
         e.preventDefault();
+
+        if (!form.current) return;
+
+        const formData = new FormData(form.current);
+        const honeyPot = formData.get('company_website');
+
+        if (honeyPot) {
+            form.current.reset();
+            return;
+        }
+
+        setFormStatus('sending');
+        setStatusMessage('Sending your message...');
 
         emailjs
         .sendForm('service_9n7nk07', 'react-portfolio', form.current, {
@@ -21,13 +35,17 @@ const ContactUs = () => {
                 button_location: 'contact_page_form',
                 destination: 'emailjs',
             });
-            e.target.reset();
+            form.current.reset();
+            setFormStatus('success');
+            setStatusMessage('Thanks! Your message was sent. We will get back to you soon.');
         })
         .catch(() => {
             trackEvent('contact_form_error', {
                 button_location: 'contact_page_form',
                 destination: 'emailjs',
             });
+            setFormStatus('error');
+            setStatusMessage('Something went wrong. Please call or email us directly and we will be happy to help.');
         })
     };
   return (
@@ -45,6 +63,7 @@ const ContactUs = () => {
                 
                 <div className="row mt-lg-5 mb-lg-5  mt-md-5 mb-md-5 mt-sm-5 mb-sm-5   pt-md-5 pt-sm-5 contact--content">
                     <h2 className="contact--title">Special request, large group, corporate event, or any other questions?</h2>
+                    <p className="contact--trust-copy">Fast replies, friendly local guides, and beginner-friendly e-bike tours across Raleigh, Clayton, and the Triangle area.</p>
                     
                     <div className="row mt-lg-5">
                         <div className="col-lg-6 col-md-12 contact--items">
@@ -80,26 +99,35 @@ const ContactUs = () => {
                             <h3 className="ct--title">Send An Inquiry</h3>
                             <div className="centering--form">
                                 <form ref={form} onSubmit={sendEmail} className="contact__form">
-                                
+                                    <div className="contact__form-honeypot" aria-hidden="true">
+                                        <label htmlFor="company_website">Company Website</label>
+                                        <input id="company_website" type="text" name="company_website" tabIndex="-1" autoComplete="off" />
+                                    </div>
                                     <div className="contact__form-div">
                                         <label  className="contact__form-tag">Name</label>
-                                        <input type="text" name="name" className="contact__form-input" placeholder="Insert your name" />
+                                        <input type="text" name="name" className="contact__form-input" placeholder="Insert your name" required />
                                     </div>
                                     <div className="contact__form-div">
                                         <label  className="contact__form-tag">Email</label>
-                                        <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" />
+                                        <input type="email" name="email" className="contact__form-input" placeholder="Insert your email" required />
                                     </div>
                                     <div className="contact__form-div">
                                         <label  className="contact__form-tag">Phone Number  </label>
-                                        <input type="tel" name="user_phone" className="contact__form-input" placeholder="Your Phone Number"/>
+                                        <input type="tel" name="user_phone" className="contact__form-input" placeholder="Your Phone Number" required />
                                     </div>
                                     <div className="contact__form-div contact__form-area">
                                         <label  className="contact__form-tag">Message</label>
-                                        <textarea name="message" cols={30} rows={10} className="contact__form-input" placeholder="Write your message"></textarea>
+                                        <textarea name="message" cols={30} rows={10} className="contact__form-input" placeholder="Write your message" required></textarea>
                                     </div>
 
-                                    <button  className="data__contact">
-                                        Send Message
+                                    {statusMessage ? (
+                                        <p className={`contact__form-status contact__form-status--${formStatus}`} role="status" aria-live="polite">
+                                            {statusMessage}
+                                        </p>
+                                    ) : null}
+
+                                    <button className="data__contact" type="submit" disabled={formStatus === 'sending'}>
+                                        {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
                                         <svg
                                             className="button__icon"
                                             xmlns="http://www.w3.org/2000/svg"
