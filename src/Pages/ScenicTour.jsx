@@ -7,29 +7,30 @@ import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
 import { breadcrumbSchema, tourProductSchema } from '../data/seoSchemas'
 
 const ScenicTour = () => {
-  const path = '/tours/scenic-tour'
+  const path = '/locations/raleigh/scenic-tour'
 
   return (
     <div>
       <SEO
-        title="Scenic E-Bike Tour in Clayton NC | Triangle Adventures"
-        description="Ride a beginner-friendly scenic e-bike tour in Clayton, NC with greenways, local history, photo stops, and an easy guided route."
+        title="Scenic E-Bike Tour in Raleigh Area NC | Triangle Adventures"
+        description="Ride a beginner-friendly scenic e-bike tour in the Raleigh area with greenways, local history, photo stops, and an easy guided route."
         path={path}
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'Tours', path: '/tours' },
+          { name: 'Locations', path: '/locations' },
+          { name: 'Raleigh', path: '/locations/raleigh' },
           { name: 'Scenic E-Bike Tour', path },
         ])}
       />
       <JsonLd
         data={tourProductSchema({
           name: 'Greenery, Scenery and Mindfulness E-Bike Tour',
-          description: 'A beginner-friendly scenic e-bike tour in Clayton, NC with greenways, local history, photo stops, and an easy guided route.',
+          description: 'A beginner-friendly scenic e-bike tour in the Raleigh area with greenways, local history, photo stops, and an easy guided route.',
           price: '69',
           path,
-          areaServed: 'Clayton, NC',
+          areaServed: 'Raleigh Area, NC',
         })}
       />
 
