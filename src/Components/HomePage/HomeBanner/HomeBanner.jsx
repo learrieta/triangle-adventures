@@ -13,7 +13,7 @@ const HomeBanner = () => {
       <div className="banner--content">
         <h1 className="banner--title text-white">
           The Triangle&apos;s
-          <br /> only E-Bike <br />
+          <br /> E-Bike <br />
           Touring Company.
         </h1>
         <a
@@ -32,9 +32,6 @@ const HomeBanner = () => {
         >
           Book a Tour!
         </a>
-        <p className="banner--trust-copy">
-          5-star rated guided e-bike tours • Beginner-friendly routes • Local Triangle guides
-        </p>
       </div>
     </div>
   )
