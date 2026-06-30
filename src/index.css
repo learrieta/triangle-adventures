@@ -19,15 +19,69 @@
   --dark-font-color: #2C5359;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "Barlow",sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
 a{
   text-decoration: none;
 }
-body{
-  font-family: "Barlow",sans-serif;
+
+img,
+video,
+picture {
+  max-width: 100%;
 }
 
 section{
   padding-top: 2rem;
-  
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.35rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.96rem;
+  }
+
+  section {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  :root {
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 0.98rem;
+  }
 }
