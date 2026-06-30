@@ -33,8 +33,14 @@ const NavbarDark = () => {
                             <li className="nav-item mx-3">
                                 <Link to="/" className="nav-link active " aria-current="page">Home</Link>
                             </li>
-                            <li className="nav-item mx-3">
-                                <Link to={'/tours'} className="nav-link  ">E-Bike Tours</Link>
+                            <li className="nav-item dropdown mx-3 locations--dropdown">
+                                <Link to="/locations" className="nav-link dropdown-toggle" id="locationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Locations
+                                </Link>
+                                <ul className="dropdown-menu dropdown-menu-dark locations--dropdown-menu" aria-labelledby="locationsDropdown">
+                                    <li><Link to="/locations/raleigh" className="dropdown-item">Raleigh</Link></li>
+                                    <li><Link to="/locations/wilmington" className="dropdown-item">Wilmington</Link></li>
+                                </ul>
                             </li>
                             <li className="nav-item dropdown mx-3">
                                 <Link to={'/about-us'} className="nav-link ">About</Link>
@@ -42,11 +48,7 @@ const NavbarDark = () => {
                             <li className="nav-item mx-3">
                                 <Link to={'/contact-us'} className="nav-link  ">Contact</Link>
                             </li>
-                           
-                            
-                            
                         </ul>
-                        
                     </div> 
                     <a
                         type="button"
@@ -74,13 +76,9 @@ const NavbarDark = () => {
                         >
                         Book Now!
                     </a>
-                    
-                   
-                    
                 </div>
             </div>
         </nav>
-       
     </div>
   )
 }
