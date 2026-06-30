@@ -74,7 +74,7 @@ const Footer = () => {
                   <Link to={'/about-us'} className="text-white footer--opts ">Who We Are</Link>
                 </li>
                 <li className='m-3'>
-                  <Link to={'/tours/foods-and-drinks-tour#faqs'} className="text-white footer--opts">Faq</Link>
+                  <Link to={'/locations/raleigh/foods-and-drinks-tour#faqs'} className="text-white footer--opts">Faq</Link>
                 </li>
               </ul>
             </div>
