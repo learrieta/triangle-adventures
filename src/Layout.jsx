@@ -1,4 +1,5 @@
 import Footer from './Components/Footer/Footer'
+import StickyMobileCTA from './Components/MobileCTA/StickyMobileCTA'
 
 import { Outlet } from 'react-router-dom'
 
@@ -12,6 +13,7 @@ const Layout = () => {
             <Outlet />
         </main>
         <Footer />
+        <StickyMobileCTA />
     </div>
   )
 }
