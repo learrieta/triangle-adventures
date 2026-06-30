@@ -9,13 +9,13 @@ const AboutUs = () => {
     <div>
       <SEO
         title="About Triangle Adventures | Guided E-Bike Tours in NC"
-        description="Meet Triangle Adventures, a guided e-bike tour company serving Raleigh, Durham, Cary, Clayton, and the Triangle area with scenic, food, drink, ghost, and history tours."
-        path="/aboutus"
+        description="Meet Triangle Adventures, a guided e-bike tour company serving Raleigh, Durham, Cary, Clayton, and the Triangle area."
+        path="/about-us"
       />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', path: '/' },
-          { name: 'About', path: '/aboutus' },
+          { name: 'About', path: '/about-us' },
         ])}
       />
       <AboutHero />
