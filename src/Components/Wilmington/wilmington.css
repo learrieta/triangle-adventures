@@ -1,6 +1,7 @@
 .wilmington-landing-hero {
   position: relative;
   min-height: 72vh;
+  min-height: 72svh;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -41,9 +42,9 @@
 
 .wilmington-landing-hero h1 {
   font-family: 'Rajdhani', sans-serif;
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(3.25rem, 9vw, 8rem);
   font-weight: 800;
-  line-height: 0.9;
+  line-height: 0.95;
   margin: 0 0 1rem;
   text-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
 }
@@ -70,6 +71,8 @@
   font-weight: 800;
   text-decoration: none;
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  max-width: 90vw;
+  white-space: nowrap;
 }
 
 .wilmington-landing-hero__button:hover {
@@ -225,11 +228,11 @@
 }
 
 .locations-card-grid {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .wilmington-card-grid {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .location--card,
@@ -248,19 +251,46 @@
   .wilmington-intro-section {
     padding: 3.5rem 0 1rem;
   }
+
+  .wilmington-things-grid {
+    gap: 1rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .wilmington-landing-hero {
-    min-height: 62vh;
+    min-height: 64vh;
+    min-height: 64svh;
   }
 
   .wilmington-landing-hero__content {
-    padding-top: 4rem;
+    padding: 4.25rem 0.75rem 3rem;
+    width: min(360px, 92vw);
+  }
+
+  .wilmington-landing-hero__eyebrow {
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+  }
+
+  .wilmington-landing-hero h1 {
+    font-size: clamp(2.6rem, 16vw, 4rem);
   }
 
   .wilmington-landing-hero p {
     font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .wilmington-landing-hero__button {
+    font-size: 1rem;
+    padding: 0.78rem 1.45rem;
+  }
+
+  .wilmington-intro-section,
+  .wilmington-things-section {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 
   .wilmington-warning,
@@ -270,5 +300,16 @@
 
   .wilmington-thing-card {
     min-height: auto;
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wilmington-landing-hero__content {
+    width: 94vw;
+  }
+
+  .wilmington-landing-hero h1 {
+    font-size: 2.45rem;
   }
 }
