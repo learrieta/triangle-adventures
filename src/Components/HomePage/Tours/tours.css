@@ -36,20 +36,24 @@
     overflow: hidden;
     border-radius: var(--radius-card);
     width: min(348px, 100%);
+    background: #0b0b0b;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
 }
 
 .card--img{
     width: 100%;
     max-width: 348px;
-    aspect-ratio: 1 / 1.22;
-    object-fit: cover;
+    aspect-ratio: 1 / 1.16;
+    object-fit: contain;
+    object-position: center;
     border-radius: var(--radius-card);
     display: block;
+    background: #0b0b0b;
 }
 .card--data{
-    width: min(316px, calc(100% - 2rem));
-    background-color: var(--container-color);
-    padding: var(--space-card);
+    width: min(300px, calc(100% - 2rem));
+    background-color: rgba(255, 255, 255, 0.96);
+    padding: 1.15rem 1.2rem;
     box-shadow: 0 8px 24px hsla(0,0%,0%, .15);
     border-radius: 1rem;
     position: absolute;
@@ -59,16 +63,17 @@
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
+    text-align: center;
 }
 .card--description{
     display: block;
-    color: var(--font-color-gray);
+    color: var(--font-muted);
     margin-bottom: .35rem;
 }
 
 .card--title{
     font-size: var(--text-xl);
-    color: var(--font-color-gray);
+    color: #2f3543;
     margin-bottom: .75rem;
 }
 
@@ -76,6 +81,9 @@
     text-decoration: none;
     font-weight: var(--weight-semibold);
     color: var(--font-accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card--button:hover{
@@ -146,10 +154,10 @@
 
 @keyframes show-data{
     50%{
-        transform: translateY(-10rem);
+        transform: translateY(-9.25rem);
     }
     100%{
-        transform: translateY(-7rem);
+        transform: translateY(-6.75rem);
     }
 }
 
@@ -161,10 +169,10 @@
 
 @keyframes remove-data{
     0%{
-        transform: translateY(-7rem);
+        transform: translateY(-6.75rem);
     }
     50%{
-        transform: translateY(-10rem);
+        transform: translateY(-9.25rem);
     }
     100%{
         transform: translateY(.5rem);
@@ -238,9 +246,9 @@
         opacity: 1;
         transform: none !important;
         animation: none !important;
-        margin-top: -3.2rem;
+        margin-top: -3rem;
         width: calc(100% - 1.5rem);
-        padding: 1.1rem 1.25rem;
+        padding: 1.05rem 1.15rem;
     }
     .card--article:hover,
     .card--article:not(:hover),
