@@ -112,16 +112,32 @@
 @media screen and (max-width: 992px) {
     .partners--grid {
         grid-template-columns: 1fr;
-        width: min(520px, 100%);
+        width: min(520px, calc(100% - 1.5rem));
     }
 }
 
 @media screen and (max-width: 576px) {
+    .partners--section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .partners--grid {
+        width: min(500px, calc(100% - 2rem));
+        gap: 2rem;
+    }
+
     .partner--card {
         border-radius: 20px;
     }
 
     .partner--map-wrap {
         height: 200px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .partners--grid {
+        width: min(500px, calc(100% - 1.5rem));
     }
 }
