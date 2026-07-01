@@ -151,7 +151,7 @@ section{
 .faq--the--adventure {
   font-family: var(--heading-font);
   font-size: var(--text-3xl);
-  font-weight: var(--weight-bold);
+  font-weight: var(--font-semi);
   line-height: var(--line-heading);
   letter-spacing: -0.018em;
 }
@@ -174,7 +174,7 @@ section{
 .ct--title {
   font-family: var(--heading-font);
   line-height: var(--line-title);
-  font-weight: var(--weight-bold);
+  font-weight: var(--font-semi);
 }
 
 .card--description,
@@ -191,7 +191,7 @@ section{
 .wilmington-landing-hero__button,
 .data__contact {
   font-family: var(--heading-font) !important;
-  font-weight: var(--weight-bold);
+  font-weight: var(--font-semi);
   line-height: 1;
   letter-spacing: var(--tracking-button);
 }
