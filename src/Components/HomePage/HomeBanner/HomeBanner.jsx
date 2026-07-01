@@ -47,9 +47,9 @@ const HomeBanner = () => {
 
       <div className="banner--content">
         <h1 className="banner--title text-white">
-          <span>The Triangle&apos;s</span>
-          <span>only E-Bike</span>
-          <span>Touring Company.</span>
+          <span>Tours in Raleigh,</span>
+          <span>Clayton and now</span>
+          <span>in Wilmington!</span>
         </h1>
         <a
           type="button"
