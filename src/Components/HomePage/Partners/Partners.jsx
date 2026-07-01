@@ -1,8 +1,7 @@
 import React from 'react'
 import './partners.css'
 import { vinsonImage } from './vinsonImage'
-
-const revivalImage = 'https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_632,q_75,w_640/v1/crm/johnstoncounty/Revival-6-1-_B358E758-9B0F-A367-D5BFA4B1A6FA6B38-b358df4bbae79f2_b358ece2-a8b7-fa56-27662d65877137e5.jpg'
+import { revivalImage } from './revivalImage'
 
 const partners = [
   {
