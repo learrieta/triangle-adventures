@@ -4,7 +4,7 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import TourReviews from '../Components/Reviews/TourReviews'
 import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
-import { breadcrumbSchema, tourProductSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
 
 const FoodsandDrink = () => {
   const path = '/locations/raleigh/foods-and-drinks-tour'
@@ -12,8 +12,8 @@ const FoodsandDrink = () => {
   return (
     <div>
       <SEO
-        title="Food & Drinks E-Bike Tour in Raleigh Area NC | Triangle Adventures"
-        description="Join a guided Raleigh area food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding."
+        title="Raleigh Food & Drinks E-Bike Tour | Tacos, Margaritas & History"
+        description="Book a Raleigh area food and drinks e-bike tour with tacos, margaritas, local history, scenic riding, beginner-friendly routes, and Triangle Adventures guides."
         path={path}
       />
       <JsonLd
@@ -26,11 +26,21 @@ const FoodsandDrink = () => {
       />
       <JsonLd
         data={tourProductSchema({
-          name: 'Food & Drinks E-Bike Tour',
+          name: 'Raleigh Food and Drinks E-Bike Tour',
           description: 'A guided Raleigh area food and drinks e-bike tour with tacos, margaritas, local history, scenic trails, and beginner-friendly riding.',
           price: '99',
           path,
           areaServed: 'Raleigh Area, NC',
+          category: 'Food and Drinks E-Bike Tour',
+        })}
+      />
+      <JsonLd
+        data={tourServiceSchema({
+          name: 'Raleigh Food and Drinks E-Bike Tour',
+          description: 'A guided Raleigh area e-bike tour with tacos, margaritas, local history, scenic riding, and food stops.',
+          path,
+          areaServed: ['Raleigh, NC', 'Clayton, NC', 'The Triangle, NC'],
+          serviceType: 'Food and Drinks Guided E-Bike Tour',
         })}
       />
 
