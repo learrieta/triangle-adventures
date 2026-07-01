@@ -14,11 +14,13 @@ import AboutUs from './Pages/AboutUs'
 import Contact from './Pages/Contact'
 import NotFound from './Pages/NotFound'
 import RouteChangeTracker from "./Components/Analytics/RouteChangeTracker";
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 
 function App() {
   return (
     <>
       <RouteChangeTracker />
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
