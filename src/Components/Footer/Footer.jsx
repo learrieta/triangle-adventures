@@ -1,34 +1,12 @@
 import './footer.css';
 import { Link } from 'react-router-dom';
-import { contactLinks, socialLinks, bookingLinks } from '../../data/bookingLinks';
-import { trackBookNowClick, trackEmailClick, trackEvent, trackInstagramClick, trackPhoneClick } from '../../utils/analytics';
+import { contactLinks, socialLinks } from '../../data/bookingLinks';
+import { trackEmailClick, trackEvent, trackInstagramClick, trackPhoneClick } from '../../utils/analytics';
 
 const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="container">
-        <div className="footer--cta-card">
-          <div>
-            <p className="footer--eyebrow">Ready for your next adventure?</p>
-            <h2>Book a guided e-bike tour with Triangle Adventures.</h2>
-          </div>
-          <a
-            className="footer--cta-button"
-            href={bookingLinks.calendar}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() =>
-              trackBookNowClick({
-                tourName: 'All Tours Calendar',
-                tourSlug: 'all-tours',
-                buttonLocation: 'footer_cta',
-              })
-            }
-          >
-            Book Now
-          </a>
-        </div>
-
         <div className="footer--main-grid">
           <div className="footer--brand-col">
             <Link to="/" className="footer--brand">Triangle Adventures</Link>
