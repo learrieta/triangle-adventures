@@ -14,8 +14,8 @@ const HomePage = () => {
   return (
     <div>
       <SEO
-        title="Guided E-Bike Tours in Raleigh, Durham, Cary & Clayton NC | Triangle Adventures"
-        description="Book guided e-bike tours across the Triangle area, including Raleigh, Durham, Cary, and Clayton. Choose scenic rides, food and drinks, ghost stories, and local history."
+        title="Raleigh, Clayton & Wilmington E-Bike Tours | Triangle Adventures"
+        description="Book guided e-bike tours in Raleigh, Clayton, and Wilmington, NC. Explore scenic rides, tacos and margaritas, ghost stories, true crime, weird history, and local North Carolina adventures."
         path="/"
       />
       <JsonLd data={localBusinessSchema} />
