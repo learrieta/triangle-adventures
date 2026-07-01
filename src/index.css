@@ -1,21 +1,58 @@
 :root {
   --body-font: "Barlow", sans-serif;
-  --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.1rem;
-  --normal-font-size: 1rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .813rem;
+  --heading-font: "Rajdhani", sans-serif;
+
+  --text-xs: clamp(0.72rem, 0.68rem + 0.12vw, 0.78rem);
+  --text-sm: clamp(0.84rem, 0.8rem + 0.14vw, 0.92rem);
+  --text-base: clamp(0.96rem, 0.92rem + 0.16vw, 1rem);
+  --text-md: clamp(1rem, 0.96rem + 0.22vw, 1.12rem);
+  --text-lg: clamp(1.08rem, 1rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.28rem, 1.12rem + 0.7vw, 1.65rem);
+  --text-2xl: clamp(1.65rem, 1.35rem + 1.25vw, 2.25rem);
+  --text-3xl: clamp(2.05rem, 1.55rem + 2.1vw, 3rem);
+  --text-hero: clamp(2.7rem, 1.75rem + 4.6vw, 5.35rem);
+  --text-hero-mobile: clamp(1.72rem, 8vw, 1.95rem);
+
+  --line-tight: 1.05;
+  --line-heading: 1.12;
+  --line-title: 1.18;
+  --line-body: 1.7;
+  --line-loose: 1.85;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+
+  --tracking-eyebrow: 0.12em;
+  --tracking-button: 0.01em;
+
+  --space-section-y: clamp(3.25rem, 6vw, 6rem);
+  --space-section-y-sm: clamp(2.25rem, 4vw, 4rem);
+  --space-heading: clamp(0.65rem, 1.4vw, 1rem);
+  --space-body: clamp(1rem, 2.2vw, 1.6rem);
+  --space-card: clamp(1.1rem, 2.6vw, 1.75rem);
+  --radius-card: 1.5rem;
+
+  --big-font-size: var(--text-3xl);
+  --h1-font-size: var(--text-3xl);
+  --h2-font-size: var(--text-xl);
+  --h3-font-size: var(--text-md);
+  --normal-font-size: var(--text-base);
+  --small-font-size: var(--text-sm);
+  --smaller-font-size: var(--text-xs);
   --tiny-font-size: .625rem;
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-semi: 600;
-  --font-semi-bold: 700;
+
+  --font-normal: var(--weight-regular);
+  --font-medium: var(--weight-medium);
+  --font-semi: var(--weight-semibold);
+  --font-semi-bold: var(--weight-bold);
+
   --container-color: white;
   --font-color-gray: #676977;
   --font-color: #ffff;
-  --font-accent:  rgb(249, 183, 23)  !important;;
+  --font-accent:  rgb(249, 183, 23)  !important;
   --dark-font-color: #2C5359;
 }
 
@@ -38,9 +75,39 @@ html {
 }
 
 body{
-  font-family: "Barlow",sans-serif;
+  font-family: var(--body-font);
   overflow-x: hidden;
   margin: 0;
+  font-size: var(--text-base);
+  line-height: var(--line-body);
+  color: var(--font-color-gray);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  line-height: var(--line-heading);
+  font-weight: var(--weight-extra-bold);
+}
+
+p {
+  line-height: var(--line-body);
 }
 
 a{
@@ -54,22 +121,89 @@ picture {
 }
 
 section{
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-top: var(--space-section-y-sm);
+  margin-bottom: var(--space-section-y-sm);
+}
+
+.section--tours,
+.wilmington-things-section,
+.wilmington-intro-section,
+.contact--section {
+  padding-top: var(--space-section-y);
+  margin-bottom: var(--space-section-y-sm);
+}
+
+.tours--subtitle,
+.wilmington-landing-hero__eyebrow {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.tours--title h3,
+.contact--title,
+.about--the--adventure,
+.faq--the--adventure {
+  font-family: var(--heading-font);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-extra-bold);
+  line-height: var(--line-heading);
+  letter-spacing: -0.015em;
+}
+
+.tours--text,
+.wilmington-intro-copy,
+.wilmington-intro,
+.itinerary--text--config,
+.faq--text--config,
+.contact--trust-copy {
+  font-size: var(--text-md);
+  line-height: var(--line-body);
+  font-weight: var(--weight-regular);
+}
+
+.card--title,
+.wilmington-nearby-content h4,
+.contact__card-title,
+.ct--title {
+  font-family: var(--heading-font);
+  line-height: var(--line-title);
+  font-weight: var(--weight-bold);
+}
+
+.card--description,
+.card--button,
+.contact__button,
+.details--list li {
+  font-size: var(--text-base);
+  line-height: var(--line-body);
+}
+
+.large--button,
+.small--button--navbar,
+.tours--button--navbar,
+.wilmington-landing-hero__button,
+.data__contact {
+  font-family: var(--heading-font) !important;
+  font-weight: var(--weight-bold);
+  line-height: 1;
+  letter-spacing: var(--tracking-button);
 }
 
 @media screen and (max-width: 768px) {
   :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 2rem;
-    --h2-font-size: 1.35rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.96rem;
+    --space-section-y: clamp(2.75rem, 10vw, 4rem);
+    --space-section-y-sm: clamp(2rem, 8vw, 3rem);
+    --text-3xl: clamp(1.95rem, 8vw, 2.45rem);
+    --text-2xl: clamp(1.55rem, 6vw, 2rem);
+    --text-xl: clamp(1.25rem, 4.5vw, 1.55rem);
   }
 
   section {
-    padding-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding-top: var(--space-section-y-sm);
+    margin-bottom: var(--space-section-y-sm);
   }
 
   .container {
@@ -80,8 +214,8 @@ section{
 
 @media screen and (max-width: 430px) {
   :root {
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 0.98rem;
+    --text-base: 0.95rem;
+    --text-md: 0.98rem;
+    --text-lg: 1.05rem;
   }
 }
