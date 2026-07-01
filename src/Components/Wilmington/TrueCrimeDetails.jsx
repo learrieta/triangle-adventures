@@ -15,7 +15,7 @@ const WilmingtonTrueCrimeDetails = () => {
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12">
             <div className="row background--color wilmington-details-card">
-              <div className="new-tour-inline-badge">New Wilmington Tour</div>
+              <div className="new-tour-inline-badge">Featured Tour</div>
               <h3 className="details--title">Quick Details</h3>
               <ul className="details--list">
                 <li><i className="fa-regular fa-hourglass-half" style={iconStyle}></i>Duration: 3 hours</li>
@@ -37,7 +37,7 @@ const WilmingtonTrueCrimeDetails = () => {
                   rel="noopener noreferrer"
                   onClick={() =>
                     trackBookNowClick({
-                      tourName: 'Wilmington True Crime and Weird History',
+                      tourName: 'Wilmington: True Crime & Weird History',
                       tourSlug: 'wilmington-true-crime-tour',
                       buttonLocation: 'wilmington_true_crime_quick_details',
                     })
@@ -51,7 +51,7 @@ const WilmingtonTrueCrimeDetails = () => {
             <div className="row mt-lg-5 my-sm-5 pt-lg-4 mt-md-3 pt-md-2">
               <h4 className="about--the--adventure text-center">About <span>The Adventure</span></h4>
               <p className="wilmington-intro text-center">
-                If you like Unsolved Mysteries, Dateline, and fascinating history they do not teach in school, this tour is for you.
+                The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history as you explore Historic Downtown, Greenfield Lake, the Cargo District, and other unforgettable stops.
               </p>
 
               <div className="wilmington-highlight-grid">
@@ -120,7 +120,7 @@ const WilmingtonTrueCrimeDetails = () => {
                 <img src={img2} alt="Triangle Adventures guided e-bike ride" title="Wilmington guided e-bike ride" loading="eager" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington True Crime and Weird History" loading="eager" className="img-fluid" />
+                <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="eager" className="img-fluid" />
               </div>
             </div>
           </div>
