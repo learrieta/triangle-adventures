@@ -58,7 +58,7 @@ const Footer = () => {
               <li><Link to="/locations/raleigh/scenic-tour">Greenery & Scenery</Link></li>
               <li><Link to="/locations/raleigh/foods-and-drinks-tour">Tacos & Margaritas</Link></li>
               <li><Link to="/locations/raleigh/ghost-and-mysteries">Ghosts & Mystery</Link></li>
-              <li><Link to="/locations/wilmington/true-crime-tour">Wilmington True Crime</Link></li>
+              <li><Link to="/locations/wilmington/true-crime-tour">Wilmington: True Crime & Weird History</Link></li>
             </ul>
           </div>
 
