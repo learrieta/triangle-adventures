@@ -68,9 +68,9 @@ const Wilmington = () => {
         <img src={wilmingtonHeroImage} alt="Wilmington North Carolina Riverwalk" className="wilmington-landing-hero__image" />
         <div className="wilmington-landing-hero__overlay"></div>
         <div className="wilmington-landing-hero__content">
-          <p className="wilmington-landing-hero__eyebrow">Triangle Adventures expands to the coast</p>
-          <h1>Wilmington E-Bike Tours</h1>
-          <p>Riverfront charm, coastal history, eerie stories, and a brand-new guided e-bike adventure in Wilmington, North Carolina.</p>
+          <p className="wilmington-landing-hero__eyebrow">Not your typical tour company.</p>
+          <h1>Wilmington</h1>
+          <p>If you&apos;re looking for another ordinary sightseeing tour... this probably isn&apos;t it.</p>
           <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">View New Tour</Link>
         </div>
       </section>
