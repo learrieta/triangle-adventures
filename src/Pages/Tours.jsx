@@ -5,14 +5,14 @@ import How_It_Works from '../Components/Tours/How It Works/How_It_Works'
 import Test_Drive from '../Components/Tours/ebike-renting/Test_Drive'
 import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
-import { breadcrumbSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 
 const Tours = () => {
   return (
     <div>
       <SEO
-        title="Raleigh Area E-Bike Tours | Triangle Adventures"
-        description="Explore Triangle Adventures guided e-bike tours in the Raleigh area, including scenic greenway rides, food and drinks, ghost stories, and local history."
+        title="Raleigh & Clayton E-Bike Tours | Triangle Adventures"
+        description="Explore guided e-bike tours near Raleigh and Clayton, NC with scenic greenways, tacos and margaritas, ghost stories, local history, beginner-friendly riding, and small-group adventures."
         path="/locations/raleigh"
       />
       <JsonLd
@@ -21,6 +21,14 @@ const Tours = () => {
           { name: 'Locations', path: '/locations' },
           { name: 'Raleigh', path: '/locations/raleigh' },
         ])}
+      />
+      <JsonLd
+        data={tourServiceSchema({
+          name: 'Raleigh and Clayton Guided E-Bike Tours',
+          description: 'Guided e-bike tours in Raleigh, Clayton, and the Triangle area with scenic routes, food stops, ghost stories, and local history.',
+          path: '/locations/raleigh',
+          areaServed: ['Raleigh, NC', 'Clayton, NC', 'The Triangle, NC'],
+        })}
       />
 
       <Tour_Hero />
