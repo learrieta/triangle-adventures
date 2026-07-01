@@ -51,19 +51,19 @@ const Tours = () => {
           </div>
 
           <div className="new-tour-feature text-center">
-            <p className="tours--subtitle">New Wilmington launch</p>
+            <p className="tours--subtitle">Featured Tour</p>
             <div className="tours--title">
-              <h3>Book the <span>New Tour</span></h3>
+              <h3>Wilmington: <span>True Crime & Weird History</span></h3>
             </div>
-            <p className="tours--text new-tour-feature__text">A darker, stranger, story-packed ride through Wilmington true crime, weird history, and unforgettable local stories.</p>
+            <p className="tours--text new-tour-feature__text">The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history.</p>
             <div className="tours--container new-tour-feature__container">
               <article className="card--article new--tour-card">
-                <span className="new-tour-badge">New Tour</span>
+                <span className="new-tour-badge">Featured Tour</span>
                 <img src={wilmingtonTourImage} alt="Wilmington True Crime and Weird History e-bike tour" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
-                  <h2 className="card--title">True Crime & Weird History</h2>
-                  <Link to={'/locations/wilmington/true-crime-tour'} className="card--button">Learn More</Link>
+                  <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
+                  <Link to={'/locations/wilmington/true-crime-tour'} className="card--button">Featured Tour</Link>
                 </div>
               </article>
             </div>
