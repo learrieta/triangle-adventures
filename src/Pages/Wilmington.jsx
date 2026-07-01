@@ -79,13 +79,13 @@ const Wilmington = () => {
         <div className="container">
           <div className="wilmington-intro-grid">
             <div>
-              <p className="tours--subtitle">New city. New stories.</p>
+              <p className="tours--subtitle">Not your typical tour</p>
               <div className="tours--title">
                 <h3>Welcome to <span>Wilmington</span></h3>
               </div>
             </div>
             <p className="wilmington-intro-copy">
-              Wilmington blends a historic riverfront, coastal neighborhoods, nearby beaches, and the kind of strange local history that makes every street feel like it has a story. Our Wilmington e-bike tour experience is built for riders who want something fun, easy, memorable, and a little darker than the usual sightseeing tour.
+              Anyone can show you historic buildings. We bring the stories behind them to life. Explore Wilmington on immersive guided e-bike adventures filled with fascinating history, hidden places, unexpected twists, and plenty of personality.
             </p>
           </div>
         </div>
