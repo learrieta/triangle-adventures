@@ -9,7 +9,7 @@
   --text-lg: clamp(1.08rem, 1rem + 0.35vw, 1.25rem);
   --text-xl: clamp(1.28rem, 1.12rem + 0.7vw, 1.65rem);
   --text-2xl: clamp(1.65rem, 1.35rem + 1.25vw, 2.25rem);
-  --text-3xl: clamp(2.05rem, 1.55rem + 2.1vw, 3rem);
+  --text-3xl: clamp(2.1rem, 1.55rem + 2.25vw, 3.15rem);
   --text-hero: clamp(2.7rem, 1.75rem + 4.6vw, 5.35rem);
   --text-hero-mobile: clamp(1.72rem, 8vw, 1.95rem);
 
@@ -50,10 +50,11 @@
   --font-semi-bold: var(--weight-bold);
 
   --container-color: white;
-  --font-color-gray: #676977;
+  --font-color-gray: #4d5262;
+  --font-muted: #5f6676;
   --font-color: #ffff;
   --font-accent:  rgb(249, 183, 23)  !important;
-  --dark-font-color: #2C5359;
+  --dark-font-color: #203f45;
 }
 
 *,
@@ -103,7 +104,8 @@ h5,
 h6 {
   font-family: var(--heading-font);
   line-height: var(--line-heading);
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-bold);
+  color: #111827;
 }
 
 p {
@@ -140,6 +142,7 @@ section{
   letter-spacing: var(--tracking-eyebrow);
   line-height: 1.25;
   text-transform: uppercase;
+  color: #101827;
 }
 
 .tours--title h3,
@@ -148,9 +151,9 @@ section{
 .faq--the--adventure {
   font-family: var(--heading-font);
   font-size: var(--text-3xl);
-  font-weight: var(--weight-extra-bold);
+  font-weight: var(--weight-bold);
   line-height: var(--line-heading);
-  letter-spacing: -0.015em;
+  letter-spacing: -0.012em;
 }
 
 .tours--text,
@@ -162,6 +165,7 @@ section{
   font-size: var(--text-md);
   line-height: var(--line-body);
   font-weight: var(--weight-regular);
+  color: var(--font-color-gray);
 }
 
 .card--title,
