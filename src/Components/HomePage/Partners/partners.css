@@ -37,7 +37,8 @@
 
 .partner--image-wrap {
     position: relative;
-    min-height: 260px;
+    width: 100%;
+    aspect-ratio: 4 / 3;
     background: #111827;
     overflow: hidden;
 }
@@ -46,18 +47,16 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.18));
     pointer-events: none;
 }
 
 .partner--image {
     width: 100%;
     height: 100%;
-    min-height: 260px;
     object-fit: cover;
     object-position: center;
     display: block;
-    transform: scale(1.01);
 }
 
 .partner--content {
@@ -112,11 +111,6 @@
     .partners--grid {
         grid-template-columns: 1fr;
     }
-
-    .partner--image-wrap,
-    .partner--image {
-        min-height: 300px;
-    }
 }
 
 @media screen and (max-width: 576px) {
@@ -124,9 +118,8 @@
         border-radius: 22px;
     }
 
-    .partner--image-wrap,
-    .partner--image {
-        min-height: 230px;
+    .partner--image-wrap {
+        aspect-ratio: 4 / 3;
     }
 
     .partner--map-wrap {
