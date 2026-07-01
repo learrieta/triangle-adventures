@@ -30,15 +30,16 @@
     text-align: center;
     display: grid;
     justify-items: center;
-    row-gap: 1.4rem;
+    row-gap: clamp(1rem, 2.5vw, 1.55rem);
 }
 
 .banner--title{
-    font-family: "Rajdhani";
-    font-size: clamp(3rem, 7vw, 4.25rem);
-    font-weight:800;
+    font-family: var(--heading-font);
+    font-size: var(--text-hero);
+    font-weight: var(--weight-extra-bold);
     text-align: center;
-    line-height: 1.14;
+    line-height: var(--line-tight);
+    letter-spacing: -0.018em;
     margin: 0;
     text-shadow: 0 16px 38px rgba(0, 0, 0, 0.48);
     display: grid;
@@ -51,12 +52,10 @@
 }
 
 .large--button{
-    font-family: 'Rajdhani' !important;
-    font-weight: 600;
     background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
     color: #fff;
-    font-size: var(--h2-font-size);
-    padding: 15px 40px;
+    font-size: clamp(1rem, 1.1vw, 1.22rem);
+    padding: 0.95rem 2.3rem;
     border-radius: 50px;
     text-decoration: none;
     transition: .3s background-color, .2s transform;
@@ -79,7 +78,7 @@
     .banner--content {
         top: 52%;
         width: min(360px, 90vw);
-        row-gap: 1.35rem;
+        row-gap: 1.25rem;
     }
 
     .banner--title {
@@ -90,11 +89,9 @@
 
     .large--button {
         margin: 0;
-        font-size: 1.05rem;
-        padding: 12px 28px;
+        font-size: 1.02rem;
+        padding: 0.78rem 1.75rem;
         min-width: 150px;
-        line-height: 1;
-        flex-shrink: 0;
     }
 }
 
@@ -102,18 +99,18 @@
     .banner--content {
         top: 51%;
         width: min(320px, 90vw);
-        row-gap: 1.2rem;
+        row-gap: 1.1rem;
     }
 
     .banner--title {
-        font-size: clamp(1.72rem, 8vw, 1.95rem);
+        font-size: var(--text-hero-mobile);
         line-height: 1.08;
         row-gap: 0.22em;
     }
 
     .large--button {
-        font-size: 0.95rem;
-        padding: 10px 22px;
+        font-size: 0.94rem;
+        padding: 0.68rem 1.35rem;
         min-width: 132px;
     }
 }
@@ -130,7 +127,7 @@
 
     .large--button {
         font-size: 0.88rem;
-        padding: 9px 18px;
+        padding: 0.6rem 1.15rem;
         min-width: 120px;
     }
 }
