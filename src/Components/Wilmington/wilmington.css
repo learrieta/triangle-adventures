@@ -109,22 +109,24 @@
 
 .wilmington-nearby-list {
   display: grid;
-  gap: clamp(1.5rem, 3vw, 2.2rem);
+  gap: clamp(1.2rem, 2.4vw, 1.75rem);
+  width: min(1080px, 100%);
+  margin: 0 auto;
 }
 
 .wilmington-nearby-row,
 .wilmington-nearby-row--reverse {
   display: grid;
   align-items: stretch;
-  gap: 1.5rem;
+  gap: 1.15rem;
 }
 
 .wilmington-nearby-row {
-  grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
 }
 
 .wilmington-nearby-row--reverse {
-  grid-template-columns: minmax(0, 1.14fr) minmax(0, 0.86fr);
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
 }
 
 .wilmington-nearby-row--reverse .wilmington-nearby-content {
@@ -137,16 +139,16 @@
 
 .wilmington-nearby-content,
 .wilmington-nearby-image-wrap {
-  border-radius: 28px;
+  border-radius: 22px;
   overflow: hidden;
-  min-height: 320px;
+  min-height: 230px;
 }
 
 .wilmington-nearby-content {
-  padding: clamp(1.5rem, 4vw, 2.6rem);
+  padding: clamp(1.2rem, 3vw, 1.85rem);
   background: #fff;
   border: 1px solid rgba(249, 183, 23, 0.25);
-  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.075);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,45 +157,91 @@
 
 .wilmington-nearby-content span {
   display: inline-flex;
-  margin-bottom: 1.25rem;
-  width: 54px;
-  height: 54px;
+  margin-bottom: 0.85rem;
+  width: 44px;
+  height: 44px;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
   background: rgba(249, 183, 23, 0.18);
   color: var(--font-accent);
   font-family: var(--heading-font);
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
   font-weight: var(--weight-extra-bold);
 }
 
 .wilmington-nearby-content h4 {
-  font-size: var(--text-2xl);
+  font-size: clamp(1.45rem, 2.7vw, 1.95rem);
   line-height: var(--line-heading);
   color: var(--font-color-gray);
-  margin-bottom: var(--space-heading);
+  margin-bottom: 0.6rem;
 }
 
 .wilmington-nearby-content p {
   color: var(--font-color-gray);
-  line-height: var(--line-body);
-  font-size: var(--text-md);
+  line-height: 1.62;
+  font-size: var(--text-base);
   margin: 0;
 }
 
 .wilmington-nearby-image-wrap {
   position: relative;
-  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.1);
 }
 
 .wilmington-nearby-image {
   width: 100%;
   height: 100%;
-  min-height: 320px;
+  min-height: 230px;
   object-fit: cover;
   display: block;
   transform: scale(1.01);
+}
+
+.wilmington-map-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+  gap: 1.25rem;
+  width: min(1080px, 100%);
+  margin: clamp(2rem, 5vw, 3rem) auto 0;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  border: 1px solid rgba(249, 183, 23, 0.24);
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+}
+
+.wilmington-map-copy {
+  padding: clamp(1.35rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wilmington-map-copy h3 {
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: var(--font-semi);
+  line-height: var(--line-heading);
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+.wilmington-map-copy p:last-child {
+  color: var(--font-color-gray);
+  line-height: var(--line-body);
+  margin-bottom: 0;
+}
+
+.wilmington-map-frame {
+  min-height: 320px;
+  background: #f4f4f4;
+}
+
+.wilmington-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
 
 .wilmington-details-card {
@@ -289,7 +337,8 @@
   }
 
   .wilmington-nearby-row,
-  .wilmington-nearby-row--reverse {
+  .wilmington-nearby-row--reverse,
+  .wilmington-map-card {
     grid-template-columns: 1fr;
     gap: 0;
   }
@@ -300,16 +349,20 @@
   }
 
   .wilmington-nearby-content {
-    border-radius: 24px 24px 0 0;
+    border-radius: 22px 22px 0 0;
     min-height: auto;
   }
 
   .wilmington-nearby-image-wrap {
-    border-radius: 0 0 24px 24px;
-    min-height: 280px;
+    border-radius: 0 0 22px 22px;
+    min-height: 220px;
   }
 
   .wilmington-nearby-image {
+    min-height: 220px;
+  }
+
+  .wilmington-map-frame {
     min-height: 280px;
   }
 }
@@ -345,21 +398,29 @@
   }
 
   .wilmington-nearby-list {
-    gap: 1.6rem;
+    gap: 1.35rem;
   }
 
   .wilmington-nearby-content {
-    padding: 1.35rem;
+    padding: 1.2rem;
   }
 
   .wilmington-nearby-content span {
-    width: 46px;
-    height: 46px;
-    margin-bottom: 1rem;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 0.85rem;
   }
 
   .wilmington-nearby-image-wrap,
   .wilmington-nearby-image {
+    min-height: 190px;
+  }
+
+  .wilmington-map-card {
+    border-radius: 20px;
+  }
+
+  .wilmington-map-frame {
     min-height: 230px;
   }
 
