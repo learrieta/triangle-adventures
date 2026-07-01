@@ -7,11 +7,20 @@ import { bookingLinks } from '../../data/bookingLinks';
 import './navbar.css'
 
 const NavbarDark = () => {
+  const closeMobileMenu = () => {
+    const navbarCollapse = document.getElementById('navbarSupportedContent')
+    const navbarToggler = document.querySelector('.navbar-toggler')
+
+    if (navbarCollapse?.classList.contains('show')) {
+      navbarToggler?.click()
+    }
+  }
+
   return (
     <div>
       <nav className="navbar sticky-top navbar-expand-lg navbar--black p-lg-2" id='navbar'>
         <div className="container">
-          <Link to="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand" onClick={closeMobileMenu}>
             <img src={logo} alt="Triangle Adventures" className='navbar--logo--dark' id='navbar--logo' />
           </Link>
 
@@ -30,22 +39,22 @@ const NavbarDark = () => {
             <div className="mx-auto">
               <ul className="navbar-nav text-center nav--list">
                 <li className="nav-item nav--item-spaced">
-                  <Link to="/" className="nav-link active" aria-current="page">Home</Link>
+                  <Link to="/" className="nav-link active" aria-current="page" onClick={closeMobileMenu}>Home</Link>
                 </li>
                 <li className="nav-item dropdown nav--item-spaced locations--dropdown">
                   <Link to="/locations" className="nav-link dropdown-toggle locations--toggle" id="locationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <span className="locations--label">Locations <span className="locations--chevron">▾</span></span>
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark locations--dropdown-menu" aria-labelledby="locationsDropdown">
-                    <li><Link to="/locations/raleigh" className="dropdown-item">Raleigh</Link></li>
-                    <li><Link to="/locations/wilmington" className="dropdown-item">Wilmington</Link></li>
+                    <li><Link to="/locations/raleigh" className="dropdown-item" onClick={closeMobileMenu}>Raleigh</Link></li>
+                    <li><Link to="/locations/wilmington" className="dropdown-item" onClick={closeMobileMenu}>Wilmington</Link></li>
                   </ul>
                 </li>
                 <li className="nav-item nav--item-spaced">
-                  <Link to={'/about-us'} className="nav-link">About</Link>
+                  <Link to={'/about-us'} className="nav-link" onClick={closeMobileMenu}>About</Link>
                 </li>
                 <li className="nav-item nav--item-spaced">
-                  <Link to={'/contact-us'} className="nav-link">Contact</Link>
+                  <Link to={'/contact-us'} className="nav-link" onClick={closeMobileMenu}>Contact</Link>
                 </li>
               </ul>
             </div>
@@ -56,7 +65,10 @@ const NavbarDark = () => {
               href={bookingLinks.giftCards}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackGiftCardClick({ buttonLocation: 'navbar' })}
+              onClick={() => {
+                closeMobileMenu()
+                trackGiftCardClick({ buttonLocation: 'navbar' })
+              }}
             >
               Gift Cards
             </a>
@@ -66,13 +78,14 @@ const NavbarDark = () => {
               href={bookingLinks.calendar}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() =>
+              onClick={() => {
+                closeMobileMenu()
                 trackBookNowClick({
                   tourName: 'All Tours Calendar',
                   tourSlug: 'all-tours',
                   buttonLocation: 'navbar',
                 })
-              }
+              }}
             >
               Book Now!
             </a>
