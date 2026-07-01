@@ -9,12 +9,12 @@
   --text-lg: clamp(1.08rem, 1rem + 0.35vw, 1.25rem);
   --text-xl: clamp(1.28rem, 1.12rem + 0.7vw, 1.65rem);
   --text-2xl: clamp(1.65rem, 1.35rem + 1.25vw, 2.25rem);
-  --text-3xl: clamp(2.1rem, 1.55rem + 2.25vw, 3.15rem);
+  --text-3xl: clamp(2.75rem, 2rem + 2.9vw, 4.1rem);
   --text-hero: clamp(2.7rem, 1.75rem + 4.6vw, 5.35rem);
   --text-hero-mobile: clamp(1.72rem, 8vw, 1.95rem);
 
   --line-tight: 1.05;
-  --line-heading: 1.12;
+  --line-heading: 1.08;
   --line-title: 1.18;
   --line-body: 1.7;
   --line-loose: 1.85;
@@ -153,7 +153,7 @@ section{
   font-size: var(--text-3xl);
   font-weight: var(--weight-bold);
   line-height: var(--line-heading);
-  letter-spacing: -0.012em;
+  letter-spacing: -0.018em;
 }
 
 .tours--text,
@@ -200,7 +200,7 @@ section{
   :root {
     --space-section-y: clamp(2.75rem, 10vw, 4rem);
     --space-section-y-sm: clamp(2rem, 8vw, 3rem);
-    --text-3xl: clamp(1.95rem, 8vw, 2.45rem);
+    --text-3xl: clamp(2.25rem, 10vw, 3rem);
     --text-2xl: clamp(1.55rem, 6vw, 2rem);
     --text-xl: clamp(1.25rem, 4.5vw, 1.55rem);
   }
@@ -221,5 +221,6 @@ section{
     --text-base: 0.95rem;
     --text-md: 0.98rem;
     --text-lg: 1.05rem;
+    --text-3xl: clamp(2rem, 11vw, 2.55rem);
   }
 }
