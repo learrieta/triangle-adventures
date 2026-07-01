@@ -136,6 +136,23 @@ const Wilmington = () => {
               </article>
             ))}
           </div>
+
+          <div className="wilmington-map-card">
+            <div className="wilmington-map-copy">
+              <p className="tours--subtitle">Beach walk idea</p>
+              <h3>Wilmington Beach Walk</h3>
+              <p>Want to extend the day after your tour? Add a relaxed Wrightsville Beach walk for ocean views, fresh air, and a classic coastal stop near Wilmington.</p>
+            </div>
+            <div className="wilmington-map-frame">
+              <iframe
+                title="Wilmington beach walk map"
+                src={`https://www.google.com/maps?q=${encodeURIComponent('Wrightsville Beach Loop Wilmington NC')}&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
     </div>
