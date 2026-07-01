@@ -166,20 +166,63 @@
 
 @media screen and (max-width: 576px) {
     .site-footer {
-        padding-top: 2.5rem;
+        padding-top: 2.4rem;
     }
 
     .footer--main-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.9rem 1.25rem;
+        padding-bottom: 2rem;
+    }
+
+    .footer--brand-col,
+    .footer--contact-col {
+        grid-column: 1 / -1;
     }
 
     .footer--brand-col p {
         max-width: none;
+        margin-bottom: 1rem;
+    }
+
+    .footer--link-col h3,
+    .footer--contact-col h3 {
+        margin-bottom: 0.75rem;
+        font-size: var(--text-md);
+    }
+
+    .footer--link-col ul {
+        gap: 0.52rem;
+    }
+
+    .footer--link-col a,
+    .footer--contact-col a {
+        font-size: var(--text-sm);
+    }
+
+    .footer--contact-col {
+        gap: 0.62rem;
+        padding-top: 0.25rem;
+    }
+
+    .footer--newsletter {
+        width: fit-content;
+        max-width: 100%;
+        padding: 0.68rem 0.95rem;
     }
 
     .footer--bottom-bar {
         align-items: flex-start;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer--main-grid {
+        gap: 1.65rem 0.9rem;
+    }
+
+    .footer--brand {
+        font-size: 1.75rem;
     }
 }
