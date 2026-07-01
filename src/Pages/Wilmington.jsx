@@ -7,6 +7,7 @@ import '../Components/Wilmington/wilmington.css'
 
 const wilmingtonHeroImage = 'https://www.southport-nc.com/images/uploads/place/3206/0526-469.jpg'
 const wilmingtonTourImage = 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bikes-on-tour-de-wilmington.jpg?v=1746580005&width=1200'
+const wilmingtonBeachImage = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
 
 const nearbyItems = [
   {
@@ -27,8 +28,8 @@ const nearbyItems = [
     number: '03',
     title: 'Visit the beaches',
     text: 'Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.',
-    image: 'https://www.southport-nc.com/images/uploads/place/2743/0526-335.jpg',
-    alt: 'Wilmington area beach and pier',
+    image: wilmingtonBeachImage,
+    alt: 'Wilmington area beach and ocean walk',
   },
   {
     number: '04',
@@ -140,13 +141,13 @@ const Wilmington = () => {
           <div className="wilmington-map-card">
             <div className="wilmington-map-copy">
               <p className="tours--subtitle">Beach walk idea</p>
-              <h3>Wilmington Beach Walk</h3>
-              <p>Want to extend the day after your tour? Add a relaxed Wrightsville Beach walk for ocean views, fresh air, and a classic coastal stop near Wilmington.</p>
+              <h3>Wrightsville Beach Walk</h3>
+              <p>Want to extend the day after your tour? Add a relaxed walk near Johnnie Mercers Pier at Wrightsville Beach for ocean views, fresh air, and a classic coastal stop near Wilmington.</p>
             </div>
             <div className="wilmington-map-frame">
               <iframe
-                title="Wilmington beach walk map"
-                src={`https://www.google.com/maps?q=${encodeURIComponent('Wrightsville Beach Loop Wilmington NC')}&output=embed`}
+                title="Wrightsville Beach walk map"
+                src={`https://www.google.com/maps?q=${encodeURIComponent('Johnnie Mercers Fishing Pier Wrightsville Beach NC')}&output=embed`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen
