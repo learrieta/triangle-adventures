@@ -46,7 +46,7 @@ const NavbarDark = () => {
                     <span className="locations--label">Locations <span className="locations--chevron">▾</span></span>
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark locations--dropdown-menu" aria-labelledby="locationsDropdown">
-                    <li><Link to="/locations/raleigh" className="dropdown-item" onClick={closeMobileMenu}>Raleigh</Link></li>
+                    <li><Link to="/locations/raleigh" className="dropdown-item" onClick={closeMobileMenu}>Raleigh Area</Link></li>
                     <li><Link to="/locations/wilmington" className="dropdown-item" onClick={closeMobileMenu}>Wilmington</Link></li>
                   </ul>
                 </li>
