@@ -13,8 +13,6 @@
     border-radius: 40px;
     box-shadow: 0 8px 20px hsla(0,0%,0%, .15);
     margin: 3rem;
-    
-    
 }
 .testimonials-item .info{
     display: flex;
@@ -29,7 +27,7 @@
 .testimonials-item .name{
     font-size: var(--h2-font-size);
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: var(--font-semi);
     color: hsl(0, 0%, 0%);
     line-height: 1.2;
 }
@@ -42,11 +40,6 @@
     font: var(--normal-font-size);
     color: hsl(36, 88%, 66%)
 }
-
-.tours--title h2 {
-    font-size: var(--h1-font-size);
-}
-
 
 .fullscreen-video-container{
     display: flex;
@@ -61,11 +54,7 @@
     overflow: hidden;
 }
 
-
-
 @media screen and (max-width: 576px) {
-
-    
     .testimonials-item img{
         max-width:  60px;
         border-radius: 50%;
@@ -75,16 +64,8 @@
     .testimonials-item .name{
         font-size: var(--normal-font-size);
         text-transform: capitalize;
-        font-weight: 600;
+        font-weight: var(--font-semi);
         color: hsl(0, 0%, 0%);
         line-height: 1.2;
     }
-
-    
-}
-
-@media screen and (max-width: 430px) {
-    
-    
-    
 }
