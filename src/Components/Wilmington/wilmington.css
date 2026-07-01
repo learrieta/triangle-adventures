@@ -33,25 +33,21 @@
 }
 
 .wilmington-landing-hero__eyebrow {
-  margin-bottom: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-weight: 700;
+  margin-bottom: var(--space-heading);
   color: rgb(249, 183, 23);
 }
 
 .wilmington-landing-hero h1 {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: clamp(3.25rem, 9vw, 8rem);
-  font-weight: 800;
-  line-height: 0.95;
-  margin: 0 0 1rem;
+  font-size: var(--text-hero);
+  line-height: var(--line-tight);
+  letter-spacing: -0.025em;
+  margin: 0 0 var(--space-heading);
   text-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
 }
 
 .wilmington-landing-hero p {
-  font-size: 1.25rem;
-  line-height: 1.7;
+  font-size: var(--text-lg);
+  line-height: var(--line-body);
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
@@ -66,9 +62,7 @@
   border-radius: 999px;
   background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
   color: #fff;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
+  font-size: clamp(1rem, 1.1vw, 1.18rem);
   text-decoration: none;
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
   max-width: 90vw;
@@ -81,48 +75,50 @@
 }
 
 .wilmington-intro-section {
-  padding: 5rem 0 2rem;
+  padding: var(--space-section-y) 0 var(--space-section-y-sm);
 }
 
 .wilmington-intro-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 3rem;
+  gap: clamp(2rem, 5vw, 3.25rem);
   align-items: center;
 }
 
 .wilmington-intro-copy {
   color: var(--font-color-gray);
-  font-size: var(--h3-font-size);
-  line-height: 1.9;
   margin: 0;
 }
 
 .wilmington-tour-section {
-  padding-top: 2rem;
+  padding-top: var(--space-section-y-sm);
 }
 
 .wilmington-things-section {
-  padding: 4.5rem 0 5.5rem;
+  padding: var(--space-section-y) 0 calc(var(--space-section-y) + 0.75rem);
   background:
     radial-gradient(circle at 50% 0%, rgba(249, 183, 23, 0.1), transparent 36%),
     linear-gradient(180deg, rgba(8, 9, 14, 0.035), rgba(255, 255, 255, 0.98));
 }
 
 .wilmington-things-heading {
-  margin-bottom: 3rem;
+  margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
 .wilmington-nearby-list {
   display: grid;
-  gap: 2.2rem;
+  gap: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.wilmington-nearby-row,
+.wilmington-nearby-row--reverse {
+  display: grid;
+  align-items: stretch;
+  gap: 1.5rem;
 }
 
 .wilmington-nearby-row {
-  display: grid;
   grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
-  align-items: stretch;
-  gap: 1.5rem;
 }
 
 .wilmington-nearby-row--reverse {
@@ -165,24 +161,22 @@
   border-radius: 999px;
   background: rgba(249, 183, 23, 0.18);
   color: var(--font-accent);
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 800;
+  font-family: var(--heading-font);
+  font-size: var(--text-md);
+  font-weight: var(--weight-extra-bold);
 }
 
 .wilmington-nearby-content h4 {
-  font-family: 'Rajdhani', sans-serif;
-  font-size: clamp(1.75rem, 3.2vw, 2.45rem);
-  line-height: 1.05;
-  font-weight: 800;
+  font-size: var(--text-2xl);
+  line-height: var(--line-heading);
   color: var(--font-color-gray);
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-heading);
 }
 
 .wilmington-nearby-content p {
   color: var(--font-color-gray);
-  line-height: 1.8;
-  font-size: 1.04rem;
+  line-height: var(--line-body);
+  font-size: var(--text-md);
   margin: 0;
 }
 
@@ -214,8 +208,8 @@
   background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
   color: #fff;
   border-radius: 999px;
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 800;
+  font-family: var(--heading-font);
+  font-weight: var(--weight-extra-bold);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
@@ -224,7 +218,7 @@
 .new-tour-inline-badge {
   margin-bottom: 0.9rem;
   padding: 0.55rem 1rem;
-  font-size: 0.86rem;
+  font-size: var(--text-xs);
 }
 
 .new-tour-badge {
@@ -233,7 +227,7 @@
   left: 14px;
   z-index: 2;
   padding: 0.48rem 0.86rem;
-  font-size: 0.78rem;
+  font-size: var(--text-xs);
 }
 
 .wilmington-warning {
@@ -242,15 +236,13 @@
   border-left: 4px solid rgb(249, 183, 23);
   border-radius: 12px;
   padding: 0.85rem 1rem;
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
 }
 
 .wilmington-intro {
   max-width: 860px;
   margin: 0 auto 1.5rem;
   color: var(--font-color-gray);
-  font-size: var(--h3-font-size);
-  line-height: 1.8;
 }
 
 .wilmington-highlight-grid {
@@ -266,12 +258,12 @@
   border-radius: 18px;
   padding: 1rem;
   color: var(--font-color-gray);
-  font-weight: 500;
-  line-height: 1.7;
+  font-weight: var(--weight-medium);
+  line-height: var(--line-body);
 }
 
 .locations-page {
-  padding-top: 3rem;
+  padding-top: var(--space-section-y-sm);
 }
 
 .locations-card-grid {
@@ -284,7 +276,7 @@
 
 .location--card,
 .location--card-new {
-  border-radius: 1.5rem;
+  border-radius: var(--radius-card);
 }
 
 @media screen and (max-width: 992px) {
@@ -292,10 +284,6 @@
   .locations-card-grid,
   .wilmington-highlight-grid {
     grid-template-columns: 1fr;
-  }
-
-  .wilmington-intro-section {
-    padding: 3.5rem 0 1rem;
   }
 
   .wilmington-nearby-row,
@@ -335,22 +323,16 @@
     width: min(360px, 92vw);
   }
 
-  .wilmington-landing-hero__eyebrow {
-    font-size: 0.78rem;
-    letter-spacing: 0.12em;
-  }
-
   .wilmington-landing-hero h1 {
     font-size: clamp(2.6rem, 16vw, 4rem);
   }
 
   .wilmington-landing-hero p {
-    font-size: 1rem;
-    line-height: 1.55;
+    font-size: var(--text-base);
   }
 
   .wilmington-landing-hero__button {
-    font-size: 1rem;
+    font-size: var(--text-base);
     padding: 0.78rem 1.45rem;
   }
 
@@ -358,11 +340,6 @@
   .wilmington-things-section {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-  }
-
-  .wilmington-things-section {
-    padding-top: 3.5rem;
-    padding-bottom: 4rem;
   }
 
   .wilmington-nearby-list {
@@ -379,11 +356,6 @@
     margin-bottom: 1rem;
   }
 
-  .wilmington-nearby-content p {
-    font-size: 0.98rem;
-    line-height: 1.7;
-  }
-
   .wilmington-nearby-image-wrap,
   .wilmington-nearby-image {
     min-height: 230px;
@@ -391,7 +363,7 @@
 
   .wilmington-warning,
   .wilmington-highlight-card {
-    font-size: 0.95rem;
+    font-size: var(--text-sm);
   }
 }
 
