@@ -38,8 +38,11 @@ const HomeBanner = () => {
           muted
           playsInline
           preload="auto"
-          src={homeVideo}
-        ></video>
+          poster="/images/hero-mobile-poster.jpg"
+        >
+          <source src="/videos/tal-mobile.mp4" media="(max-width: 768px)" type="video/mp4" />
+          <source src={homeVideo} type="video/mp4" />
+        </video>
       </div>
 
       <div className="banner--content">
