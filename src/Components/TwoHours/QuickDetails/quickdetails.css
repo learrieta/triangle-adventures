@@ -61,6 +61,11 @@
 .nav--list--i li a:hover {
     color: rgb(249, 183, 23)  !important;
 }
+.about--the--adventure,
+.faq--the--adventure{
+    margin-top: clamp(1.8rem, 4vw, 2.75rem);
+    margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
 .about--the--adventure span,
 .faq--the--adventure span{
     color: rgb(249, 183, 23)  !important
@@ -101,18 +106,42 @@
         padding: 1.1rem;
         margin-left: 0;
         margin-right: 0;
+        margin-bottom: 2.3rem;
+    }
+
+    .details--title{
+        margin-bottom: 1.1rem;
+    }
+
+    .details--list{
+        margin-bottom: 1.35rem;
     }
 
     .details--list li{
         display: flex;
         align-items: flex-start;
-        gap: 0.35rem;
-        margin-bottom: 0.75rem;
+        gap: 0.5rem;
+        margin-bottom: 0.95rem;
+        line-height: 1.55;
     }
 
     .details--list li i{
         flex: 0 0 30px;
         margin-top: 0.15rem;
+    }
+
+    .about--the--adventure,
+    .faq--the--adventure{
+        margin-top: 2.5rem;
+        margin-bottom: 1.15rem;
+        line-height: 1.08;
+    }
+
+    .about--the--adventure + p,
+    .faq--the--adventure + p,
+    .itinerary--text--config,
+    .faq--text--config{
+        margin-top: 0.75rem;
     }
 
     .nav--list--i{
@@ -154,10 +183,17 @@
 @media screen and (max-width: 430px) {
     .background--color{
         border-radius: 16px;
+        margin-bottom: 2.5rem;
     }
 
     .details--title{
         text-align: center;
+    }
+
+    .about--the--adventure,
+    .faq--the--adventure{
+        margin-top: 2.75rem;
+        margin-bottom: 1.2rem;
     }
 
     .image--item--pad img {
