@@ -71,7 +71,7 @@ const Wilmington = () => {
           <p className="wilmington-landing-hero__eyebrow">Not your typical tour company.</p>
           <h1>Wilmington</h1>
           <p>If you&apos;re looking for another ordinary sightseeing tour... this probably isn&apos;t it.</p>
-          <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">View New Tour</Link>
+          <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">View Featured Tour</Link>
         </div>
       </section>
 
@@ -94,24 +94,24 @@ const Wilmington = () => {
       <section className="section--tours wilmington-tour-section">
         <div className="container">
           <div className="text-center">
-            <p className="tours--subtitle">Book the new tour</p>
+            <p className="tours--subtitle">Featured tour</p>
             <div className="tours--title">
-              <h3>Wilmington <span>True Crime</span></h3>
+              <h3>Wilmington: <span>True Crime & Weird History</span></h3>
             </div>
             <p className="tours--text">
-              A darker, stranger, story-packed Wilmington e-bike ride through true crime, weird history, Historic Downtown, Greenfield Lake, the Cargo District, and more.
+              The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history as you explore Historic Downtown, Greenfield Lake, the Cargo District, and other unforgettable stops.
             </p>
           </div>
 
           <div className="tours--container">
             <div className="card--container wilmington-card-grid">
               <article className="card--article location--card-new">
-                <span className="new-tour-badge">New Tour</span>
+                <span className="new-tour-badge">Featured Tour</span>
                 <img src={wilmingtonTourImage} alt="Wilmington True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
-                  <h2 className="card--title">True Crime & Weird History</h2>
-                  <Link to="/locations/wilmington/true-crime-tour" className="card--button">Learn More</Link>
+                  <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
+                  <Link to="/locations/wilmington/true-crime-tour" className="card--button">Featured Tour</Link>
                 </div>
               </article>
             </div>
