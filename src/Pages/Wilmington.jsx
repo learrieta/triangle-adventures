@@ -1,6 +1,6 @@
 import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
-import { breadcrumbSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
@@ -44,8 +44,8 @@ const Wilmington = () => {
   return (
     <div>
       <SEO
-        title="Wilmington E-Bike Tours | True Crime & Weird History"
-        description="Explore Triangle Adventures in Wilmington, NC with a new True Crime and Weird History guided e-bike tour, riverfront scenery, beaches, downtown history, and coastal things to do."
+        title="Wilmington E-Bike Tours | True Crime, Weird History & Riverfront Rides"
+        description="Book Wilmington, NC e-bike tours with Triangle Adventures. Explore true crime, weird history, Historic Downtown, Greenfield Lake, the Cargo District, beaches, and riverfront stops."
         path="/locations/wilmington"
       />
       <JsonLd
@@ -55,14 +55,22 @@ const Wilmington = () => {
           { name: 'Wilmington', path: '/locations/wilmington' },
         ])}
       />
+      <JsonLd
+        data={tourServiceSchema({
+          name: 'Wilmington NC Guided E-Bike Tours',
+          description: 'Guided e-bike tours in Wilmington, NC featuring true crime, weird history, Historic Downtown, Greenfield Lake, the Cargo District, beaches, and Cape Fear River scenery.',
+          path: '/locations/wilmington',
+          areaServed: ['Wilmington, NC', 'Wrightsville Beach, NC', 'Carolina Beach, NC'],
+        })}
+      />
 
       <section className="wilmington-landing-hero">
         <img src={wilmingtonHeroImage} alt="Wilmington North Carolina Riverwalk" className="wilmington-landing-hero__image" />
         <div className="wilmington-landing-hero__overlay"></div>
         <div className="wilmington-landing-hero__content">
           <p className="wilmington-landing-hero__eyebrow">Triangle Adventures expands to the coast</p>
-          <h1>Wilmington</h1>
-          <p>Riverfront charm, coastal history, eerie stories, and a brand-new guided e-bike adventure.</p>
+          <h1>Wilmington E-Bike Tours</h1>
+          <p>Riverfront charm, coastal history, eerie stories, and a brand-new guided e-bike adventure in Wilmington, North Carolina.</p>
           <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">View New Tour</Link>
         </div>
       </section>
@@ -77,7 +85,7 @@ const Wilmington = () => {
               </div>
             </div>
             <p className="wilmington-intro-copy">
-              Wilmington blends a historic riverfront, coastal neighborhoods, nearby beaches, and the kind of strange local history that makes every street feel like it has a story. Our Wilmington experience is built for riders who want something fun, easy, memorable, and a little darker than the usual sightseeing tour.
+              Wilmington blends a historic riverfront, coastal neighborhoods, nearby beaches, and the kind of strange local history that makes every street feel like it has a story. Our Wilmington e-bike tour experience is built for riders who want something fun, easy, memorable, and a little darker than the usual sightseeing tour.
             </p>
           </div>
         </div>
@@ -91,7 +99,7 @@ const Wilmington = () => {
               <h3>Wilmington <span>True Crime</span></h3>
             </div>
             <p className="tours--text">
-              A darker, stranger, story-packed ride through Wilmington true crime, weird history, Historic Downtown, Greenfield Lake, the Cargo District, and more.
+              A darker, stranger, story-packed Wilmington e-bike ride through true crime, weird history, Historic Downtown, Greenfield Lake, the Cargo District, and more.
             </p>
           </div>
 
