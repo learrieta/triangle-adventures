@@ -10,8 +10,8 @@ const Locations = () => {
   return (
     <div>
       <SEO
-        title="Triangle Adventures Locations | Raleigh & Wilmington E-Bike Tours"
-        description="Choose your Triangle Adventures location. Explore Raleigh area e-bike tours or discover the new Wilmington True Crime and Weird History tour."
+        title="E-Bike Tour Locations in NC | Raleigh, Clayton & Wilmington"
+        description="Choose a Triangle Adventures location for guided e-bike tours in Raleigh, Clayton, the Triangle area, or Wilmington, NC with scenic rides, food tours, ghost stories, true crime, and local history."
         path="/locations"
       />
       <JsonLd
@@ -29,16 +29,16 @@ const Locations = () => {
               <h3>Adventure <span>Locations</span></h3>
             </div>
             <p className="tours--text">
-              Pick your starting city and explore guided e-bike tours built around local stories, hidden history, scenic routes, and memorable stops.
+              Pick your starting city and explore guided e-bike tours in Raleigh, Clayton, the Triangle area, and Wilmington built around local stories, hidden history, scenic routes, and memorable stops.
             </p>
           </div>
 
           <div className="tours--container">
             <div className="card--container locations-card-grid">
               <article className="card--article location--card">
-                <img src={raleighImg} alt="Raleigh and Triangle area e-bike tours" loading="lazy" className="card--img" />
+                <img src={raleighImg} alt="Raleigh Clayton and Triangle area e-bike tours" loading="lazy" className="card--img" />
                 <div className="card--data location--card-data">
-                  <span className="card--description">Raleigh Area</span>
+                  <span className="card--description">Raleigh & Clayton Area</span>
                   <h2 className="card--title">Raleigh & The Triangle</h2>
                   <Link to="/locations/raleigh" className="card--button">View Tours</Link>
                 </div>
@@ -46,7 +46,7 @@ const Locations = () => {
 
               <article className="card--article location--card location--card-new">
                 <span className="new-tour-badge">New Location</span>
-                <img src={wilmingtonImg} alt="Wilmington True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
+                <img src={wilmingtonImg} alt="Wilmington NC True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
                 <div className="card--data location--card-data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington</h2>
