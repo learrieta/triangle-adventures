@@ -1,13 +1,45 @@
+import { useEffect, useRef } from 'react'
 import './homebanner.css'
 import homeVideo from '../../../assets/Home/tal.mp4'
 import { bookingLinks } from '../../../data/bookingLinks'
 import { trackBookNowClick } from '../../../utils/analytics'
 
 const HomeBanner = () => {
+  const videoRef = useRef(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    video.muted = true
+    video.playsInline = true
+
+    const playVideo = () => {
+      const playPromise = video.play()
+      if (playPromise && typeof playPromise.catch === 'function') {
+        playPromise.catch(() => {})
+      }
+    }
+
+    playVideo()
+
+    const retryTimer = window.setTimeout(playVideo, 600)
+
+    return () => window.clearTimeout(retryTimer)
+  }, [])
+
   return (
     <div className="banner--container">
       <div className="home--video--container">
-        <video autoPlay loop muted playsInline preload="metadata" src={homeVideo}></video>
+        <video
+          ref={videoRef}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          src={homeVideo}
+        ></video>
       </div>
 
       <div className="banner--content">
