@@ -1,0 +1,29 @@
+name: Create mobile hero video
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-mobile-video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Generate compressed mobile video
+        run: npm run video:mobile-hero
+
+      - name: Save generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-hero-video
+          path: |
+            public/videos/tal-mobile.mp4
+            public/images/hero-mobile-poster.jpg
