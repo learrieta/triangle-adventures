@@ -2,10 +2,9 @@ import './tours.css'
 import imgOne from '../../../assets/Home/scenary.png'
 import imgTwo from '../../../assets/Home/fooddrink.png'
 import imgThree from '../../../assets/Home/mystery.png'
+import { wilmingtonTourImage } from '../../../data/wilmingtonTourImage'
 
 import { Link } from 'react-router-dom'
-
-const wilmingtonTourImage = 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bikes-on-tour-de-wilmington.jpg?v=1746580005&width=1200'
 
 const Tours = () => {
   return (
@@ -59,7 +58,7 @@ const Tours = () => {
             <div className="tours--container new-tour-feature__container">
               <article className="card--article new--tour-card">
                 <span className="new-tour-badge">Featured Tour</span>
-                <img src={wilmingtonTourImage} alt="Wilmington True Crime and Weird History e-bike tour" loading='lazy' className="card--img" />
+                <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History e-bike tour poster" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
