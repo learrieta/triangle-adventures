@@ -61,7 +61,7 @@ const Tours = () => {
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
-                  <Link to={'/locations/wilmington/true-crime-tour'} className="card--button">Featured Tour</Link>
+                  <Link to={'/locations/wilmington/true-crime-tour'} className="card--button">Learn More</Link>
                 </div>
               </article>
             </div>
