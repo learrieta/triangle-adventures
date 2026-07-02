@@ -2,11 +2,11 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
+import { wilmingtonTourImage } from '../data/wilmingtonTourImage'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
 
 const wilmingtonHeroImage = 'https://www.southport-nc.com/images/uploads/place/3206/0526-469.jpg'
-const wilmingtonTourImage = 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bikes-on-tour-de-wilmington.jpg?v=1746580005&width=1200'
 const wilmingtonBeachImage = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
 
 const nearbyItems = [
@@ -71,7 +71,7 @@ const Wilmington = () => {
           <p className="wilmington-landing-hero__eyebrow">Not your typical tour company.</p>
           <h1>Wilmington</h1>
           <p>If you&apos;re looking for another ordinary sightseeing tour... this probably isn&apos;t it.</p>
-          <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">View Featured Tour</Link>
+          <Link to="/locations/wilmington/true-crime-tour" className="wilmington-landing-hero__button">Explore Tours</Link>
         </div>
       </section>
 
@@ -107,7 +107,7 @@ const Wilmington = () => {
             <div className="card--container wilmington-card-grid">
               <article className="card--article location--card-new">
                 <span className="new-tour-badge">Featured Tour</span>
-                <img src={wilmingtonTourImage} alt="Wilmington True Crime and Weird History e-bike tour" loading="lazy" className="card--img" />
+                <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
