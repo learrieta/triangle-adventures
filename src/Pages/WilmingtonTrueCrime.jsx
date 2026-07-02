@@ -2,7 +2,7 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
 import WilmingtonTrueCrimeDetails from '../Components/Wilmington/TrueCrimeDetails'
-import { wilmingtonTourImage, wilmingtonTourOgImage } from '../data/wilmingtonTourImage'
+import { wilmingtonTourHeroImage, wilmingtonTourOgImage } from '../data/wilmingtonTourImage'
 
 const WilmingtonTrueCrime = () => {
   const path = '/locations/wilmington/true-crime-tour'
@@ -44,8 +44,8 @@ const WilmingtonTrueCrime = () => {
         })}
       />
 
-      <div className="tour--container wilmington-poster-hero">
-        <img src={wilmingtonTourImage} className="banner--tour" loading="eager" title="Wilmington: True Crime & Weird History" alt="Wilmington: True Crime & Weird History e-bike tour poster" />
+      <div className="tour--container wilmington-true-crime-hero">
+        <img src={wilmingtonTourHeroImage} className="banner--tour" loading="eager" title="Wilmington: True Crime & Weird History" alt="Wilmington: True Crime & Weird History e-bike tour hero" />
         <h1 className="banner--tour--title text-white">Wilmington: True Crime & Weird History</h1>
       </div>
 
