@@ -82,6 +82,13 @@
     transition: background .2s ease, color .2s ease, transform .2s ease;
 }
 
+.footer--social-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: currentColor;
+}
+
 .footer--socials a:hover {
     color: #111827;
     background: rgb(249, 183, 23);
