@@ -18,12 +18,15 @@ const WilmingtonTrueCrimeDetails = () => {
               <h3 className="details--title">Quick Details</h3>
               <ul className="details--list">
                 <li><i className="fa-regular fa-hourglass-half" style={iconStyle}></i>Duration: 3 hours</li>
-                <li><i className="fa-solid fa-location-arrow" style={iconStyle}></i>Location: 1101 Hill Street, Wilmington NC</li>
+                <li><i className="fa-solid fa-location-arrow" style={iconStyle}></i>Location: 1101 Hill Street, Wilmington NC (Inside the gated area)</li>
                 <li><i className="fa-solid fa-user-group" style={iconStyle}></i>Capacity: 8 riders</li>
                 <li><i className="fa-regular fa-clock" style={iconStyle}></i>Times: Varies, Check the Calendar</li>
                 <li><i className="fa-solid fa-circle-exclamation" style={iconStyle}></i>Ages: 15+</li>
-                <li><i className="fa-solid fa-dollar-sign" style={iconStyle}></i>85 per person</li>
+                <li><i className="fa-solid fa-dollar-sign" style={iconStyle}></i>$85 per person</li>
               </ul>
+              <p className="wilmington-warning">
+                <strong>Warning:</strong> Some adult topics. This is not your grandma&apos;s history lesson.
+              </p>
               <div className="center--the--button">
                 <a
                   type="button"
@@ -63,8 +66,7 @@ const WilmingtonTrueCrimeDetails = () => {
                   The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history as you explore Historic Downtown, Greenfield Lake, the Cargo District, and other unforgettable stops.<br /><br />
                   Triangle Adventures is expanding from the Raleigh area to Wilmington, with the official tour launch planned for March 2027. Meet your experienced guides at 1101 Hill Street, Wilmington, near the black metal gates and Triangle Adventures Garage area.<br /><br />
                   After check-in and a brief safety tutorial, we will do quick orientation rides so everyone feels comfortable on the bikes. From there, the group begins an easy ride on the Connector Bike Trail to Forest Hills, then toward Historic Downtown, Greenfield Lake, the Cargo District, and back to the starting point.<br /><br />
-                  Along the way, expect stories about a radical social experiment gone wrong, unsolved murder mysteries, a local Civil War spy, local unsung heroes, and a few weird and wild surprises.<br /><br />
-                  <strong>Warning:</strong> some adult topics. This is not your grandma&apos;s history lesson.
+                  Along the way, expect stories about a radical social experiment gone wrong, unsolved murder mysteries, a local Civil War spy, local unsung heroes, and a few weird and wild surprises.
                 </div>
                 <div className="tab-pane fade itinerary--text--config" id="wilmington-tabs-2" role="tabpanel" aria-labelledby="wilmington-tab-2">
                   We provide a state-of-the-art pedal assisted e-bike with throttle, a clean disinfected helmet, neck warmer and gloves if needed, a bike bag for small belongings, bottled water, and a fun knowledgeable tour guide. Please bring comfortable clothes, closed-toe shoes, sunglasses, sunscreen, a small backpack or fanny pack, photo ID, phone, and a smile.
