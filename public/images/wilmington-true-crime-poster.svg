@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Wilmington: True Crime &amp; Weird History tour poster</title>
+  <desc id="desc">Official Triangle Adventures Wilmington True Crime and Weird History tour poster artwork.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050506"/>
+      <stop offset="0.48" stop-color="#12100b"/>
+      <stop offset="1" stop-color="#060606"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="28%" r="60%">
+      <stop offset="0" stop-color="#f9b717" stop-opacity="0.34"/>
+      <stop offset="0.36" stop-color="#ff833d" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#000" flood-opacity="0.55"/>
+    </filter>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#grid)"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+
+  <path d="M0 1190c170-90 320-124 515-95 192 29 369 112 685 7v398H0z" fill="#090909" opacity="0.82"/>
+  <path d="M100 1120c155-92 307-114 475-68 158 43 319 121 525 55" fill="none" stroke="#f9b717" stroke-opacity="0.38" stroke-width="6"/>
+  <path d="M110 1167c177-84 321-88 491-35 136 42 283 96 490 32" fill="none" stroke="#ff833d" stroke-opacity="0.28" stroke-width="3"/>
+
+  <g opacity="0.9" filter="url(#shadow)">
+    <circle cx="600" cy="440" r="235" fill="#0b0b0b" stroke="#f9b717" stroke-opacity="0.38" stroke-width="5"/>
+    <path d="M382 464c85-112 158-168 218-168s133 56 218 168" fill="none" stroke="#f9b717" stroke-width="18" stroke-linecap="round" opacity="0.92"/>
+    <path d="M452 512h296" stroke="#ffffff" stroke-opacity="0.86" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="496" cy="584" r="46" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="16"/>
+    <circle cx="704" cy="584" r="46" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="16"/>
+    <path d="M542 584h116" stroke="#ffffff" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"/>
+  </g>
+
+  <g text-anchor="middle" filter="url(#shadow)">
+    <text x="600" y="140" font-family="Barlow, Arial, sans-serif" font-size="38" font-weight="700" letter-spacing="7" fill="#f9b717">TRIANGLE ADVENTURES</text>
+    <text x="600" y="775" font-family="Rajdhani, Barlow, Arial, sans-serif" font-size="104" font-weight="800" fill="#ffffff" letter-spacing="-1">WILMINGTON</text>
+    <text x="600" y="890" font-family="Rajdhani, Barlow, Arial, sans-serif" font-size="88" font-weight="800" fill="#ffffff" letter-spacing="-1">TRUE CRIME</text>
+    <text x="600" y="985" font-family="Rajdhani, Barlow, Arial, sans-serif" font-size="72" font-weight="700" fill="#f9b717">&amp; WEIRD HISTORY</text>
+    <text x="600" y="1084" font-family="Barlow, Arial, sans-serif" font-size="34" font-weight="600" fill="#ffffff" opacity="0.86" letter-spacing="1.5">THE STORIES YOUR HISTORY TEACHER SKIPPED</text>
+  </g>
+
+  <g font-family="Barlow, Arial, sans-serif" font-weight="700" fill="#ffffff" opacity="0.9">
+    <rect x="318" y="1227" width="564" height="72" rx="36" fill="#f9b717" opacity="0.96"/>
+    <text x="600" y="1274" text-anchor="middle" font-size="30" fill="#111827" letter-spacing="2">FEATURED TOUR</text>
+  </g>
+</svg>
