@@ -69,6 +69,19 @@
     transform: scale(1.001);
     transition: transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1), filter var(--motion-smooth);
 }
+
+.new--tour-card,
+.location--card-new {
+    width: min(390px, 100%);
+}
+
+.new--tour-card .card--img,
+.location--card-new .card--img,
+.wilmington-card-grid .card--img {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    object-position: center;
+}
 .card--data{
     width: min(340px, calc(100% - 1.5rem));
     background-color: rgba(255, 255, 255, 0.96);
@@ -246,7 +259,9 @@
 }
 
 @media screen and (max-width: 1400px) {
-    .card--article{
+    .card--article,
+    .new--tour-card,
+    .location--card-new{
         width: min(360px, 100%);
     }
 }
@@ -255,7 +270,9 @@
     .card--container{
         gap: 1.5rem;
     }
-    .card--article{
+    .card--article,
+    .new--tour-card,
+    .location--card-new{
         width: min(330px, 100%);
     }
     .card--title{
@@ -271,7 +288,9 @@
     .home--tour-card-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .card--article{
+    .card--article,
+    .new--tour-card,
+    .location--card-new{
         width: min(360px, 100%);
     }
 }
@@ -304,7 +323,8 @@
         overflow: visible;
         padding-bottom: 0.25rem;
     }
-    .new--tour-card {
+    .new--tour-card,
+    .location--card-new {
         width: min(360px, 92vw);
         margin-left: auto;
         margin-right: auto;
@@ -313,6 +333,11 @@
     .card--img{
         max-width: none;
         aspect-ratio: 1.13 / 1;
+    }
+    .new--tour-card .card--img,
+    .location--card-new .card--img,
+    .wilmington-card-grid .card--img {
+        aspect-ratio: 2 / 3;
     }
     .card--data{
         position: relative;
@@ -338,7 +363,8 @@
 
 @media screen and (max-width: 375px) {
     .card--article,
-    .new--tour-card{
+    .new--tour-card,
+    .location--card-new{
         width: min(330px, 92vw);
     }
     .card--title{
