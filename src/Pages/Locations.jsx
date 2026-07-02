@@ -45,7 +45,6 @@ const Locations = () => {
               </article>
 
               <article className="card--article location--card location--card-new">
-                <span className="new-tour-badge">Featured Tour</span>
                 <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" className="card--img" />
                 <div className="card--data location--card-data">
                   <span className="card--description">Wilmington, NC</span>
