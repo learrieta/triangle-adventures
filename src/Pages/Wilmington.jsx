@@ -106,7 +106,6 @@ const Wilmington = () => {
           <div className="tours--container">
             <div className="card--container wilmington-card-grid">
               <article className="card--article location--card-new">
-                <span className="new-tour-badge">Featured Tour</span>
                 <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
