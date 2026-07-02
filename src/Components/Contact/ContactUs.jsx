@@ -61,12 +61,12 @@ const ContactUs = () => {
 
   return (
     <div>
-        <div className='tour--container contact--hero'>
+        <div className='tour--container contact--hero contact--hero-safe'>
             <img src={about} className='banner--tour contact--hero-image' loading='eager' title='Triangle Adventures contact' alt='Triangle Adventures guided e-bike tour contact page'></img>
             <div className="contact--hero-overlay"></div>
-            <div className="contact--hero-content">
+            <div className="contact--hero-content contact--hero-content-safe">
                 <p className="contact--hero-eyebrow">Raleigh • Clayton • Wilmington</p>
-                <h1 className='banner--tour--title text-white contact--hero-title'>Contact Triangle Adventures</h1>
+                <h1 className='text-white contact--hero-title contact--hero-title-safe'>Contact Triangle Adventures</h1>
                 <p className="contact--hero-copy">Questions about a tour, private group, or custom adventure? Send us a note and we will help you plan the right ride.</p>
             </div>
         </div>
