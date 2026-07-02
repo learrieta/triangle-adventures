@@ -57,7 +57,6 @@ const Tours = () => {
             <p className="tours--text new-tour-feature__text">The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history.</p>
             <div className="tours--container new-tour-feature__container">
               <article className="card--article new--tour-card">
-                <span className="new-tour-badge">Featured Tour</span>
                 <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History e-bike tour poster" loading='lazy' className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
