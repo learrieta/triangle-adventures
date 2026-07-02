@@ -15,7 +15,6 @@ const WilmingtonTrueCrimeDetails = () => {
         <div className="row">
           <div className="col-lg-8 col-md-12 col-sm-12">
             <div className="row background--color wilmington-details-card">
-              <div className="new-tour-inline-badge">Featured Tour</div>
               <h3 className="details--title">Quick Details</h3>
               <ul className="details--list">
                 <li><i className="fa-regular fa-hourglass-half" style={iconStyle}></i>Duration: 3 hours</li>
