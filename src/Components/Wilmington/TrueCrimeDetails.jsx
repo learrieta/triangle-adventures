@@ -24,9 +24,6 @@ const WilmingtonTrueCrimeDetails = () => {
                 <li><i className="fa-solid fa-circle-exclamation" style={iconStyle}></i>Ages: 15+</li>
                 <li><i className="fa-solid fa-dollar-sign" style={iconStyle}></i>85 per person</li>
               </ul>
-              <p className="wilmington-warning">
-                Warning: some adult topics. This is not your grandma&apos;s history lesson.
-              </p>
               <div className="center--the--button">
                 <a
                   type="button"
@@ -49,23 +46,12 @@ const WilmingtonTrueCrimeDetails = () => {
 
             <div className="row mt-lg-5 my-sm-5 pt-lg-4 mt-md-3 pt-md-2">
               <h4 className="about--the--adventure text-center">About <span>The Adventure</span></h4>
-              <p className="wilmington-intro text-center">
-                The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history as you explore Historic Downtown, Greenfield Lake, the Cargo District, and other unforgettable stops.
-              </p>
-
-              <div className="wilmington-highlight-grid">
-                <div className="wilmington-highlight-card">Effortlessly e-bike approximately 13 miles.</div>
-                <div className="wilmington-highlight-card">Stops in classic Wilmington locations, on and off the beaten path.</div>
-                <div className="wilmington-highlight-card">Immersive digital videos, wild facts, and fascinating history.</div>
-                <div className="wilmington-highlight-card">Tour can last between 3-4 hours.</div>
-              </div>
-
               <ul className="nav nav-tabs nav-justified mb-3 nav--list--i pt-lg-3 pt-md-2 pt-sm-1" id="wilmington-tour-tabs" role="tablist">
                 <li className="nav-item" role="presentation">
                   <a className="nav-link active" id="wilmington-tab-1" data-bs-toggle="tab" href="#wilmington-tabs-1" role="tab" aria-controls="wilmington-tabs-1" aria-selected="true">Itinerary</a>
                 </li>
                 <li className="nav-item" role="presentation">
-                  <a className="nav-link" id="wilmington-tab-2" data-bs-toggle="tab" href="#wilmington-tabs-2" role="tab" aria-controls="wilmington-tabs-2" aria-selected="false">What We Provide</a>
+                  <a className="nav-link" id="wilmington-tab-2" data-bs-toggle="tab" href="#wilmington-tabs-2" role="tab" aria-controls="wilmington-tabs-2" aria-selected="false">Equipment</a>
                 </li>
                 <li className="nav-item" role="presentation">
                   <a className="nav-link" id="wilmington-tab-3" data-bs-toggle="tab" href="#wilmington-tabs-3" role="tab" aria-controls="wilmington-tabs-3" aria-selected="false">The Ride</a>
@@ -74,9 +60,11 @@ const WilmingtonTrueCrimeDetails = () => {
 
               <div className="tab-content" id="wilmington-tour-content">
                 <div className="tab-pane fade show active itinerary--text--config" id="wilmington-tabs-1" role="tabpanel" aria-labelledby="wilmington-tab-1">
-                  Coming soon. Triangle Adventures is expanding from the Raleigh area to Wilmington, with the official tour launch planned for March 2027. Meet your experienced guides at 1101 Hill Street, Wilmington, near the black metal gates and Triangle Adventures Garage area.<br /><br />
+                  The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history as you explore Historic Downtown, Greenfield Lake, the Cargo District, and other unforgettable stops.<br /><br />
+                  Triangle Adventures is expanding from the Raleigh area to Wilmington, with the official tour launch planned for March 2027. Meet your experienced guides at 1101 Hill Street, Wilmington, near the black metal gates and Triangle Adventures Garage area.<br /><br />
                   After check-in and a brief safety tutorial, we will do quick orientation rides so everyone feels comfortable on the bikes. From there, the group begins an easy ride on the Connector Bike Trail to Forest Hills, then toward Historic Downtown, Greenfield Lake, the Cargo District, and back to the starting point.<br /><br />
-                  Along the way, expect stories about a radical social experiment gone wrong, unsolved murder mysteries, a local Civil War spy, local unsung heroes, and a few weird and wild surprises.
+                  Along the way, expect stories about a radical social experiment gone wrong, unsolved murder mysteries, a local Civil War spy, local unsung heroes, and a few weird and wild surprises.<br /><br />
+                  <strong>Warning:</strong> some adult topics. This is not your grandma&apos;s history lesson.
                 </div>
                 <div className="tab-pane fade itinerary--text--config" id="wilmington-tabs-2" role="tabpanel" aria-labelledby="wilmington-tab-2">
                   We provide a state-of-the-art pedal assisted e-bike with throttle, a clean disinfected helmet, neck warmer and gloves if needed, a bike bag for small belongings, bottled water, and a fun knowledgeable tour guide. Please bring comfortable clothes, closed-toe shoes, sunglasses, sunscreen, a small backpack or fanny pack, photo ID, phone, and a smile.
@@ -90,7 +78,7 @@ const WilmingtonTrueCrimeDetails = () => {
             <div className="p-4">
               <h4 className="faq--the--adventure text-center">More <span>Tour Details</span></h4>
               <p className="text-center itinerary--text--config mb-5">
-                Good for any fitness level. No pedaling required. The e-bikes do the work for you.
+                Good for many fitness levels. No pedaling required. The e-bikes do the work for you.
               </p>
 
               <div className="row">
