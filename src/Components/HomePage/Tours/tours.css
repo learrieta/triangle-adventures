@@ -38,6 +38,22 @@
     width: min(390px, 100%);
     background: #0b0b0b;
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+    isolation: isolate;
+    transition: transform var(--motion-smooth), box-shadow var(--motion-smooth), filter var(--motion-fast);
+}
+
+.card--article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.22)),
+        radial-gradient(circle at 50% 15%, rgba(249, 183, 23, 0.12), transparent 38%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--motion-smooth);
 }
 
 .card--img{
@@ -50,6 +66,8 @@
     border-radius: var(--radius-card);
     display: block;
     background: #0b0b0b;
+    transform: scale(1.001);
+    transition: transform 650ms cubic-bezier(0.2, 0.8, 0.2, 1), filter var(--motion-smooth);
 }
 .card--data{
     width: min(340px, calc(100% - 1.5rem));
@@ -63,8 +81,10 @@
     right: 0;
     margin-inline: auto;
     opacity: 0;
-    transition: opacity 1s 1s;
+    transition: opacity 1s 1s, box-shadow var(--motion-smooth), transform var(--motion-smooth), background-color var(--motion-smooth);
     text-align: center;
+    z-index: 2;
+    backdrop-filter: blur(12px);
 }
 .card--description{
     display: block;
@@ -85,11 +105,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 0.28rem;
+}
+
+.card--button::after {
+    content: "\2192";
+    line-height: 1;
+    transform: translateX(0);
+    transition: transform var(--motion-fast);
 }
 
 .card--button:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--font-accent);
+}
+
+.card--button:hover::after {
+    transform: translateX(4px);
 }
 
 .new-tour-feature {
@@ -142,11 +174,24 @@
 .card--article:hover .card--data{
     animation: show-data 1s forwards;
     opacity: 1;
-    transition: opacity .3s;
+    transition: opacity .3s, box-shadow var(--motion-smooth), transform var(--motion-smooth), background-color var(--motion-smooth);
+    box-shadow: 0 18px 46px hsla(0,0%,0%, .18);
+    background-color: rgba(255, 255, 255, 0.98);
 }
 
 .card--article:hover{
     animation: remove-overflow 2s forwards;
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-premium-hover);
+}
+
+.card--article:hover::before {
+    opacity: 1;
+}
+
+.card--article:hover .card--img {
+    transform: scale(1.055);
+    filter: saturate(1.04) contrast(1.03);
 }
 
 .card--article:not(:hover){
@@ -284,6 +329,10 @@
     .card--article:hover .card--data,
     .card--article:not(:hover) .card--data{
         animation: none;
+    }
+
+    .card--article:hover {
+        transform: translateY(-4px);
     }
 }
 
