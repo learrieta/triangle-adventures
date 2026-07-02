@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './contactus.css'
+import './contactHero.css'
 import about from '../../assets/Aboutus/contact.jpg'
 import emailjs from '@emailjs/browser';
 import { bookingLinks, contactLinks, socialLinks } from '../../data/bookingLinks';
@@ -61,15 +62,15 @@ const ContactUs = () => {
 
   return (
     <div>
-        <div className='tour--container contact--hero contact--hero-safe'>
-            <img src={about} className='banner--tour contact--hero-image' loading='eager' title='Triangle Adventures contact' alt='Triangle Adventures guided e-bike tour contact page'></img>
-            <div className="contact--hero-overlay"></div>
-            <div className="contact--hero-content contact--hero-content-safe">
+        <section className='contactHero'>
+            <img src={about} className='contactHeroImage' loading='eager' title='Triangle Adventures contact' alt='Triangle Adventures guided e-bike tour contact page'></img>
+            <div className="contactHeroOverlay"></div>
+            <div className="contactHeroContent">
                 <p className="contact--hero-eyebrow">Raleigh • Clayton • Wilmington</p>
-                <h1 className='text-white contact--hero-title contact--hero-title-safe'>Contact Triangle Adventures</h1>
+                <h1 className='contactHeroTitle'>Contact Triangle Adventures</h1>
                 <p className="contact--hero-copy">Questions about a tour, private group, or custom adventure? Send us a note and we will help you plan the right ride.</p>
             </div>
-        </div>
+        </section>
 
         <section className="contact--section" id="contact">
             <div className="container">
