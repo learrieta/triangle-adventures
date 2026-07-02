@@ -34,6 +34,10 @@
   --space-body: clamp(1rem, 2.2vw, 1.6rem);
   --space-card: clamp(1.1rem, 2.6vw, 1.75rem);
   --radius-card: 1.5rem;
+  --motion-fast: 180ms ease;
+  --motion-smooth: 320ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --shadow-premium: 0 24px 70px rgba(0, 0, 0, 0.14);
+  --shadow-premium-hover: 0 32px 90px rgba(0, 0, 0, 0.2);
 
   --big-font-size: var(--text-3xl);
   --h1-font-size: var(--text-3xl);
@@ -195,6 +199,50 @@ section{
   font-weight: var(--font-semi);
   line-height: 1;
   letter-spacing: var(--tracking-button);
+}
+
+.large--button,
+.small--button--navbar,
+.tours--button--navbar,
+.wilmington-landing-hero__button,
+.card--button,
+.contact__button,
+.data__contact {
+  transition: transform var(--motion-fast), box-shadow var(--motion-smooth), filter var(--motion-fast), color var(--motion-fast), background var(--motion-smooth);
+}
+
+.large--button:focus-visible,
+.small--button--navbar:focus-visible,
+.tours--button--navbar:focus-visible,
+.wilmington-landing-hero__button:focus-visible,
+.card--button:focus-visible,
+.contact__button:focus-visible,
+.data__contact:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(249, 183, 23, 0.75);
+  outline-offset: 4px;
+  border-radius: 999px;
+}
+
+.large--button:active,
+.small--button--navbar:active,
+.tours--button--navbar:active,
+.wilmington-landing-hero__button:active,
+.contact__button:active,
+.data__contact:active {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media screen and (max-width: 768px) {
