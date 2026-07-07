@@ -3,6 +3,9 @@ import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
 import { wilmingtonTourImage } from '../data/wilmingtonTourImage'
+import Testimonials from '../Components/HomePage/Testimonials/Testimonials'
+import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
+import Partners from '../Components/HomePage/Partners/Partners'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
 
@@ -110,13 +113,17 @@ const Wilmington = () => {
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
-                  <Link to="/locations/wilmington/true-crime-tour" className="card--button">Featured Tour</Link>
+                  <Link to="/locations/wilmington/true-crime-tour" className="card--button">Learn More</Link>
                 </div>
               </article>
             </div>
           </div>
         </div>
       </section>
+
+      <Testimonials />
+      <TripAdvisorWidget />
+      <Partners />
 
       <section className="wilmington-things-section">
         <div className="container">
