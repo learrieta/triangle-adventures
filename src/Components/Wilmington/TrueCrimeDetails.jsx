@@ -2,9 +2,10 @@ import '../TwoHours/QuickDetails/quickdetails.css'
 import './wilmington.css'
 import { bookingLinks } from '../../data/bookingLinks'
 import { trackBookNowClick } from '../../utils/analytics'
-import img1 from '../../assets/2hour/2.1.png'
-import img2 from '../../assets/2hour/2.2.png'
-import img3 from '../../assets/2hour/2.3-optimized.webp'
+import img1 from '../../assets/2hour/w-1.jpg'
+import img2 from '../../assets/2hour/w-2.jpg'
+import img3 from '../../assets/2hour/w-3.jpg'
+import img3 from '../../assets/2hour/w-4.jpg'
 
 const iconStyle = { color: '#f9b717', width: '30px' }
 
@@ -110,6 +111,9 @@ const WilmingtonTrueCrimeDetails = () => {
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
                 <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="lazy" className="img-fluid" />
+              </div>
+              <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
+                <img src={img4} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="lazy" className="img-fluid" />
               </div>
             </div>
           </div>
