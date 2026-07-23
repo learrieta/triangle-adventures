@@ -5,7 +5,7 @@ import { trackBookNowClick } from '../../utils/analytics'
 import img1 from '../../assets/2hour/w-1.jpg'
 import img2 from '../../assets/2hour/w-2.jpg'
 import img3 from '../../assets/2hour/w-3.jpg'
-import img3 from '../../assets/2hour/w-4.jpg'
+import img4 from '../../assets/2hour/w-4.jpg'
 
 const iconStyle = { color: '#f9b717', width: '30px' }
 
