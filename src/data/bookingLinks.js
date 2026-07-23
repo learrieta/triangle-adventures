@@ -4,7 +4,7 @@ export const bookingLinks = {
   scenic: 'https://fareharbor.com/embeds/book/triangleadventures/items/584156/?full-items=yes&flow=1269994',
   food: 'https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994',
   ghost: 'https://fareharbor.com/embeds/book/triangleadventures/items/584144/?full-items=yes&flow=1269994',
-  wilmingtonTrueCrime: 'https://fareharbor.com/embeds/book/triangleadventures/items/calendar/?full-items=yes&flow=1269994',
+  wilmingtonTrueCrime: 'https://fareharbor.com/embeds/book/triangleadventures/items/584155/?full-items=yes&flow=1269994',
 }
 
 

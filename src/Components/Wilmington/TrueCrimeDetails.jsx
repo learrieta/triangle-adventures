@@ -42,7 +42,7 @@ const WilmingtonTrueCrimeDetails = () => {
                     })
                   }
                 >
-                  Check Calendar
+                  Book Now
                 </a>
               </div>
             </div>

@@ -72,23 +72,62 @@ const NavbarDark = () => {
             >
               Gift Cards
             </a>
-            <a
-              type="button"
-              className="small--button--navbar mx-3"
-              href={bookingLinks.calendar}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => {
-                closeMobileMenu()
-                trackBookNowClick({
-                  tourName: 'All Tours Calendar',
-                  tourSlug: 'all-tours',
-                  buttonLocation: 'navbar',
-                })
-              }}
-            >
-              Book Now!
-            </a>
+            <div className="dropdown booking-location-dropdown">
+              <button
+                type="button"
+                className="small--button--navbar booking-location-toggle mx-3"
+                id="bookingLocationDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Book Now!
+                <span className="booking-location-chevron" aria-hidden="true">▾</span>
+              </button>
+              <ul
+                className="dropdown-menu dropdown-menu-dark dropdown-menu-end booking-location-menu"
+                aria-labelledby="bookingLocationDropdown"
+              >
+                <li>
+                  <a
+                    className="dropdown-item booking-location-item"
+                    href={bookingLinks.calendar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      closeMobileMenu()
+                      trackBookNowClick({
+                        tourName: 'Raleigh Area Tours',
+                        tourSlug: 'raleigh-area',
+                        buttonLocation: 'navbar-location-menu',
+                      })
+                    }}
+                  >
+                    <span>Raleigh Area</span>
+                    <span className="booking-location-item-hint">View tours</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item booking-location-item"
+                    href={bookingLinks.wilmingtonTrueCrime}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      closeMobileMenu()
+                      trackBookNowClick({
+                        tourName: 'Wilmington True Crime Tour',
+                        tourSlug: 'wilmington-true-crime',
+                        buttonLocation: 'navbar-location-menu',
+                      })
+                    }}
+                  >
+                    <span>Wilmington</span>
+                    <span className="booking-location-item-hint">View tour</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
