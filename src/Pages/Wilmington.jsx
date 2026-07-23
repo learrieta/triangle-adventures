@@ -3,11 +3,13 @@ import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
 import { wilmingtonTourImage } from '../data/wilmingtonTourImage'
+import downtownFoodImage from '../assets/2hour/w-3-optimized-1600.webp'
+import waterfrontImage from '../assets/2hour/w-4-optimized-1600.webp'
+import localHistoryImage from '../assets/2hour/w-1.jpg'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
 
 const wilmingtonHeroImage = '/images/wilmington-true-crime-header.jpg'
-const wilmingtonPosterImage = '/images/wilmington-true-crime-poster.jpeg'
 
 const nearbyItems = [
   {
@@ -23,28 +25,28 @@ const nearbyItems = [
     number: '02',
     title: 'Grab food downtown',
     text: 'Plan time for riverfront dining, coffee, dessert, or a relaxed meal around Historic Downtown and the Cargo District.',
-    image: wilmingtonPosterImage,
-    width: 1024,
-    height: 1536,
-    alt: 'Wilmington True Crime and Weird History tour artwork',
+    image: downtownFoodImage,
+    width: 1600,
+    height: 1200,
+    alt: 'E-bike riders near downtown Wilmington restaurants',
   },
   {
     number: '03',
-    title: 'Visit the beaches',
-    text: 'Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.',
-    image: wilmingtonHeroImage,
-    width: 1705,
-    height: 920,
-    alt: 'Historic Wilmington waterfront',
+    title: 'Ride the waterfront',
+    text: 'Enjoy Cape Fear River views, open sky, and memorable waterfront landmarks while exploring Wilmington by e-bike.',
+    image: waterfrontImage,
+    width: 1600,
+    height: 1200,
+    alt: 'Triangle Adventures rider beside the Wilmington waterfront',
   },
   {
     number: '04',
-    title: 'Walk historic streets',
-    text: 'Wilmington is full of old homes, hidden corners, and local legends that pair perfectly with the True Crime and Weird History theme.',
-    image: wilmingtonPosterImage,
-    width: 1024,
-    height: 1536,
-    alt: 'Wilmington True Crime and Weird History tour artwork',
+    title: 'Discover local history',
+    text: 'Visit historic sites and hidden corners while your guide shares Wilmington stories, mysteries, and local legends.',
+    image: localHistoryImage,
+    width: 798,
+    height: 599,
+    alt: 'Triangle Adventures guide sharing Wilmington history with guests',
   },
 ]
 
