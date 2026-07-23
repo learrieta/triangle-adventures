@@ -4,7 +4,7 @@ import { bookingLinks } from '../../../data/bookingLinks';
 import { trackBookNowClick } from '../../../utils/analytics';
 import img1 from '../../../assets/2hour/2.1.png'
 import img2 from '../../../assets/2hour/2.2.png'
-import img3 from '../../../assets/2hour/2.3.jpg'
+import img3 from '../../../assets/2hour/2.3-optimized.webp'
 import img4 from '../../../assets/2hour/2.4.jpg'
 import img5 from '../../../assets/2hour/2.5.jpg'
 import img6 from '../../../assets/2hour/2.6.png'

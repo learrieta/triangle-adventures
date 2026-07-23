@@ -5,8 +5,8 @@ import { trackBookNowClick } from '../../../utils/analytics';
 import img1 from '../../../assets/4hour/4.1.png'
 import img2 from '../../../assets/4hour/4.2.jpg'
 import img3 from '../../../assets/4hour/4.3.jpg'
-import img4 from '../../../assets/4hour/4.4.jpg'
-import img5 from '../../../assets/4hour/4.5.jpg'
+import img4 from '../../../assets/4hour/4.4-optimized.webp'
+import img5 from '../../../assets/4hour/4.5-optimized.webp'
 import img6 from '../../../assets/4hour/4.6.jpg'
 
 

@@ -2,8 +2,8 @@ import './aboutdetails.css'
 import about1 from '../../../assets/Aboutus/a1.jpg'
 import about2 from '../../../assets/Aboutus/a2.jpg'
 import about3 from '../../../assets/Aboutus/a3.jpg'
-import marlo from '../../../assets/Aboutus/marlo.MP4'
-import dave from '../../../assets/Aboutus/dave.mov'
+import marlo from '../../../assets/Aboutus/marlo-optimized.mp4'
+import dave from '../../../assets/Aboutus/dave-optimized.mp4'
 
 
 const AboutDetails = () => {

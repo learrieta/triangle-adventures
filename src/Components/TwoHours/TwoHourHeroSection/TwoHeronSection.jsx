@@ -1,6 +1,6 @@
 
 
-import twoHour from '../../../assets/3hour/twohour.jpg'
+import twoHour from '../../../assets/3hour/twohour-optimized.webp'
 
 const TwoHeronSection = () => {
   return (

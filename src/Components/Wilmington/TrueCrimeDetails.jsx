@@ -4,7 +4,7 @@ import { bookingLinks } from '../../data/bookingLinks'
 import { trackBookNowClick } from '../../utils/analytics'
 import img1 from '../../assets/2hour/2.1.png'
 import img2 from '../../assets/2hour/2.2.png'
-import img3 from '../../assets/2hour/2.3.jpg'
+import img3 from '../../assets/2hour/2.3-optimized.webp'
 
 const iconStyle = { color: '#f9b717', width: '30px' }
 
