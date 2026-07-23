@@ -1,5 +1,5 @@
 import './rent.css'
-import aventon from '../../../assets/Home/aventon.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 const Rent = () => {
   return (
     <section>
@@ -22,7 +22,7 @@ const Rent = () => {
                     <div className="img-exp">
                         <div className="about-img">
                             <div className="img">
-                                <img src={aventon} alt="clayton ebike rental" title='Aventon rentals' loading='lazy' className="img-fluid aventon--img" />
+                                <ResponsiveImage asset="Home/aventon" width="1600" height="900" sizes="(max-width: 991px) 100vw, 50vw" alt="Aventon e-bike available for a free test drive in Clayton" className="img-fluid aventon--img" />
                             </div>
                         </div>
                     </div>

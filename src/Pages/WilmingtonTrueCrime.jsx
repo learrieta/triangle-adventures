@@ -1,6 +1,7 @@
 import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
-import { breadcrumbSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, faqSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { wilmingtonTourFaqs } from '../data/tourFaqs'
 import WilmingtonTrueCrimeDetails from '../Components/Wilmington/TrueCrimeDetails'
 import { wilmingtonTourHeroImage, wilmingtonTourOgImage } from '../data/wilmingtonTourImage'
 
@@ -44,9 +45,10 @@ const WilmingtonTrueCrime = () => {
           serviceType: 'True Crime Guided E-Bike Tour',
         })}
       />
+      <JsonLd data={faqSchema(wilmingtonTourFaqs)} />
 
       <div className="tour--container wilmington-true-crime-hero">
-        <img src={wilmingtonTourHeroImage} className="banner--tour" loading="eager" title="Wilmington: True Crime & Weird History" alt="Wilmington: True Crime & Weird History e-bike tour hero" />
+        <img src={wilmingtonTourHeroImage} width="1705" height="920" className="banner--tour" loading="eager" alt="Wilmington True Crime and Weird History e-bike tour route" />
         <h1 className="banner--tour--title text-white">Wilmington: True Crime & Weird History</h1>
       </div>
 

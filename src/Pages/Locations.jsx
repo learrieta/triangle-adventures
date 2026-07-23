@@ -2,7 +2,7 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
-import raleighImg from '../assets/Home/scenary.png'
+import raleighImg from '../assets/Home/scenary-optimized.webp'
 import { wilmingtonTourImage } from '../data/wilmingtonTourImage'
 import '../Components/HomePage/Tours/tours.css'
 
@@ -36,7 +36,7 @@ const Locations = () => {
           <div className="tours--container">
             <div className="card--container locations-card-grid">
               <article className="card--article location--card">
-                <img src={raleighImg} alt="Raleigh Clayton and Triangle area e-bike tours" loading="lazy" className="card--img" />
+                <img src={raleighImg} width="1024" height="1024" alt="Raleigh Clayton and Triangle area e-bike tours" loading="lazy" decoding="async" className="card--img" />
                 <div className="card--data location--card-data">
                   <span className="card--description">Raleigh & Clayton Area</span>
                   <h2 className="card--title">Raleigh & The Triangle</h2>
@@ -45,7 +45,7 @@ const Locations = () => {
               </article>
 
               <article className="card--article location--card location--card-new">
-                <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" className="card--img" />
+                <img src={wilmingtonTourImage} width="1024" height="1536" alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" decoding="async" className="card--img" />
                 <div className="card--data location--card-data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>

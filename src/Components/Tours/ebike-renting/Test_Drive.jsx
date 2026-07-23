@@ -1,8 +1,7 @@
 import './test_drive.css'
-import aventon_one from '../../../assets/Tours/a1.jpg'
-import aventon_two from '../../../assets/Tours/a2.jpg'
-import aventon_three from '../../../assets/Tours/a3-optimized.webp'
-import aventon_four from '../../../assets/Tours/a4.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
+
+const bikeGallerySizes = '(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw'
 
 const Test_Drive = () => {
   return (
@@ -19,13 +18,13 @@ const Test_Drive = () => {
               <div className="row ">
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_one} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                    <ResponsiveImage asset="Tours/a1" alt="Aventon e-bike used on Triangle Adventures tours" width="1600" height="1200" sizes={bikeGallerySizes} className='img-fluid'/>
                   </div>
                   
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_two} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                    <ResponsiveImage asset="Tours/a2" alt="Aventon pedal-assist e-bike ready for a guided tour" width="1200" height="1600" sizes={bikeGallerySizes} className='img-fluid'/>
                   </div>
                   
                 </div>
@@ -33,13 +32,13 @@ const Test_Drive = () => {
               <div className='row'>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_three} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                    <ResponsiveImage asset="Tours/a3" alt="Triangle Adventures Aventon e-bike on the trail" width="1200" height="1600" sizes={bikeGallerySizes} className='img-fluid'/>
                   </div>
                   
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 my-2  ">
                   <div className='image--item'>
-                    <img src={aventon_four} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                    <ResponsiveImage asset="Tours/a4" alt="Aventon e-bike available for Triangle Adventures guests" width="3000" height="2766" sizes={bikeGallerySizes} className='img-fluid'/>
                   </div>
                   
                 </div>

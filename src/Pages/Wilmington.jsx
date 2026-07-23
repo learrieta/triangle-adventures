@@ -15,6 +15,8 @@ const nearbyItems = [
     title: 'Explore the Riverwalk',
     text: 'Take in Cape Fear River views, downtown shops, waterfront patios, and classic Wilmington riverfront scenery before or after your ride.',
     image: wilmingtonHeroImage,
+    width: 1705,
+    height: 920,
     alt: 'Wilmington Riverwalk by the Cape Fear River',
   },
   {
@@ -22,6 +24,8 @@ const nearbyItems = [
     title: 'Grab food downtown',
     text: 'Plan time for riverfront dining, coffee, dessert, or a relaxed meal around Historic Downtown and the Cargo District.',
     image: wilmingtonPosterImage,
+    width: 1024,
+    height: 1536,
     alt: 'Wilmington True Crime and Weird History tour artwork',
   },
   {
@@ -29,6 +33,8 @@ const nearbyItems = [
     title: 'Visit the beaches',
     text: 'Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.',
     image: wilmingtonHeroImage,
+    width: 1705,
+    height: 920,
     alt: 'Historic Wilmington waterfront',
   },
   {
@@ -36,6 +42,8 @@ const nearbyItems = [
     title: 'Walk historic streets',
     text: 'Wilmington is full of old homes, hidden corners, and local legends that pair perfectly with the True Crime and Weird History theme.',
     image: wilmingtonPosterImage,
+    width: 1024,
+    height: 1536,
     alt: 'Wilmington True Crime and Weird History tour artwork',
   },
 ]
@@ -65,7 +73,7 @@ const Wilmington = () => {
       />
 
       <section className="wilmington-landing-hero">
-        <img src={wilmingtonHeroImage} alt="Wilmington North Carolina Riverwalk" className="wilmington-landing-hero__image" />
+        <img src={wilmingtonHeroImage} width="1705" height="920" alt="Wilmington North Carolina Riverwalk" className="wilmington-landing-hero__image" />
         <div className="wilmington-landing-hero__overlay"></div>
         <div className="wilmington-landing-hero__content">
           <p className="wilmington-landing-hero__eyebrow">Not your typical tour company.</p>
@@ -106,7 +114,7 @@ const Wilmington = () => {
           <div className="tours--container">
             <div className="card--container wilmington-card-grid">
               <article className="card--article location--card-new">
-                <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" className="card--img" />
+                <img src={wilmingtonTourImage} width="1024" height="1536" alt="Wilmington: True Crime & Weird History tour poster" loading="lazy" decoding="async" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>
@@ -139,7 +147,7 @@ const Wilmington = () => {
                   <p>{item.text}</p>
                 </div>
                 <div className="wilmington-nearby-image-wrap">
-                  <img src={item.image} alt={item.alt} loading="lazy" className="wilmington-nearby-image" />
+                  <img src={item.image} width={item.width} height={item.height} alt={item.alt} loading="lazy" decoding="async" className="wilmington-nearby-image" />
                 </div>
               </article>
             ))}

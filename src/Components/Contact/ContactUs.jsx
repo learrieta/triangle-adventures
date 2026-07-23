@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react'
 import './contactus.css'
 import './contactHero.css'
-import about from '../../assets/Aboutus/contact.jpg'
 import emailjs from '@emailjs/browser';
 import { bookingLinks, contactLinks, socialLinks } from '../../data/bookingLinks';
 import { trackBookNowClick, trackEmailClick, trackEvent, trackInstagramClick, trackPhoneClick } from '../../utils/analytics';
+import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 
 const helpItems = [
     {
@@ -63,7 +63,7 @@ const ContactUs = () => {
   return (
     <div>
         <section className='contactHero'>
-            <img src={about} className='contactHeroImage' loading='eager' title='Triangle Adventures contact' alt='Triangle Adventures guided e-bike tour contact page'></img>
+            <ResponsiveImage asset="Aboutus/contact" width="1600" height="737" sizes="100vw" className='contactHeroImage' loading='eager' alt='Triangle Adventures guided e-bike tour guests' />
             <div className="contactHeroOverlay"></div>
             <div className="contactHeroContent">
                 <p className="contact--hero-eyebrow">Raleigh • Clayton • Wilmington</p>

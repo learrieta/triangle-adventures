@@ -4,7 +4,8 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import TourReviews from '../Components/Reviews/TourReviews'
 import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
-import { breadcrumbSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, faqSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { raleighTourFaqs } from '../data/tourFaqs'
 
 const Gmr = () => {
   const path = '/locations/raleigh/ghost-and-mysteries'
@@ -43,6 +44,7 @@ const Gmr = () => {
           serviceType: 'Ghost and History Guided E-Bike Tour',
         })}
       />
+      <JsonLd data={faqSchema(raleighTourFaqs)} />
 
       <FourHeronSection />
       <QuickDetails />

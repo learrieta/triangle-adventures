@@ -1,12 +1,10 @@
 import './pictures.css'
 import hp1 from '../../../assets/Home/hp1.jpg'
-import hp2 from '../../../assets/Home/hp2.jpg'
-import hp3 from '../../../assets/Home/hp3.jpg'
-import hp4 from '../../../assets/Home/hp4.jpg'
-import hp5 from '../../../assets/Home/hp5-optimized.webp'
 import hp6 from '../../../assets/Home/hp6.png'
-import hp7 from '../../../assets/Home/hp7.jpg'
 import hp8 from '../../../assets/Home/hp8.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
+
+const gallerySizes = '(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw'
 
 const Pictures = () => {
   return (
@@ -23,25 +21,25 @@ const Pictures = () => {
               
               <div className="col-lg-3 col-md-6 col-sm-12 my-2   ">
                 <div className='image--item'>
-                  <img src={hp1} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <img src={hp1} width="1200" height="1600" alt="Guests riding e-bikes on a Triangle Adventures tour" loading='lazy' decoding="async" className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp2} alt="Triangle Adventures e-bike tour experience" loading="lazy" className="card--img"  style={{ height: '242px', width: '100%' }} />
+                  <ResponsiveImage asset="Home/hp2" alt="Triangle Adventures guests posing with their e-bikes" width="1600" height="1200" sizes={gallerySizes} className="card--img" style={{ height: '242px', width: '100%' }} />
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp3} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <ResponsiveImage asset="Home/hp3" alt="E-bike riders enjoying a guided North Carolina adventure" width="1600" height="1200" sizes={gallerySizes} className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp4} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <ResponsiveImage asset="Home/hp4" alt="Friends enjoying a stop during a Triangle Adventures tour" width="1600" height="1200" sizes={gallerySizes} className='img-fluid'/>
                 </div>
                 
               </div>
@@ -52,25 +50,25 @@ const Pictures = () => {
             <div className="row ">
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp5} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <ResponsiveImage asset="Home/hp5" alt="Triangle Adventures riders exploring a scenic greenway" width="1600" height="1200" sizes={gallerySizes} className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp6} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <img src={hp6} width="704" height="530" alt="Guests gathered during a Triangle Adventures e-bike tour" loading='lazy' decoding="async" className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp7} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <ResponsiveImage asset="Home/hp7" alt="E-bike tour guests stopping for a group photo" width="1600" height="1200" sizes={gallerySizes} className='img-fluid'/>
                 </div>
                 
               </div>
               <div className="col-lg-3 col-md-6 col-sm-12 my-2  ">
                 <div className='image--item'>
-                  <img src={hp8} alt="Triangle Adventures e-bike tour experience" title='clayton fun activities'  loading='lazy' className='img-fluid'/>
+                  <img src={hp8} width="1200" height="1600" alt="Guided e-bike tour riders enjoying the trail" loading='lazy' decoding="async" className='img-fluid'/>
                 </div>
                 
               </div>

@@ -5,9 +5,7 @@ import { trackBookNowClick } from '../../../utils/analytics';
 import img1 from '../../../assets/4hour/4.1.png'
 import img2 from '../../../assets/4hour/4.2.jpg'
 import img3 from '../../../assets/4hour/4.3.jpg'
-import img4 from '../../../assets/4hour/4.4-optimized.webp'
-import img5 from '../../../assets/4hour/4.5-optimized.webp'
-import img6 from '../../../assets/4hour/4.6.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 
 
@@ -218,13 +216,13 @@ const QuickDetails = () => {
                             <img src={img3} alt="Triangle Adventures guests exploring Raleigh by e-bike" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img4} alt="Evening stop during the Raleigh history tour" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="4hour/4.4" alt="Evening stop during the Raleigh history tour" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img5} alt="Haunted-history stop on the Raleigh e-bike route" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="4hour/4.5" alt="Haunted-history stop on the Raleigh e-bike route" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img6} alt="Guided Raleigh ghost and mystery tour group" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="4hour/4.6" alt="Guided Raleigh ghost and mystery tour group" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         
                         

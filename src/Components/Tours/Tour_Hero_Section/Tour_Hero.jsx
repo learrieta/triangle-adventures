@@ -1,5 +1,7 @@
-import imgTourBanner from '../../../assets/Tours/tour_banner.jpg'
-import mobileTourBanner from '../../../assets/Tours/mobileTourBanner.jpg'
+import tourBannerSmall from '../../../assets/Tours/tour_banner-optimized-800.webp'
+import tourBannerLarge from '../../../assets/Tours/tour_banner-optimized-1600.webp'
+import mobileTourBannerSmall from '../../../assets/Tours/mobileTourBanner-optimized-800.webp'
+import mobileTourBannerLarge from '../../../assets/Tours/mobileTourBanner-optimized-1600.webp'
 import './tour_hero.css'
 
 const Tour_Hero = () => {
@@ -8,10 +10,17 @@ const Tour_Hero = () => {
         <picture>
           <source 
             media="(max-width: 776px)" 
-            srcSet={mobileTourBanner} 
+            srcSet={`${mobileTourBannerSmall} 800w, ${mobileTourBannerLarge} 1600w`}
+            sizes="100vw"
+            width="1600"
+            height="1200"
           />
           <img 
-            src={imgTourBanner} 
+            src={tourBannerLarge}
+            srcSet={`${tourBannerSmall} 800w, ${tourBannerLarge} 1600w`}
+            sizes="100vw"
+            width="1600"
+            height="728"
             className="banner--tour"
             alt="Triangle Adventures guided e-bike tours in the Raleigh area"
           />

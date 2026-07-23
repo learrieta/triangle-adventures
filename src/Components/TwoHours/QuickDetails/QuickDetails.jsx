@@ -2,12 +2,10 @@
 import './quickdetails.css'
 import { bookingLinks } from '../../../data/bookingLinks';
 import { trackBookNowClick } from '../../../utils/analytics';
-import img1 from '../../../assets/2hour/2.1.png'
+import img1 from '../../../assets/2hour/2.1-optimized.webp'
 import img2 from '../../../assets/2hour/2.2.png'
-import img3 from '../../../assets/2hour/2.3-optimized.webp'
-import img4 from '../../../assets/2hour/2.4.jpg'
-import img5 from '../../../assets/2hour/2.5.jpg'
 import img6 from '../../../assets/2hour/2.6.png'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 
 
@@ -200,13 +198,13 @@ const QuickDetails = () => {
                             <img src={img2} alt="Scenic greenway on the Raleigh area e-bike tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img3} alt="Triangle Adventures guests riding e-bikes" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="2hour/2.3" alt="Triangle Adventures guests riding e-bikes" width="1200" height="1600" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img4} alt="Photo stop during a Triangle Adventures scenic tour" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="2hour/2.4" alt="Photo stop during a Triangle Adventures scenic tour" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img5} alt="E-bike riders exploring a North Carolina greenway" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="2hour/2.5" alt="E-bike riders exploring a North Carolina greenway" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
                             <img src={img6} alt="Guided Triangle Adventures e-bike tour group" loading='lazy' className='img-fluid'/>

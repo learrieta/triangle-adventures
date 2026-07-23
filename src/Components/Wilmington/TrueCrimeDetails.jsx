@@ -4,8 +4,7 @@ import { bookingLinks } from '../../data/bookingLinks'
 import { trackBookNowClick } from '../../utils/analytics'
 import img1 from '../../assets/2hour/w-1.jpg'
 import img2 from '../../assets/2hour/w-2.jpg'
-import img3 from '../../assets/2hour/w-3.jpg'
-import img4 from '../../assets/2hour/w-4.jpg'
+import ResponsiveImage from '../ResponsiveImage/ResponsiveImage'
 
 const iconStyle = { color: '#f9b717', width: '30px' }
 
@@ -86,16 +85,16 @@ const WilmingtonTrueCrimeDetails = () => {
 
               <div className="row">
                 <div className="col-md-6 col-lg-4 mb-4">
-                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>Equipment</h6>
-                  <p className="faq--text--config">All participants receive a pedal-assisted Aventon e-bike and helmet. Dress in layers because it can feel cooler while riding.</p>
+                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>What equipment is included?</h6>
+                  <p className="faq--text--config">Each participant receives a pedal-assisted Aventon e-bike and helmet. Neck warmers, gloves, a bike bag, and bottled water are also provided when needed.</p>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
-                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>Group Size</h6>
-                  <p className="faq--text--config">Groups are limited to 8 participants aged 15 and up to keep the ride safe, personal, and memorable.</p>
+                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>What is the Wilmington tour group size and minimum age?</h6>
+                  <p className="faq--text--config">Groups are limited to 8 participants, and riders must be at least 15 years old.</p>
                 </div>
                 <div className="col-md-6 col-lg-4 mb-4">
-                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>Weather</h6>
-                  <p className="faq--text--config">Tours generally take place in light rain or shine. If weather is inclement, we will contact you with alternate arrangements.</p>
+                  <h6 className="mb-3 faqs--the--adventure"><i className="far fa-paper-plane pe-2" style={{ color: 'rgb(249, 183, 23)' }}></i>What happens if it rains?</h6>
+                  <p className="faq--text--config">Tours generally take place in light rain or shine. If weather is inclement, Triangle Adventures will contact riders with alternate arrangements.</p>
                 </div>
               </div>
             </div>
@@ -104,16 +103,16 @@ const WilmingtonTrueCrimeDetails = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img1} alt="Triangle Adventures e-bike tour" title="Wilmington e-bike tour" loading="lazy" className="img-fluid" />
+                <img src={img1} width="798" height="599" alt="Triangle Adventures guests beginning a Wilmington e-bike tour" loading="lazy" decoding="async" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img2} alt="Triangle Adventures guided e-bike ride" title="Wilmington guided e-bike ride" loading="lazy" className="img-fluid" />
+                <img src={img2} width="1130" height="848" alt="Guided e-bike riders exploring Wilmington" loading="lazy" decoding="async" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="lazy" className="img-fluid" />
+                <ResponsiveImage asset="2hour/w-3" alt="Wilmington True Crime and Weird History tour route" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img4} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="lazy" className="img-fluid" />
+                <ResponsiveImage asset="2hour/w-4" alt="Triangle Adventures e-bike tour stop in Wilmington" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className="img-fluid" />
               </div>
             </div>
           </div>

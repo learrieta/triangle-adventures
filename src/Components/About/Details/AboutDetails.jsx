@@ -1,9 +1,7 @@
 import './aboutdetails.css'
-import about1 from '../../../assets/Aboutus/a1.jpg'
-import about2 from '../../../assets/Aboutus/a2.jpg'
-import about3 from '../../../assets/Aboutus/a3.jpg'
 import marlo from '../../../assets/Aboutus/marlo-optimized.mp4'
 import dave from '../../../assets/Aboutus/dave-optimized.mp4'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 
 const AboutDetails = () => {
@@ -20,13 +18,13 @@ const AboutDetails = () => {
                         </div>
                         <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={about1} className="d-block w-100" alt="Triangle Adventures guests on a guided e-bike tour" loading='lazy'/>
+                            <ResponsiveImage asset="Aboutus/a1" width="1600" height="1200" sizes="(max-width: 767px) 100vw, 50vw" className="d-block w-100" alt="Triangle Adventures guests on a guided e-bike tour" />
                         </div>
                         <div className="carousel-item">
-                            <img src={about2} className="d-block w-100" alt="Guests exploring North Carolina with Triangle Adventures" loading='lazy'/>
+                            <ResponsiveImage asset="Aboutus/a2" width="1600" height="1200" sizes="(max-width: 767px) 100vw, 50vw" className="d-block w-100" alt="Guests exploring North Carolina with Triangle Adventures" />
                         </div>
                         <div className="carousel-item">
-                            <img src={about3} className="d-block w-100" alt="Triangle Adventures e-bike tour group" loading='lazy'/>
+                            <ResponsiveImage asset="Aboutus/a3" width="1600" height="784" sizes="(max-width: 767px) 100vw, 50vw" className="d-block w-100" alt="Triangle Adventures e-bike tour group" />
                         </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

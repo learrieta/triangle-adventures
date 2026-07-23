@@ -1,5 +1,5 @@
 import './tour_banner.css'
-import heroImg  from '../../../assets/Tours/tour_hero.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 
 const Tour_Banner = () => {
@@ -11,7 +11,7 @@ const Tour_Banner = () => {
               <div className="img-exp">
                 <div className="about-img">
                   <div className="img">
-                    <img src={heroImg} alt="Triangle Adventures guests on a Raleigh area e-bike tour" loading='lazy' className="img-fluid tour--banner--img" />
+                    <ResponsiveImage asset="Tours/tour_hero" width="1600" height="1200" sizes="(max-width: 991px) 100vw, 42vw" alt="Triangle Adventures guests on a Raleigh area e-bike tour" className="img-fluid tour--banner--img" />
                   </div>
                 </div>
               </div>

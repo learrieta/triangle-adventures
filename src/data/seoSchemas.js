@@ -12,8 +12,9 @@ export const localBusinessSchema = {
   logo: `${SITE_URL}/websitelogo.png`,
   description: 'Triangle Adventures offers guided e-bike tours in Raleigh, Clayton, the Triangle area, and Wilmington, North Carolina with scenic routes, food stops, ghost stories, true crime, weird history, and local guides.',
   telephone: '+1-919-807-1368',
-  email: 'Info@Triangle-Adventures.com',
+  email: 'info@triangle-adventures.com',
   priceRange: '$$',
+  hasMap: 'https://www.google.com/maps/search/?api=1&query=348%20East%20Main%20Street%2C%20Clayton%2C%20NC%2027520',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '348 East Main Street',
@@ -21,6 +22,13 @@ export const localBusinessSchema = {
     addressRegion: 'NC',
     postalCode: '27520',
     addressCountry: 'US',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    telephone: '+1-919-807-1368',
+    email: 'info@triangle-adventures.com',
+    availableLanguage: 'English',
   },
   areaServed: [
     'Raleigh, NC',
@@ -46,6 +54,44 @@ export const localBusinessSchema = {
     'https://www.instagram.com/triangleadventures',
     'https://www.tripadvisor.com/Attraction_Review-g49463-d27435815-Reviews-Triangle_Adventures-Raleigh_North_Carolina.html',
   ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Guided E-Bike Tours',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Greenery, Scenery and Mindfulness E-Bike Tour',
+          url: `${SITE_URL}/locations/raleigh/scenic-tour`,
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Raleigh Food and Drinks E-Bike Tour',
+          url: `${SITE_URL}/locations/raleigh/foods-and-drinks-tour`,
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Raleigh Ghosts, Mystery and History E-Bike Tour',
+          url: `${SITE_URL}/locations/raleigh/ghost-and-mysteries`,
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Wilmington: True Crime and Weird History',
+          url: `${SITE_URL}/locations/wilmington/true-crime-tour`,
+        },
+      },
+    ],
+  },
 }
 
 export const websiteSchema = {
@@ -87,6 +133,7 @@ export const tourProductSchema = ({
   name,
   description,
   image,
+  url: `${SITE_URL}${path}`,
   category,
   brand: {
     '@type': 'Brand',

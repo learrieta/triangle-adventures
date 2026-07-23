@@ -1,7 +1,7 @@
 import './tours.css'
-import imgOne from '../../../assets/Home/scenary.png'
-import imgTwo from '../../../assets/Home/fooddrink.png'
-import imgThree from '../../../assets/Home/mystery.png'
+import imgOne from '../../../assets/Home/scenary-optimized.webp'
+import imgTwo from '../../../assets/Home/fooddrink-optimized.webp'
+import imgThree from '../../../assets/Home/mystery-optimized.webp'
 import { wilmingtonTourImage } from '../../../data/wilmingtonTourImage'
 
 import { Link } from 'react-router-dom'
@@ -21,7 +21,7 @@ const Tours = () => {
           <div className="tours--container">
             <div className="card--container home--tour-card-grid">
               <article className="card--article">
-                <img src={imgOne} alt="Scenic Clayton greenway e-bike tour with Triangle Adventures" loading='lazy' className="card--img" />
+                <img src={imgOne} width="1024" height="1024" alt="Scenic Clayton greenway e-bike tour with Triangle Adventures" loading='lazy' decoding="async" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Raleigh Area</span>
                   <h2 className="card--title">Greenery, Scenery & Mindfulness</h2>
@@ -30,7 +30,7 @@ const Tours = () => {
               </article>
 
               <article className="card--article">
-                <img src={imgTwo} alt="Food and drinks e-bike tour in Clayton NC" loading='lazy' className="card--img" />
+                <img src={imgTwo} width="1024" height="1024" alt="Food and drinks e-bike tour in Clayton NC" loading='lazy' decoding="async" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Raleigh Area</span>
                   <h2 className="card--title">Tacos, Margaritas & History</h2>
@@ -39,7 +39,7 @@ const Tours = () => {
               </article>
 
               <article className="card--article">
-                <img src={imgThree} alt="Raleigh ghost and history e-bike tour" loading='lazy' className="card--img" />
+                <img src={imgThree} width="1024" height="1024" alt="Raleigh ghost and history e-bike tour" loading='lazy' decoding="async" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Raleigh, NC</span>
                   <h2 className="card--title">Ghosts, Mystery, Raleigh History</h2>
@@ -57,7 +57,7 @@ const Tours = () => {
             <p className="tours--text new-tour-feature__text">The stories your history teacher skipped. Explore Wilmington&apos;s most infamous crimes, bizarre legends, forgotten scandals, and strange local history.</p>
             <div className="tours--container new-tour-feature__container">
               <article className="card--article new--tour-card">
-                <img src={wilmingtonTourImage} alt="Wilmington: True Crime & Weird History e-bike tour poster" loading='lazy' className="card--img" />
+                <img src={wilmingtonTourImage} width="1024" height="1536" alt="Wilmington: True Crime & Weird History e-bike tour poster" loading='lazy' decoding="async" className="card--img" />
                 <div className="card--data">
                   <span className="card--description">Wilmington, NC</span>
                   <h2 className="card--title">Wilmington: True Crime & Weird History</h2>

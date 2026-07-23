@@ -1,10 +1,10 @@
-import about from '../../../assets/Aboutus/about.jpg'
 import './abouthero.css'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 const AboutHero = () => {
   return (
     <div className='tour--container'>
-        <img src={about} className='banner--tour' loading='eager' title='Clayton sunset' alt='Clayton sunset on a Triangle Adventures tour route'></img>
+        <ResponsiveImage asset="Aboutus/about" width="1600" height="662" sizes="100vw" className='banner--tour' loading='eager' alt='Clayton sunset on a Triangle Adventures tour route' />
              
         <h1 className='banner--tour--title text-white'>About us</h1>
     </div>

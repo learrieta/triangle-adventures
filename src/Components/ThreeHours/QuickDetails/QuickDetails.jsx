@@ -4,9 +4,7 @@ import { trackBookNowClick } from '../../../utils/analytics';
 import img1 from '../../../assets/3hour/b1.jpg'
 import img2 from '../../../assets/3hour/b2.jpg'
 import img3 from '../../../assets/3hour/b3.jpg'
-import img4 from '../../../assets/3hour/b4.jpg'
-import img5 from '../../../assets/3hour/b5.jpg'
-import img6 from '../../../assets/3hour/b6.jpg'
+import ResponsiveImage from '../../ResponsiveImage/ResponsiveImage'
 
 
 
@@ -219,13 +217,13 @@ const QuickDetails = () => {
                             <img src={img3} alt="Triangle Adventures food tour guests with e-bikes" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img4} alt="Local Raleigh area stop during the guided food tour" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="3hour/b4" alt="Local Raleigh area stop during the guided food tour" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img5} alt="E-bike riders taking a break during the food tour" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="3hour/b5" alt="E-bike riders taking a break during the food tour" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img6} alt="Guided food and history e-bike tour group" loading='lazy' className='img-fluid'/>
+                            <ResponsiveImage asset="3hour/b6" alt="Guided food and history e-bike tour group" width="1600" height="1200" sizes="(max-width: 991px) 50vw, 33vw" className='img-fluid'/>
                         </div>
                         
                         

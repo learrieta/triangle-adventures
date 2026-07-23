@@ -4,7 +4,8 @@ import SEO from '../Components/SEO/SEO'
 import JsonLd from '../Components/SEO/JsonLd'
 import TourReviews from '../Components/Reviews/TourReviews'
 import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
-import { breadcrumbSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { breadcrumbSchema, faqSchema, tourProductSchema, tourServiceSchema } from '../data/seoSchemas'
+import { raleighTourFaqs } from '../data/tourFaqs'
 
 const FoodsandDrink = () => {
   const path = '/locations/raleigh/foods-and-drinks-tour'
@@ -43,6 +44,7 @@ const FoodsandDrink = () => {
           serviceType: 'Food and Drinks Guided E-Bike Tour',
         })}
       />
+      <JsonLd data={faqSchema(raleighTourFaqs)} />
 
       <ThreeHeronSection />
       <QuickDetails />
