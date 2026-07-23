@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './homebanner.css'
-import homeVideo from '../../../assets/Home/tal.mp4'
 import { bookingLinks } from '../../../data/bookingLinks'
 import { trackBookNowClick } from '../../../utils/analytics'
 
 const HomeBanner = () => {
   const videoRef = useRef(null)
+  const [isPlaying, setIsPlaying] = useState(true)
 
   useEffect(() => {
     const video = videoRef.current
@@ -15,9 +15,15 @@ const HomeBanner = () => {
     video.playsInline = true
 
     const playVideo = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.pause()
+        setIsPlaying(false)
+        return
+      }
+
       const playPromise = video.play()
       if (playPromise && typeof playPromise.catch === 'function') {
-        playPromise.catch(() => {})
+        playPromise.catch(() => setIsPlaying(false))
       }
     }
 
@@ -28,6 +34,18 @@ const HomeBanner = () => {
     return () => window.clearTimeout(retryTimer)
   }, [])
 
+  const toggleVideo = () => {
+    const video = videoRef.current
+    if (!video) return
+
+    if (video.paused) {
+      video.play().then(() => setIsPlaying(true)).catch(() => {})
+    } else {
+      video.pause()
+      setIsPlaying(false)
+    }
+  }
+
   return (
     <div className="banner--container">
       <div className="home--video--container">
@@ -37,12 +55,21 @@ const HomeBanner = () => {
           loop
           muted
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="/images/hero-mobile-poster.jpg"
+          aria-label="Triangle Adventures e-bike tour highlights"
         >
-          <source src="/videos/tal-mobile.mp4" media="(max-width: 768px)" type="video/mp4" />
-          <source src={homeVideo} type="video/mp4" />
+          <source src="/videos/tal-mobile.mp4" type="video/mp4" />
         </video>
+        <button
+          className="home-video-toggle"
+          type="button"
+          onClick={toggleVideo}
+          aria-label={isPlaying ? 'Pause background video' : 'Play background video'}
+          aria-pressed={!isPlaying}
+        >
+          {isPlaying ? 'Pause video' : 'Play video'}
+        </button>
       </div>
 
       <div className="banner--content">

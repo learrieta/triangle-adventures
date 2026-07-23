@@ -1,12 +1,18 @@
 import { trackBookNowClick, trackGiftCardClick } from '../../utils/analytics';
 import logo from '../../assets/websitelogo.png'
 import { TiThMenu } from "react-icons/ti";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { bookingLinks } from '../../data/bookingLinks';
 
 import './navbar.css'
 
 const NavbarDark = () => {
+  const { pathname } = useLocation()
+  const isHome = pathname === '/'
+  const isLocations = pathname === '/locations' || pathname.startsWith('/locations/')
+  const isAbout = pathname === '/about-us'
+  const isContact = pathname === '/contact-us'
+
   const closeMobileMenu = () => {
     const navbarCollapse = document.getElementById('navbarSupportedContent')
     const navbarToggler = document.querySelector('.navbar-toggler')
@@ -39,10 +45,10 @@ const NavbarDark = () => {
             <div className="mx-auto">
               <ul className="navbar-nav text-center nav--list">
                 <li className="nav-item nav--item-spaced">
-                  <Link to="/" className="nav-link active" aria-current="page" onClick={closeMobileMenu}>Home</Link>
+                  <Link to="/" className={`nav-link${isHome ? ' active' : ''}`} aria-current={isHome ? 'page' : undefined} onClick={closeMobileMenu}>Home</Link>
                 </li>
                 <li className="nav-item dropdown nav--item-spaced locations--dropdown">
-                  <Link to="/locations" className="nav-link dropdown-toggle locations--toggle" id="locationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <Link to="/locations" className={`nav-link dropdown-toggle locations--toggle${isLocations ? ' active' : ''}`} id="locationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current={pathname === '/locations' ? 'page' : undefined}>
                     <span className="locations--label">Locations <span className="locations--chevron">▾</span></span>
                   </Link>
                   <ul className="dropdown-menu dropdown-menu-dark locations--dropdown-menu" aria-labelledby="locationsDropdown">
@@ -51,10 +57,10 @@ const NavbarDark = () => {
                   </ul>
                 </li>
                 <li className="nav-item nav--item-spaced">
-                  <Link to={'/about-us'} className="nav-link" onClick={closeMobileMenu}>About</Link>
+                  <Link to={'/about-us'} className={`nav-link${isAbout ? ' active' : ''}`} aria-current={isAbout ? 'page' : undefined} onClick={closeMobileMenu}>About</Link>
                 </li>
                 <li className="nav-item nav--item-spaced">
-                  <Link to={'/contact-us'} className="nav-link" onClick={closeMobileMenu}>Contact</Link>
+                  <Link to={'/contact-us'} className={`nav-link${isContact ? ' active' : ''}`} aria-current={isContact ? 'page' : undefined} onClick={closeMobileMenu}>Contact</Link>
                 </li>
               </ul>
             </div>
@@ -89,23 +95,16 @@ const NavbarDark = () => {
                 aria-labelledby="bookingLocationDropdown"
               >
                 <li>
-                  <a
+                  <Link
                     className="dropdown-item booking-location-item"
-                    href={bookingLinks.calendar}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    to="/locations/raleigh"
                     onClick={() => {
                       closeMobileMenu()
-                      trackBookNowClick({
-                        tourName: 'Raleigh Area Tours',
-                        tourSlug: 'raleigh-area',
-                        buttonLocation: 'navbar-location-menu',
-                      })
                     }}
                   >
                     <span>Raleigh Area</span>
-                    <span className="booking-location-item-hint">View tours</span>
-                  </a>
+                    <span className="booking-location-item-hint">Choose tour</span>
+                  </Link>
                 </li>
                 <li>
                   <a

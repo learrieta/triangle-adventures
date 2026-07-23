@@ -57,7 +57,7 @@
   --font-color-gray: #4d5262;
   --font-muted: #5f6676;
   --font-color: #ffff;
-  --font-accent:  rgb(249, 183, 23)  !important;
+  --font-accent: #8a5100;
   --dark-font-color: #203f45;
 }
 
@@ -150,6 +150,7 @@ section{
 }
 
 .tours--title h2,
+.tours--title h1,
 .tours--title h3,
 .contact--title,
 .about--the--adventure,
@@ -211,6 +212,14 @@ section{
   transition: transform var(--motion-fast), box-shadow var(--motion-smooth), filter var(--motion-fast), color var(--motion-fast), background var(--motion-smooth);
 }
 
+.large--button,
+.small--button--navbar,
+.tours--button--navbar,
+.wilmington-landing-hero__button,
+.data__contact {
+  color: #111827 !important;
+}
+
 .large--button:focus-visible,
 .small--button--navbar:focus-visible,
 .tours--button--navbar:focus-visible,
@@ -220,7 +229,7 @@ section{
 .data__contact:focus-visible,
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(249, 183, 23, 0.75);
+  outline: 3px solid #7a4300;
   outline-offset: 4px;
   border-radius: 999px;
 }
@@ -272,4 +281,45 @@ button:focus-visible {
     --text-lg: 1.05rem;
     --text-3xl: clamp(2rem, 11vw, 2.55rem);
   }
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #111827;
+  color: #fff;
+  transform: translateY(-160%);
+}
+
+.skip-link:focus {
+  color: #fff;
+  transform: translateY(0);
+}
+
+.privacy-page {
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+
+.privacy-page article {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.privacy-page h1 {
+  font-size: var(--text-3xl);
+  margin-bottom: 0.5rem;
+}
+
+.privacy-page h2 {
+  font-size: var(--text-xl);
+  margin-top: 2rem;
+}
+
+.privacy-page__updated {
+  color: var(--font-muted);
 }

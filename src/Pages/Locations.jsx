@@ -26,7 +26,7 @@ const Locations = () => {
           <div className="text-center">
             <p className="tours--subtitle">Choose your city</p>
             <div className="tours--title">
-              <h3>Adventure <span>Locations</span></h3>
+              <h1>Adventure <span>Locations</span></h1>
             </div>
             <p className="tours--text">
               Pick your starting city and explore guided e-bike tours in Raleigh, Clayton, the Triangle area, and Wilmington built around local stories, hidden history, scenic routes, and memorable stops.

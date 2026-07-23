@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import './contactus.css'
 import './contactHero.css'
 import about from '../../assets/Aboutus/contact.jpg'
@@ -178,22 +178,22 @@ const ContactUs = () => {
                             <form ref={form} onSubmit={sendEmail} className="contact__form">
                                 <div className="contact__form-row">
                                     <div className="contact__form-div">
-                                        <label className="contact__form-tag">Name</label>
-                                        <input type="text" name="name" className="contact__form-input" placeholder="Your name" required />
+                                        <label className="contact__form-tag" htmlFor="contact-name">Name</label>
+                                        <input id="contact-name" type="text" name="name" autoComplete="name" className="contact__form-input" placeholder="Your name" required />
                                     </div>
                                     <div className="contact__form-div">
-                                        <label className="contact__form-tag">Email</label>
-                                        <input type="email" name="email" className="contact__form-input" placeholder="you@example.com" required />
+                                        <label className="contact__form-tag" htmlFor="contact-email">Email</label>
+                                        <input id="contact-email" type="email" name="email" autoComplete="email" className="contact__form-input" placeholder="you@example.com" required />
                                     </div>
                                 </div>
                                 <div className="contact__form-row">
                                     <div className="contact__form-div">
-                                        <label className="contact__form-tag">Phone</label>
-                                        <input type="tel" name="user_phone" className="contact__form-input" placeholder="Your phone number" required />
+                                        <label className="contact__form-tag" htmlFor="contact-phone">Phone</label>
+                                        <input id="contact-phone" type="tel" name="user_phone" autoComplete="tel" className="contact__form-input" placeholder="Your phone number" required />
                                     </div>
                                     <div className="contact__form-div">
-                                        <label className="contact__form-tag">Interested in</label>
-                                        <select name="tour_interest" className="contact__form-input" defaultValue="">
+                                        <label className="contact__form-tag" htmlFor="contact-interest">Interested in</label>
+                                        <select id="contact-interest" name="tour_interest" className="contact__form-input" defaultValue="">
                                             <option value="" disabled>Select one</option>
                                             <option value="Raleigh / Clayton tour">Raleigh / Clayton tour</option>
                                             <option value="Wilmington tour">Wilmington tour</option>
@@ -204,8 +204,8 @@ const ContactUs = () => {
                                     </div>
                                 </div>
                                 <div className="contact__form-div contact__form-area">
-                                    <label className="contact__form-tag">Message</label>
-                                    <textarea name="message" cols={30} rows={10} className="contact__form-input" placeholder="Tell us about your tour, group, date, or question" required></textarea>
+                                    <label className="contact__form-tag" htmlFor="contact-message">Message</label>
+                                    <textarea id="contact-message" name="message" cols={30} rows={10} className="contact__form-input" placeholder="Tell us about your tour, group, date, or question" required></textarea>
                                 </div>
 
                                 {statusMessage ? (
@@ -214,6 +214,9 @@ const ContactUs = () => {
                                     </p>
                                 ) : null}
 
+                                <p className="contact__privacy-note">
+                                    By submitting this form, you agree that we may use your details to respond to your inquiry. See our <a href="/privacy-policy">Privacy Policy</a>.
+                                </p>
                                 <button className="data__contact" type="submit" disabled={formStatus === 'sending'}>
                                     {formStatus === 'sending' ? 'Sending...' : 'Send Message'}
                                 </button>

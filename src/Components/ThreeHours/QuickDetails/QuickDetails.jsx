@@ -1,4 +1,3 @@
-import React from 'react'
 import './quickdetails.css'
 import { bookingLinks } from '../../../data/bookingLinks';
 import { trackBookNowClick } from '../../../utils/analytics';
@@ -211,22 +210,22 @@ const QuickDetails = () => {
                 <div className="col-lg-4 col-md-12 col-sm-12">
                     <div className="row">
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img1} alt="Guests enjoying the Raleigh area food and drinks e-bike tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img2} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img2} alt="Food stop on the Tacos, Margaritas and History tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img3} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img3} alt="Triangle Adventures food tour guests with e-bikes" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img4} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img4} alt="Local Raleigh area stop during the guided food tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img5} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img5} alt="E-bike riders taking a break during the food tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img6} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img6} alt="Guided food and history e-bike tour group" loading='lazy' className='img-fluid'/>
                         </div>
                         
                         

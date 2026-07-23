@@ -1,4 +1,3 @@
-import React from 'react'
 import './tour_banner.css'
 import heroImg  from '../../../assets/Tours/tour_hero.jpg'
 
@@ -12,7 +11,7 @@ const Tour_Banner = () => {
               <div className="img-exp">
                 <div className="about-img">
                   <div className="img">
-                    <img src={heroImg} alt="clayton clients" title='clayton activity' loading='lazy' className="img-fluid tour--banner--img" />
+                    <img src={heroImg} alt="Triangle Adventures guests on a Raleigh area e-bike tour" loading='lazy' className="img-fluid tour--banner--img" />
                   </div>
                 </div>
               </div>

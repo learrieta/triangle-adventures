@@ -17,7 +17,7 @@ const WilmingtonTrueCrimeDetails = () => {
             <div className="row background--color wilmington-details-card">
               <h3 className="details--title">Quick Details</h3>
               <ul className="details--list">
-                <li><i className="fa-regular fa-hourglass-half" style={iconStyle}></i>Duration: 3 hours</li>
+                <li><i className="fa-regular fa-hourglass-half" style={iconStyle}></i>Duration: 3–4 hours</li>
                 <li><i className="fa-solid fa-location-arrow" style={iconStyle}></i>Location: 1101 Hill Street, Wilmington NC (Inside the gated area)</li>
                 <li><i className="fa-solid fa-user-group" style={iconStyle}></i>Capacity: 8 riders</li>
                 <li><i className="fa-regular fa-clock" style={iconStyle}></i>Times: Varies, Check the Calendar</li>
@@ -103,13 +103,13 @@ const WilmingtonTrueCrimeDetails = () => {
           <div className="col-lg-4 col-md-12 col-sm-12">
             <div className="row">
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img1} alt="Triangle Adventures e-bike tour" title="Wilmington e-bike tour" loading="eager" className="img-fluid" />
+                <img src={img1} alt="Triangle Adventures e-bike tour" title="Wilmington e-bike tour" loading="lazy" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img2} alt="Triangle Adventures guided e-bike ride" title="Wilmington guided e-bike ride" loading="eager" className="img-fluid" />
+                <img src={img2} alt="Triangle Adventures guided e-bike ride" title="Wilmington guided e-bike ride" loading="lazy" className="img-fluid" />
               </div>
               <div className="col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad">
-                <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="eager" className="img-fluid" />
+                <img src={img3} alt="Triangle Adventures scenic e-bike route" title="Wilmington: True Crime & Weird History" loading="lazy" className="img-fluid" />
               </div>
             </div>
           </div>

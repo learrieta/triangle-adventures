@@ -7,8 +7,9 @@ import NavbarDark from './Components/Navbar/NavbarDark'
 const Layout = () => {
   return (
     <div>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         <NavbarDark />
-        <main>
+        <main id="main-content">
             <Outlet />
         </main>
         <Footer />

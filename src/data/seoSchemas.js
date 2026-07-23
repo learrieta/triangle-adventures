@@ -58,11 +58,6 @@ export const websiteSchema = {
   publisher: {
     '@id': `${SITE_URL}/#business`,
   },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${SITE_URL}/locations?search={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
 }
 
 export const breadcrumbSchema = (items) => ({
@@ -84,6 +79,7 @@ export const tourProductSchema = ({
   areaServed,
   image = DEFAULT_IMAGE,
   category = 'Guided E-Bike Tour',
+  availability = 'https://schema.org/InStock',
 }) => ({
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -103,7 +99,7 @@ export const tourProductSchema = ({
     '@type': 'Offer',
     price,
     priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
+    availability,
     url: `${SITE_URL}${path}`,
     seller: {
       '@id': `${SITE_URL}/#business`,

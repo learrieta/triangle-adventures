@@ -12,6 +12,7 @@ import FoodsandDrink from './Pages/FoodsandDrink'
 import Gmr from './Pages/Gmr'
 import AboutUs from './Pages/AboutUs'
 import Contact from './Pages/Contact'
+import PrivacyPolicy from './Pages/PrivacyPolicy'
 import NotFound from './Pages/NotFound'
 import RouteChangeTracker from "./Components/Analytics/RouteChangeTracker";
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
@@ -33,6 +34,7 @@ function App() {
           <Route path="/locations/wilmington/true-crime-tour" element={<WilmingtonTrueCrime />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
           <Route path="/tours" element={<Navigate to="/locations/raleigh" replace />} />
           <Route path="/tours/scenic-tour" element={<Navigate to="/locations/raleigh/scenic-tour" replace />} />

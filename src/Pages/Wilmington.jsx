@@ -3,14 +3,11 @@ import JsonLd from '../Components/SEO/JsonLd'
 import { breadcrumbSchema, tourServiceSchema } from '../data/seoSchemas'
 import { Link } from 'react-router-dom'
 import { wilmingtonTourImage } from '../data/wilmingtonTourImage'
-import Testimonials from '../Components/HomePage/Testimonials/Testimonials'
-import TripAdvisorWidget from '../Components/Social/TripAdvisorWidget'
-import Partners from '../Components/HomePage/Partners/Partners'
 import '../Components/HomePage/Tours/tours.css'
 import '../Components/Wilmington/wilmington.css'
 
-const wilmingtonHeroImage = 'https://www.southport-nc.com/images/uploads/place/3206/0526-469.jpg'
-const wilmingtonBeachImage = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80'
+const wilmingtonHeroImage = '/images/wilmington-true-crime-header.jpg'
+const wilmingtonPosterImage = '/images/wilmington-true-crime-poster.jpeg'
 
 const nearbyItems = [
   {
@@ -24,22 +21,22 @@ const nearbyItems = [
     number: '02',
     title: 'Grab food downtown',
     text: 'Plan time for riverfront dining, coffee, dessert, or a relaxed meal around Historic Downtown and the Cargo District.',
-    image: 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-tour-de-wilmington-e-bike-tour.jpg?v=1746655130&width=1200',
-    alt: 'Downtown Wilmington e-bike tour route',
+    image: wilmingtonPosterImage,
+    alt: 'Wilmington True Crime and Weird History tour artwork',
   },
   {
     number: '03',
     title: 'Visit the beaches',
     text: 'Wrightsville Beach and Carolina Beach are easy add-ons for guests who want sunshine, ocean views, or a coastal walk.',
-    image: wilmingtonBeachImage,
-    alt: 'Wilmington area beach and ocean walk',
+    image: wilmingtonHeroImage,
+    alt: 'Historic Wilmington waterfront',
   },
   {
     number: '04',
     title: 'Walk historic streets',
     text: 'Wilmington is full of old homes, hidden corners, and local legends that pair perfectly with the True Crime and Weird History theme.',
-    image: 'https://ezelectricbikerentals.com/cdn/shop/files/ez-electric-bike-rentals-image-of-bridge-in-wilmington.jpg?v=1746579954&width=1200',
-    alt: 'Historic Wilmington streets and bridge area',
+    image: wilmingtonPosterImage,
+    alt: 'Wilmington True Crime and Weird History tour artwork',
   },
 ]
 
@@ -120,10 +117,6 @@ const Wilmington = () => {
           </div>
         </div>
       </section>
-
-      <Testimonials />
-      <TripAdvisorWidget />
-      <Partners />
 
       <section className="wilmington-things-section">
         <div className="container">

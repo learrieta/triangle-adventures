@@ -26,7 +26,7 @@ const Testimonials = () => {
             <div className="row justify-content-center align-items-center">
                 <div className="col-lg-6 col-sm-12 col-xs-12">
                     <div className="fullscreen-video-container">
-                        <video autoPlay loop muted playsInline preload="metadata" src={reviews}></video>
+                        <video controls playsInline preload="none" src={reviews} aria-label="Triangle Adventures customer video review"></video>
                     </div>
                 </div>
 

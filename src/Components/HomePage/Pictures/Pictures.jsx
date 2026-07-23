@@ -7,7 +7,6 @@ import hp5 from '../../../assets/Home/hp5.jpg'
 import hp6 from '../../../assets/Home/hp6.png'
 import hp7 from '../../../assets/Home/hp7.jpg'
 import hp8 from '../../../assets/Home/hp8.jpg'
-import hp9 from '../../../assets/Home/fooddrink.png'
 
 const Pictures = () => {
   return (

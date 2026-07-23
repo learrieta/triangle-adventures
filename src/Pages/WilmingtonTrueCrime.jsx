@@ -32,6 +32,7 @@ const WilmingtonTrueCrime = () => {
           areaServed: 'Wilmington, NC',
           category: 'Wilmington True Crime E-Bike Tour',
           image: wilmingtonTourOgImage,
+          availability: 'https://schema.org/PreOrder',
         })}
       />
       <JsonLd

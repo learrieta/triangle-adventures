@@ -28,7 +28,7 @@ const HeroSection = () => {
               <div className="img-exp">
                 <div className="about-img">
                   <div className="img">
-                    <img src={heroImg} alt="clayton clients" title='clayton activity' loading='lazy' className="img-fluid aventon--img" />
+                    <img src={heroImg} alt="Triangle Adventures guests exploring the Clayton greenway by e-bike" loading='lazy' className="img-fluid aventon--img" />
                   </div>
                 </div>
               </div>

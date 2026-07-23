@@ -9,7 +9,7 @@ const AboutUs = () => {
     <div>
       <SEO
         title="About Triangle Adventures | Guided E-Bike Tours in NC"
-        description="Meet Triangle Adventures, a guided e-bike tour company serving Raleigh, Durham, Cary, Clayton, and the Triangle area."
+        description="Meet Triangle Adventures, a guided e-bike tour company serving Raleigh, Clayton, the Triangle area, and Wilmington, North Carolina."
         path="/about-us"
       />
       <JsonLd

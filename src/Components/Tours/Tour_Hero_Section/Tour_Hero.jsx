@@ -1,4 +1,3 @@
-import React from 'react'
 import imgTourBanner from '../../../assets/Tours/tour_banner.jpg'
 import mobileTourBanner from '../../../assets/Tours/mobileTourBanner.jpg'
 import './tour_hero.css'

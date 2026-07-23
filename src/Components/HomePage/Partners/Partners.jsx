@@ -1,4 +1,3 @@
-import React from 'react'
 import './partners.css'
 import { vinsonImage } from './vinsonImage'
 import { revivalImage } from './revivalImage'

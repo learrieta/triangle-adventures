@@ -1,4 +1,3 @@
-import React from 'react'
 
 import twoHour from '../../../assets/Aboutus/about.jpg'
 

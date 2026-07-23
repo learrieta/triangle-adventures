@@ -1,4 +1,3 @@
-import React from 'react'
 
 import twoHour from '../../../assets/3hour/food_drink_fun.jpg'
 import mobileImg from '../../../assets/Tours/mobileImg.jpg'

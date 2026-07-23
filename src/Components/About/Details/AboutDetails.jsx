@@ -1,4 +1,3 @@
-import React from 'react'
 import './aboutdetails.css'
 import about1 from '../../../assets/Aboutus/a1.jpg'
 import about2 from '../../../assets/Aboutus/a2.jpg'
@@ -21,13 +20,13 @@ const AboutDetails = () => {
                         </div>
                         <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src={about1} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
+                            <img src={about1} className="d-block w-100" alt="Triangle Adventures guests on a guided e-bike tour" loading='lazy'/>
                         </div>
                         <div className="carousel-item">
-                            <img src={about2} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
+                            <img src={about2} className="d-block w-100" alt="Guests exploring North Carolina with Triangle Adventures" loading='lazy'/>
                         </div>
                         <div className="carousel-item">
-                            <img src={about3} className="d-block w-100" alt="clayton clients" title='clayton activity' loading='lazy'/>
+                            <img src={about3} className="d-block w-100" alt="Triangle Adventures e-bike tour group" loading='lazy'/>
                         </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -56,7 +55,7 @@ const AboutDetails = () => {
                         <div className="row  align-items-center">
                             <div className="col-lg-6 col-sm-12 col-xs-12">
                                 <div className="fullscreen-video-c">
-                                    <video autoPlay loop muted src={dave}></video>
+                                    <video controls playsInline preload="none" src={dave} aria-label="Meet Triangle Adventures guide Dave"></video>
                                 </div>
                             </div>
                             <div className="col-lg-6 col-sm-12 col-xs-12">
@@ -76,7 +75,7 @@ const AboutDetails = () => {
                             </div>
                             <div className="col-lg-6 col-sm-12 col-xs-12">
                                 <div className="fullscreen-video-c">
-                                    <video autoPlay loop muted src={marlo}></video>
+                                    <video controls playsInline preload="none" src={marlo} aria-label="Meet Triangle Adventures guide Marlo"></video>
                                 </div>
                             </div>
                         </div>

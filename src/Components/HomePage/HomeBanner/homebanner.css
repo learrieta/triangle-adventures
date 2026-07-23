@@ -69,7 +69,7 @@
 
 .large--button{
     background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
-    color: #fff;
+    color: #111827;
     font-size: clamp(1rem, 1.1vw, 1.22rem);
     padding: 0.95rem 2.3rem;
     border-radius: 50px;
@@ -98,7 +98,7 @@
 
 .large--button:hover{
     background: radial-gradient(circle at 10% 20%,rgb(249, 183, 23)  0%, rgb(255, 131, 61) 90%);
-    color: #fff;
+    color: #111827;
     transform: translateY(-3px);
     box-shadow: 0 24px 58px rgba(0, 0, 0, 0.36);
 }
@@ -185,4 +185,24 @@
         padding: 0.6rem 1.15rem;
         min-width: 120px;
     }
+}
+
+.home-video-toggle {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 3;
+    min-height: 44px;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    font: inherit;
+    font-weight: var(--weight-semibold);
+    backdrop-filter: blur(8px);
+}
+
+.home-video-toggle:hover {
+    background: rgba(0, 0, 0, 0.88);
 }

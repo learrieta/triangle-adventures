@@ -209,22 +209,22 @@ const QuickDetails = () => {
                 <div className="col-lg-4 col-md-12 col-sm-12">
                     <div className="row">
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img1} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img1} alt="Raleigh ghost and mystery e-bike tour riders" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img2} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img2} alt="Historic Raleigh stop on the ghost tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img3} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img3} alt="Triangle Adventures guests exploring Raleigh by e-bike" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img4} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img4} alt="Evening stop during the Raleigh history tour" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img5} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img5} alt="Haunted-history stop on the Raleigh e-bike route" loading='lazy' className='img-fluid'/>
                         </div>
                         <div className='col-lg-12 col-md-6 col-sm-6 col-xs-6 image--item--pad'>
-                            <img src={img6} alt="image" title='clayton fun activities'  loading = 'eager' className='img-fluid'/>
+                            <img src={img6} alt="Guided Raleigh ghost and mystery tour group" loading='lazy' className='img-fluid'/>
                         </div>
                         
                         

@@ -61,6 +61,7 @@ const Footer = () => {
               <li><Link to="/locations/wilmington">Wilmington Tours</Link></li>
               <li><Link to="/about-us">About Us</Link></li>
               <li><Link to="/contact-us">Contact</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 

@@ -112,7 +112,7 @@
 }
 
 .contact--primary-action {
-    color: #fff;
+    color: #111827;
     background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
     box-shadow: 0 14px 34px rgba(249, 183, 23, 0.28);
 }
@@ -435,7 +435,7 @@ select.contact__form-input {
     padding: 0.95rem 1.65rem;
     border-radius: 999px;
     background: radial-gradient(circle at 10% 20%, rgb(255, 131, 61) 0%, rgb(249, 183, 23) 90%);
-    color: #fff;
+    color: #111827;
     border: none;
     font-family: var(--heading-font);
     font-weight: var(--font-semi);

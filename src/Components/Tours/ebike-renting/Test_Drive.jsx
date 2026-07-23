@@ -1,4 +1,3 @@
-import React from 'react'
 import './test_drive.css'
 import aventon_one from '../../../assets/Tours/a1.jpg'
 import aventon_two from '../../../assets/Tours/a2.jpg'
